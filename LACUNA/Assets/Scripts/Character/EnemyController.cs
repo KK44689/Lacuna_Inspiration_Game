@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     private bool mustPatrol;
 
     private bool mustDetect;
+    public static bool monsterInactive = false;
 
     // private bool flip;
     public GameObject pandora;
@@ -54,7 +55,7 @@ public class EnemyController : MonoBehaviour
         float distanceToPlayer =
             Vector2.Distance(transform.position, pandora.transform.position);
         ReturnToStartPoint();
-        if (distanceToPlayer < attackRange && mustDetect)
+        if ((distanceToPlayer < attackRange) && mustDetect && (transform.position.y <= pandora.transform.position.y))
         {
             ChasePlayer();
         }
@@ -71,6 +72,7 @@ public class EnemyController : MonoBehaviour
             {
                 mustDetect = false;
                 animator.SetBool("walk", false);
+                monsterInactive = true;
                 RotateMonster();
                 Physics2D
                     .IgnoreCollision(pandora.GetComponent<Collider2D>(),

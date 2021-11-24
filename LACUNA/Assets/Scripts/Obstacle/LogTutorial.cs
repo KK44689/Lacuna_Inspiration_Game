@@ -5,7 +5,7 @@ using UnityEngine;
 public class LogTutorial : MonoBehaviour
 {
     public GameObject tutorialText;
-    bool pickUpAllowed;
+    // bool pickUpAllowed;
 
     // Start is called before the first frame update
     void Start()
@@ -15,20 +15,20 @@ public class LogTutorial : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
+        if (EnemyController.monsterInactive)
         {
             tutorialText.SetActive(false);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (
-            collision.gameObject.tag.Equals("Player") &&
-            PuzzleCollider.alreadyPickup
-        )
-        {
-            pickUpAllowed = true;
-        }
-    }
+    // void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if (
+    //         collision.gameObject.tag.Equals("Player") &&
+    //         PuzzleCollider.alreadyPickup
+    //     )
+    //     {
+    //         pickUpAllowed = true;
+    //     }
+    // }
 }
