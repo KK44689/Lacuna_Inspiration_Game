@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     private bool mustPatrol;
 
     private bool mustDetect;
+
     public static bool monsterInactive = false;
 
     // private bool flip;
@@ -21,7 +22,6 @@ public class EnemyController : MonoBehaviour
     public GameObject gameOver;
 
     // public static bool monsterFall = false;
-
     public GameObject
 
             startPos,
@@ -55,9 +55,26 @@ public class EnemyController : MonoBehaviour
         float distanceToPlayer =
             Vector2.Distance(transform.position, pandora.transform.position);
         ReturnToStartPoint();
-        if ((distanceToPlayer < attackRange) && mustDetect && (transform.position.y <= pandora.transform.position.y))
+        if ((distanceToPlayer < attackRange) && mustDetect)
         {
-            ChasePlayer();
+            if (gameObject.name == "Monster03" || gameObject.name == "Monster04"
+            )
+            {
+                if ((transform.position.y > pandora.transform.position.y))
+                {
+                    monsterWalk();
+                }
+                else
+                {
+                    print("chase player mon 3/4");
+                    ChasePlayer();
+                }
+            }
+            else
+            {
+                print("chase player");
+                ChasePlayer();
+            }
         }
         else
         {
@@ -162,10 +179,12 @@ public class EnemyController : MonoBehaviour
         {
             gameover = true;
             gameOver.SetActive(true);
-            if(gameObject.name == "Monster02"){
+            if (gameObject.name == "Monster02")
+            {
                 ReturnToCheckPoint.checkPoint = "checkpoint1";
             }
-            else{
+            else
+            {
                 ReturnToCheckPoint.checkPoint = "checkpoint2";
             }
             // gameObject.transform.position = stopPos.transform.position;

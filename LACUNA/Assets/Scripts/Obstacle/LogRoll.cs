@@ -45,7 +45,7 @@ public class LogRoll : MonoBehaviour
                 GetComponent<Collider2D>(),
                 false);
 
-            rb2D.AddForce(transform.right * 5f);
+            rb2D.AddForce(transform.right * 3f);
         }
         if (hitFloor)
         {
