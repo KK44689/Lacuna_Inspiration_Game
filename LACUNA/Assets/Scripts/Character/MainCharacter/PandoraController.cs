@@ -17,6 +17,8 @@ public class PandoraController : MonoBehaviour
     bool destroyCollectable = false;
 
     public GameObject collectable;
+    GameObject npc;
+
 
     // public GameObject gameOver;
     // public Transform checkPoint;
@@ -50,9 +52,20 @@ public class PandoraController : MonoBehaviour
 
     void FixedUpdate()
     {
+        npc = GameObject.FindWithTag("NPC");
         // generateBouquet();
         if (DialogueManager.isActive == true)
         {
+            if (transform.position.x >= npc.transform.position.x)
+            {
+                lookDirection(1);
+                lookDirecTemp = 1;
+            }
+            else if (transform.position.x < npc.transform.position.x)
+            {
+                lookDirection(-1);
+                lookDirecTemp = -1;
+            }
             animator.SetBool("walk", false);
             return;
         }

@@ -11,7 +11,7 @@ public class NpcController : MonoBehaviour
     public static int direction = 1;
 
     // public static int sceneID = 0;
-    float speed = 75f;
+    float speed = 72f;
 
     public GameObject talkText;
 
