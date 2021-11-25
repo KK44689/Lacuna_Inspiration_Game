@@ -25,7 +25,8 @@ public class DialogueManager : MonoBehaviour
 
         Debug.Log("started conversation ! Loaded messages" + messages.Length);
         DisplayMessage();
-        backgroundBox.LeanScale(new Vector3(7.93153f,7.93153f,0.881281f),1f).setEaseInOutExpo();
+        backgroundBox.LeanScale(new Vector3(1f,1f,1f),1f).setEaseInOutExpo();
+        // new  (9f,9f,1f),1f)
     }
 
     void DisplayMessage(){

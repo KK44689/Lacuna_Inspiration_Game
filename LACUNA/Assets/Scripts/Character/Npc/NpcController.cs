@@ -11,7 +11,7 @@ public class NpcController : MonoBehaviour
     public static int direction = 1;
 
     // public static int sceneID = 0;
-    float speed = 72f;
+    float speed = 8.4f;
 
     public GameObject talkText;
 
@@ -45,7 +45,7 @@ public class NpcController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         pandora = GameObject.FindWithTag("Player");
 
