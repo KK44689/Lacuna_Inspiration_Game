@@ -21,7 +21,7 @@ public class CollectableDetecter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (showPuzzle && Input.GetKeyDown(KeyCode.E) && PandoraController.challangeSolved == false)
+        if (showPuzzle && Input.GetKeyDown(KeyCode.E) && GenCollectable.challangeSolved == false)
         {
             pickUpText.SetActive(false);
             Puzzle.SetActive(true);
@@ -30,7 +30,7 @@ public class CollectableDetecter : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player") && PandoraController.challangeSolved == false)
+        if (collision.gameObject.tag.Equals("Player") && GenCollectable.challangeSolved == false)
         {
             pickUpText.SetActive(true);
             showPuzzle = true;

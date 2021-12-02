@@ -12,11 +12,11 @@ public class PandoraController : MonoBehaviour
 
     int lookDirecTemp = 1;
 
-    public static bool challangeSolved;
+    // public static bool challangeSolved;
 
-    bool destroyCollectable = false;
+    // bool destroyCollectable = false;
 
-    public GameObject collectable;
+    // public GameObject collectable;
     GameObject npc;
 
 
@@ -35,7 +35,7 @@ public class PandoraController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
-        challangeSolved = false;
+        // challangeSolved = false;
     }
 
     // Update is called once per frame
@@ -76,7 +76,7 @@ public class PandoraController : MonoBehaviour
             return;
         }
         PlayerWalk();
-        generateCollectable();
+        // generateCollectable();
         PlayCollectitemSound();
     }
 
@@ -128,22 +128,23 @@ public class PandoraController : MonoBehaviour
         transform.localScale = tempScale;
     }
 
-    void generateCollectable()
-    {
-        if (challangeSolved && destroyCollectable == false)
-        {
-            print("show collectable");
-            Vector2 tempPos = transform.position;
-            tempPos.y = transform.position.y + 3f;
+    // void generateCollectable()
+    // {
+    //     if (challangeSolved && destroyCollectable == false)
+    //     {
+    //         print("show collectable");
+    //         Vector2 tempPos = transform.position;
+    //         tempPos.y = transform.position.y + 3f;
 
-            GameObject CollectableObject =
-                (GameObject)
-                Instantiate(collectable, tempPos, Quaternion.identity);
-
-            Destroy(CollectableObject, 0.5f);
-            destroyCollectable = true;
-        }
-    }
+    //         GameObject CollectableObject =
+    //             (GameObject)
+    //             Instantiate(collectable, tempPos, Quaternion.identity);
+    //         PositionPickedUpItem CollectableObjectPos =
+    //             CollectableObject.GetComponent<PositionPickedUpItem>();
+    //         Destroy(CollectableObject, 0.5f);
+    //         destroyCollectable = true;
+    //     }
+    // }
 
     public void PlaySound(AudioClip clip)
     {

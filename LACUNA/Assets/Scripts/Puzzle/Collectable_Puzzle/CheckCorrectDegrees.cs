@@ -44,7 +44,7 @@ public class CheckCorrectDegrees : MonoBehaviour
 
     void CheckAllCorrected(){
         if(circle1_solved && circle2_solved && circle3_solved && circle4_solved){
-            PandoraController.challangeSolved = true;
+            GenCollectable.challangeSolved = true;
             Puzzle.SetActive(false);
         }
     }
