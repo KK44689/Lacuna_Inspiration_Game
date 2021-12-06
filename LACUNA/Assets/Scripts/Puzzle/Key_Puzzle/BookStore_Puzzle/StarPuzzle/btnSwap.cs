@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class btnSwap : MonoBehaviour
 {
     int clickedCount = 0;
+    public Color clickedColor;
 
     private Button
 
@@ -50,6 +51,8 @@ public class btnSwap : MonoBehaviour
     {
         clicked1.transform.name = btn1_name;
         clicked2.transform.name = btn2_name;
+        clicked1.transform.GetComponent<Image>().color = Color.white;
+        clicked2.transform.GetComponent<Image>().color = Color.white;
         clicked1.transform.localScale = new Vector2(1f, 1f);
         clicked2.transform.localScale = new Vector2(1f, 1f);
         clickedCount = 0;
@@ -64,7 +67,8 @@ public class btnSwap : MonoBehaviour
             position1 = btn.transform.position;
             btn.transform.name = "clicked";
 
-            btn.transform.localScale = new Vector2(0.8f, 0.8f);
+            // btn.transform.localScale = new Vector2(0.8f, 0.8f);
+            btn.transform.GetComponent<Image>().color = clickedColor;
             clickedCount++;
         }
         else if (btn.transform.name != "clicked" && clickedCount == 1)
@@ -75,7 +79,8 @@ public class btnSwap : MonoBehaviour
 
             btn.transform.name = "clicked";
 
-            btn.transform.localScale = new Vector2(0.8f, 0.8f);
+            // btn.transform.localScale = new Vector2(0.8f, 0.8f);
+            btn.transform.GetComponent<Image>().color = clickedColor;
             clickedCount++;
         }
     }
