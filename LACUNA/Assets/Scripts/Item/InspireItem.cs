@@ -33,6 +33,7 @@ public class InspireItem : MonoBehaviour
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
         {
             PuzzleCollider.alreadyPickup = true;
+            GenInspireItem.inspireItemPicked = true;
             PlayPickupSound = true;
             pickUpText.SetActive(false);
             // convert_color.GenColorObj();
