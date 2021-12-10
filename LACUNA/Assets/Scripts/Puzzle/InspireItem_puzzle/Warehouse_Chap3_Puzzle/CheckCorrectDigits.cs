@@ -59,5 +59,8 @@ public class CheckCorrectDigits : MonoBehaviour
         {
             isCorrect[orderDigit] = true;
         }
+        else{
+            isCorrect[orderDigit] = false;
+        }
     }
 }
