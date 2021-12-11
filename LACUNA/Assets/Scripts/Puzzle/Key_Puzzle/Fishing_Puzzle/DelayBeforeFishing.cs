@@ -8,11 +8,14 @@ public class DelayBeforeFishing : MonoBehaviour
 
     public GameObject fishingPuzzle;
 
+    public GameObject score;
+
     // Start is called before the first frame update
     void Start()
     {
         delay = Random.Range(1f, 5f);
         fishingPuzzle.SetActive(false);
+        score.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,6 +30,9 @@ public class DelayBeforeFishing : MonoBehaviour
             fishingPuzzle.SetActive(true);
             // delay = Random.Range(1f, 5f);
         }
-        print (delay);
+        if (gameObject.active)
+        {
+            score.SetActive(true);
+        }
     }
 }

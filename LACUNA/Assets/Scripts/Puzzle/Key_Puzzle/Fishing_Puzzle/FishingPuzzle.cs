@@ -66,10 +66,12 @@ public class FishingPuzzle : MonoBehaviour
     [SerializeField] GameObject fishRod;
 
     public static bool fishingComplete = false;
+    public static int score = 0;
 
     void OnEnable()
     {
         ResizeHookArea();
+        hookProgress = 0;
         fishRod.SetActive(false);
         failTimer = 10f;
         pause = false;
@@ -156,6 +158,7 @@ public class FishingPuzzle : MonoBehaviour
     void Win()
     {
         pause = true;
+        score++;
         DelayBeforeFishing.delay = Random.Range(1f, 5f);
         fishRod.SetActive(true);
         gameObject.SetActive(false);
