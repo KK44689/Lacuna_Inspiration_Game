@@ -14,11 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/Puzzle/Key_Puzzle/Fishing_Puzzle/inactiveAfterGetFish.cs
-    - Assets/Scripts/Puzzle/Key_Puzzle/Fishing_Puzzle/inactiveAfterGetFish.cs.meta
+    - Assets/Scripts/Event/ScaleCanvasToScreen.cs
+    - Assets/Scripts/Event/ScaleCanvasToScreen.cs.meta
+    - Assets/Scripts/Puzzle/Collectable_Puzzle/jigsaw_3_puzzle/piecesScript.cs
+    - Assets/Scripts/Puzzle/Collectable_Puzzle/jigsaw_3_puzzle/piecesScript.cs.meta
     - 
-    m_Values: 000000
-  RevisionSummary: 
+    m_Values: 0000000000
+  RevisionSummary: '- add world space canvas scale to screen size
+
+    - add random
+    pieces position when start'
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
