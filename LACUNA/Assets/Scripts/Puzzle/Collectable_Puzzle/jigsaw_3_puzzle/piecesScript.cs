@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class piecesScript : MonoBehaviour
 {
@@ -9,13 +10,15 @@ public class piecesScript : MonoBehaviour
     public bool InRightPosition;
 
     public bool Selected;
+    GameObject pandora;
 
     // Start is called before the first frame update
     void Start()
     {
+        pandora = GameObject.FindWithTag("Player");
         RightPosition = transform.position;
         transform.position =
-            new Vector3(Random.Range(167f, 173f), Random.Range(8.5f, -2.3f));
+            new Vector3(Random.Range(195f, 202f), Random.Range(7.6f, -2.2f));
     }
 
     // Update is called once per frame
@@ -25,8 +28,12 @@ public class piecesScript : MonoBehaviour
         {
             if (!Selected)
             {
-                transform.position = RightPosition;
-                InRightPosition = true;
+                if (InRightPosition == false)
+                {
+                    transform.position = RightPosition;
+                    InRightPosition = true;
+                    GetComponent<SortingGroup>().sortingOrder = 1;
+                }
             }
         }
     }

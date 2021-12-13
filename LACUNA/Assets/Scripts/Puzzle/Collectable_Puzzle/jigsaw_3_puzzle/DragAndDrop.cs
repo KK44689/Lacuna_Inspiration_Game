@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class DragAndDrop : MonoBehaviour
 {
     public GameObject SelectedPiece;
+
+    private RaycastHit2D raycastHit;
+
+    int OIL = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +34,18 @@ public class DragAndDrop : MonoBehaviour
                 {
                     SelectedPiece = hit.transform.gameObject;
                     SelectedPiece.GetComponent<piecesScript>().Selected = true;
+                    SelectedPiece.GetComponent<SortingGroup>().sortingOrder = OIL;
+                    OIL++;
                 }
             }
         }
         if (Input.GetMouseButtonUp(0))
         {
-            SelectedPiece.GetComponent<piecesScript>().Selected = false;
-            SelectedPiece = null;
+            if (SelectedPiece != null)
+            {
+                SelectedPiece.GetComponent<piecesScript>().Selected = false;
+                SelectedPiece = null;
+            }
         }
         if (SelectedPiece != null)
         {
@@ -43,5 +54,53 @@ public class DragAndDrop : MonoBehaviour
             SelectedPiece.transform.position =
                 new Vector3(MousePoint.x, MousePoint.y, 0);
         }
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //     if (Physics.Raycast(ray,out raycastHit) && raycastHit.collider.gameObject.tag =="Puzzle")
+        //     {
+        //         if (!raycastHit.transform.GetComponent<piecesScript>().InRightPosition)
+        //         {
+        //             SelectedPiece = hit.transform.gameObject;
+        //             SelectedPiece.GetComponent<piecesScript>().Selected = true;
+        //             SelectedPiece.GetComponent<SortingGroup>().sortingOrder =
+        //                 OIL;
+        //             OIL++;
+        //         }
+        //     }
+        // }
+        // if (Input.GetMouseButtonUp(0))
+        // {
+        //     if (SelectedPiece != null)
+        //     {
+        //         SelectedPiece.GetComponent<piecesScript>().Selected = false;
+        //         SelectedPiece = null;
+        //     }
+        // }
+        // if (SelectedPiece != null)
+        // {
+        //     Vector3 MousePoint =
+        //         Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //     SelectedPiece.transform.position =
+        //         new Vector3(MousePoint.x, MousePoint.y, 0);
+        // }
     }
+
+    // void CheckSelected()
+    // {
+    //     // RaycastHit2D hit =
+    //     //     Physics2D
+    //     //         .Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition),
+    //     //         Vector2.zero);
+    //     if (hit.transform.CompareTag("Puzzle"))
+    //     {
+    //         if (!hit.transform.GetComponent<piecesScript>().InRightPosition)
+    //         {
+    //             selected_piece = hit.transform.gameObject;
+    //             selected_piece .GetComponent<piecesScript>().Selected = true;
+    //             selected_piece.GetComponent<SortingGroup>().sortingOrder = OIL;
+    //             OIL++;
+    //         }
+    //     }
+    // }
 }
