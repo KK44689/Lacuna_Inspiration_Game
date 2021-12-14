@@ -6,9 +6,6 @@ using UnityEngine.EventSystems;
 public class DragDrop : MonoBehaviour, IDragHandler
 // , IEndDragHandler
 {
-    List<bool> checkRightPos = new List<bool>();
-
-    bool allCorrect = false;
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -22,10 +19,6 @@ public class DragDrop : MonoBehaviour, IDragHandler
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 36; i++)
-        {
-            checkRightPos.Add(false);
-        }
     }
 
     // Update is called once per frame
@@ -35,30 +28,6 @@ public class DragDrop : MonoBehaviour, IDragHandler
         {
             transform.position =
                 this.GetComponent<pieceScript2>().RightPosition;
-            for (int i = 1; i <= 36; i++)
-            {
-                if (this.gameObject.name == "piece" + i.ToString())
-                {
-                    checkRightPos[i-1] = true;
-                    print(checkRightPos[i-1]);
-                }
-            }
         }
-        if (check())
-        {
-            print("won");
-        }
-    }
-
-    bool check()
-    {
-        foreach (bool j in checkRightPos)
-        {
-            if (j == false)
-            {
-                return false;
-            }
-        }
-        return true;
     }
 }

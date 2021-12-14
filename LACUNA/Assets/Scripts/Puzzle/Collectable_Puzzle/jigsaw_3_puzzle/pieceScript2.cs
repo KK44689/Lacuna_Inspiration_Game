@@ -26,7 +26,7 @@ public class pieceScript2 : MonoBehaviour
             if (InRightPosition == false)
             {
                 transform.position = RightPosition;
-                InRightPosition = true;
+                this.InRightPosition = true;
                 GetComponent<SortingGroup>().sortingOrder = 1;
             }
         }
