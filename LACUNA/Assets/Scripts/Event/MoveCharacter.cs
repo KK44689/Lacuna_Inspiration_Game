@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MoveCharacter : MonoBehaviour
 {
-    public GameObject pandora;
+    public GameObject Character;
 
     public string posName;
+    public string charType;
 
     bool Return = false;
 
@@ -22,14 +23,14 @@ public class MoveCharacter : MonoBehaviour
         if (Return)
         {
             print("return");
-            pandora.transform.position = destinationPoint.transform.position;
+            Character.transform.position = destinationPoint.transform.position;
             Return = false;
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player"))
+        if (collision.gameObject.tag.Equals(charType))
         {
             Return = true;
         }
@@ -37,7 +38,7 @@ public class MoveCharacter : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player"))
+        if (collision.gameObject.tag.Equals(charType))
         {
             Return = false;
         }

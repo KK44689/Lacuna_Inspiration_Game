@@ -14,17 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animation/collectable/pallete.controller
-    - Assets/Animation/collectable/pallete.controller.meta
-    - Assets/Animation/collectable/pallete_Idle.anim
-    - Assets/Animation/collectable/pallete_Idle.anim.meta
-    - Assets/Animation/collectable/pallete_move.anim
-    - Assets/Animation/collectable/pallete_move.anim.meta
-    - Assets/Prefabs/Collectable/pallete.prefab
-    - Assets/Prefabs/Collectable/pallete.prefab.meta
+    - Assets/Scenes/Chap2.unity
+    - Assets/Scripts/Event/ActiveAfterGetInspireItem1.cs
+    - Assets/Scripts/Event/ActiveAfterGetInspireItem1.cs.meta
+    - Assets/Scripts/Event/MoveCharacter.cs
     - 
-    m_Values: 010101010101010101
-  RevisionSummary: 
+    m_Values: 0101010101
+  RevisionSummary: '- add move pan + jill to library -- chap2'
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

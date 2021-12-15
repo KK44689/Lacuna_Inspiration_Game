@@ -14,4 +14,11 @@ public class Detect_ActiveNextCollider : MonoBehaviour
             NextCollider.SetActive(true);
         }
     }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals(charType))
+        {
+            NextCollider.SetActive(false);
+        }
+    }
 }
