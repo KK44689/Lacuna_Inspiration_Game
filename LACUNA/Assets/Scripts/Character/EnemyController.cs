@@ -39,6 +39,8 @@ public class EnemyController : MonoBehaviour
 
     public static bool gameover = false;
 
+    public float monSize = 0.5f;
+
     void Start()
     {
         mustPatrol = true;
@@ -127,7 +129,7 @@ public class EnemyController : MonoBehaviour
     void MoveRight()
     {
         movingRight = true;
-        localScale.x = 0.5f;
+        localScale.x = monSize;
         transform.localScale = localScale;
         rb.velocity = new Vector2(localScale.x * speed, rb.velocity.y);
     }
@@ -135,7 +137,7 @@ public class EnemyController : MonoBehaviour
     void MoveLeft()
     {
         movingRight = false;
-        localScale.x = -0.5f;
+        localScale.x = -monSize;
         transform.localScale = localScale;
         rb.velocity = new Vector2(localScale.x * speed, rb.velocity.y);
     }
@@ -153,7 +155,7 @@ public class EnemyController : MonoBehaviour
 
             //enemy on the left side of player move right
             rb.velocity = new Vector2(chaseSpeed, 0);
-            transform.localScale = new Vector2(0.5f, 0.5f);
+            transform.localScale = new Vector2(monSize, monSize);
         }
         else
         {
@@ -161,7 +163,7 @@ public class EnemyController : MonoBehaviour
 
             //enemy on the right side of player move left
             rb.velocity = new Vector2(-chaseSpeed, 0);
-            transform.localScale = new Vector2(-0.5f, 0.5f);
+            transform.localScale = new Vector2(-monSize, monSize);
         }
     }
 
@@ -179,6 +181,7 @@ public class EnemyController : MonoBehaviour
         {
             gameover = true;
             gameOver.SetActive(true);
+            
             if (gameObject.name == "Monster02")
             {
                 ReturnToCheckPoint.checkPoint = "checkpoint1";

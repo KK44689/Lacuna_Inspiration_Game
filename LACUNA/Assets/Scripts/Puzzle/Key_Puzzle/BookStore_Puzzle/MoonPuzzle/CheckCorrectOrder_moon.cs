@@ -25,6 +25,8 @@ public class CheckCorrectOrder_moon : MonoBehaviour
     public GameObject Puzzle;
 
     public GameObject puzzleDetector;
+    public GameObject getInspireItemDetector;
+
 
     bool
 
@@ -83,6 +85,7 @@ public class CheckCorrectOrder_moon : MonoBehaviour
             Puzzle.SetActive(false);
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             moon_puzzle_solved = true;
+            getInspireItemDetector.SetActive(false);
         }
     }
 

@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class CheckCorrectOrder : MonoBehaviour
 {
-    GameObject piece1,
+    GameObject
+
+            piece1,
             piece2,
             piece3,
             piece4,
             piece5;
 
-    private Vector3 pos1,
+    private Vector3
+
+            pos1,
             pos2,
             pos3,
             pos4,
@@ -20,11 +24,20 @@ public class CheckCorrectOrder : MonoBehaviour
 
     public GameObject puzzleDetector;
 
-    bool piece1_solved,
+    public GameObject getInspireItemDetector;
+
+    public GameObject monster;
+
+    public GameObject monsterStruck;
+
+    bool
+
+            piece1_solved,
             piece2_solved,
             piece3_solved,
             piece4_solved,
             piece5_solved;
+
     public static bool star_puzzle_solved = false;
 
     // Start is called before the first frame update
@@ -41,7 +54,7 @@ public class CheckCorrectOrder : MonoBehaviour
         piece3 = GameObject.Find("puzzle3");
         piece4 = GameObject.Find("puzzle4");
         piece5 = GameObject.Find("puzzle5");
-
+        monsterStruck.SetActive(false);
     }
 
     // Update is called once per frame
@@ -70,6 +83,9 @@ public class CheckCorrectOrder : MonoBehaviour
             Puzzle.SetActive(false);
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             star_puzzle_solved = true;
+            getInspireItemDetector.SetActive(false);
+            monster.SetActive(false);
+            monsterStruck.SetActive(true);
         }
     }
 
