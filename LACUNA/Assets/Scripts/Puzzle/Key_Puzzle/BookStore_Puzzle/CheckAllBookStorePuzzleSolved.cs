@@ -7,6 +7,7 @@ public class CheckAllBookStorePuzzleSolved : MonoBehaviour
     public GameObject collider;
 
     GameObject Pandora;
+    public static bool allBookStorePuzzleSolved = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class CheckAllBookStorePuzzleSolved : MonoBehaviour
         )
         {
             print("all solved");
+            allBookStorePuzzleSolved = true;
             Pandora = GameObject.FindWithTag("Player");
             collider.SetActive(true);
             collider.transform.position = Pandora.transform.position;
