@@ -29,8 +29,12 @@ public class CheckCorrectOrder_sun : MonoBehaviour
     public GameObject Puzzle;
 
     public GameObject puzzleDetector;
+
     public GameObject getInspireItemDetector;
 
+    public GameObject monster;
+
+    public GameObject monsterStruck;
 
     bool
 
@@ -65,6 +69,7 @@ public class CheckCorrectOrder_sun : MonoBehaviour
         box6 = GameObject.Find("box6");
         box7 = GameObject.Find("box7");
         box8 = GameObject.Find("box8");
+        monsterStruck.SetActive(false);
     }
 
     // Update is called once per frame
@@ -92,7 +97,7 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             box5_solved &&
             box6_solved &&
             box7_solved &&
-            box8_solved 
+            box8_solved
         )
         {
             Debug.Log("star puzzle solved");
@@ -100,6 +105,8 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             sun_puzzle_solved = true;
             getInspireItemDetector.SetActive(false);
+            monster.SetActive(false);
+            monsterStruck.SetActive(true);
         }
     }
 
@@ -141,7 +148,7 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             (pos3.x < pos5.x) &&
             (pos3.x < pos6.x) &&
             (pos3.x < pos7.x) &&
-            (pos3.x < pos8.x) 
+            (pos3.x < pos8.x)
         )
         {
             box3_solved = true;
@@ -155,7 +162,7 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             (pos4.x < pos5.x) &&
             (pos4.x < pos6.x) &&
             (pos4.x < pos7.x) &&
-            (pos4.x < pos8.x) 
+            (pos4.x < pos8.x)
         )
         {
             box4_solved = true;
@@ -169,7 +176,7 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             (pos5.x > pos4.x) &&
             (pos5.x < pos6.x) &&
             (pos5.x < pos7.x) &&
-            (pos5.x < pos8.x) 
+            (pos5.x < pos8.x)
         )
         {
             box5_solved = true;
@@ -183,11 +190,12 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             (pos6.x > pos4.x) &&
             (pos6.x > pos5.x) &&
             (pos6.x < pos7.x) &&
-            (pos6.x < pos8.x) 
+            (pos6.x < pos8.x)
         )
         {
             box6_solved = true;
         }
+
         // piece7
         if (
             (pos7.x > pos1.x) &&
@@ -196,11 +204,12 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             (pos7.x > pos4.x) &&
             (pos7.x > pos5.x) &&
             (pos7.x > pos6.x) &&
-            (pos7.x < pos8.x) 
+            (pos7.x < pos8.x)
         )
         {
             box7_solved = true;
         }
+
         // piece8
         if (
             (pos8.x > pos1.x) &&
@@ -209,7 +218,7 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             (pos8.x > pos4.x) &&
             (pos8.x > pos5.x) &&
             (pos8.x > pos6.x) &&
-            (pos8.x > pos7.x) 
+            (pos8.x > pos7.x)
         )
         {
             box8_solved = true;

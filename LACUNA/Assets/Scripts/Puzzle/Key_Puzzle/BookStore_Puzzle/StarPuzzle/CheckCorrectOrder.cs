@@ -145,7 +145,13 @@ public class CheckCorrectOrder : MonoBehaviour
         {
             piece5_solved = true;
         }
-
+        else{
+            piece1_solved = false;
+            piece2_solved = false;
+            piece3_solved = false;
+            piece4_solved = false;
+            piece5_solved = false;
+        }
         print("1 " + piece1_solved);
         print("2 " + piece2_solved);
         print("3 " + piece3_solved);
