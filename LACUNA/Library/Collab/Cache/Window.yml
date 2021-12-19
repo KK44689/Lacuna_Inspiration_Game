@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Prefabs/BlackFade.prefab
     - Assets/Scenes/Chap2_afterBookStore.unity
+    - Assets/Scripts/Event/ActiveAfterDelay.cs
+    - Assets/Scripts/Event/ActiveAfterDelay.cs.meta
+    - Assets/Scripts/Event/ChangeSkyColor.cs
+    - Assets/Scripts/Event/ChangeSkyColor.cs.meta
+    - Assets/Scripts/Event/MoveToPlayerPos.cs
+    - Assets/Scripts/Event/MoveToPlayerPos.cs.meta
     - 
-    m_Values: 0101
-  RevisionSummary: '- change sky color -- Chap2_after
-
-    - add before jill back
-    home dialogue -- Chap2_after
-
-    - add jill talk to pan at bike store dialogue
-    -- Chap2_after'
+    m_Values: 000000000000000000
+  RevisionSummary: '- add change sky color -- Chap2_after'
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
