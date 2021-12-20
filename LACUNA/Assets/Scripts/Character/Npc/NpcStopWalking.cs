@@ -5,12 +5,9 @@ using UnityEngine;
 public class NpcStopWalking : MonoBehaviour
 {
     // public GameObject destroyedCollider;
-
     // public GameObject nextCollider;
-
     // public bool continueWalking;
     // bool npcEnter = false;
-
     // Start is called before the first frame update
     void Start()
     {

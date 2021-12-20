@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class collectableDetect : MonoBehaviour
+public class MoveToNpcPos : MonoBehaviour
 {
+    GameObject npc;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,7 @@ public class collectableDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        npc = GameObject.FindWithTag("NPC");
+        transform.position = npc.transform.position;
     }
 }

@@ -18,7 +18,7 @@ public class NpcWalkingLeft : MonoBehaviour
     {
         if (collider.gameObject.tag.Equals("NPC"))
         {
-            NpcController.moveNotWait = true;
+            NpcController.move = true;
             NpcController.direction = -1;
         }
     }

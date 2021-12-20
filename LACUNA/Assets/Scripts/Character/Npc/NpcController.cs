@@ -84,9 +84,9 @@ public class NpcController : MonoBehaviour
 
     void NpcMove(int direction)
     {
+
         // Vector2 position = rigidbody2d.position;
         // pandora = GameObject.FindWithTag("Player");
-
         // pandora = GameObject.FindWithTag("Player");
         // Transform pandoraTransform = pandora.transform;
         // Vector2 pandoraPosition = pandoraTransform.position;
@@ -131,12 +131,12 @@ public class NpcController : MonoBehaviour
         {
             lookDirection (lookDirecTemp);
             animator.SetBool("walk", false);
-            // Debug.Log("idle");
         }
     }
 
     void NpcMoveNotWait(int direction)
     {
+
         // Vector2 position = rigidbody2d.position;
         // pandora = GameObject.FindWithTag("Player");
         // Transform pandoraTransform = pandora.transform;
@@ -162,7 +162,6 @@ public class NpcController : MonoBehaviour
         {
             lookDirection (lookDirecTemp);
             animator.SetBool("walk", false);
-            // Debug.Log("idle");
         }
     }
 

@@ -22,6 +22,7 @@ public class NpcWalkingLeft_notWait : MonoBehaviour
         if (collider.gameObject.tag.Equals("NPC"))
         {
             NpcController.moveNotWait = true;
+            NpcController.move = false;
             NpcController.direction = -1;
             PuzzleCollider.puzzleAwake = true;
         }
