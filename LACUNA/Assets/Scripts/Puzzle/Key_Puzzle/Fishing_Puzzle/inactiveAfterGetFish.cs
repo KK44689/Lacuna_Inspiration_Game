@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class inactiveAfterGetFish : MonoBehaviour
 {
+    public GameObject NextCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,7 @@ public class inactiveAfterGetFish : MonoBehaviour
     void Update()
     {
         if(FishingPuzzle.score == 10){
+            NextCollider.SetActive(true);
             gameObject.SetActive(false);
         }
     }
