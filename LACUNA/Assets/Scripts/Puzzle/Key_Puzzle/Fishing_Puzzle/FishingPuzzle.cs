@@ -10,6 +10,11 @@ public class FishingPuzzle : MonoBehaviour
 
     [SerializeField]
     Transform bottomPivot;
+    [SerializeField]
+    Transform topPivotHook;
+
+    [SerializeField]
+    Transform bottomPivotHook;
 
     [SerializeField]
     Transform fish;
@@ -58,14 +63,19 @@ public class FishingPuzzle : MonoBehaviour
     [SerializeField]
     Transform progressBarContainer;
 
+    // [SerializeField]
+    // Transform HookAreaContainer;
+
     bool pause = false;
 
     [SerializeField]
     float failTimer = 10f;
 
-    [SerializeField] GameObject fishRod;
+    [SerializeField]
+    GameObject fishRod;
 
     public static bool fishingComplete = false;
+
     public static int score = 0;
 
     void OnEnable()
@@ -76,28 +86,13 @@ public class FishingPuzzle : MonoBehaviour
         failTimer = 10f;
         pause = false;
     }
-    // void OnDisable()
-    // {
-    //     fishRod.SetActive(true);
-    //     failTimer = 10f;
-    //     pause = false;
-    //     Debug.Log("PrintOnDisable: script was disabled");
-    // }
-
-    // void OnEnable()
-    // {
-    //     fishRod.SetActive(false);
-    //     // failTimer = 10f;
-    //     // pause = false;
-    //     Debug.Log("PrintOnEnable: script was enabled");
-    // }
 
     private void ResizeHookArea()
     {
         // Bounds b = hookImage.bounds;
         float ySize = hookImage.rectTransform.rect.height;
         Vector3 ls = hook.localScale;
-        hookSize = Random.Range(0.05f, 0.2f);
+        hookSize = Random.Range(0.05f, 0.1f);
         float distance =
             Vector3.Distance(topPivot.position, bottomPivot.position);
         ls.y = (distance / ySize * hookSize);
@@ -167,26 +162,34 @@ public class FishingPuzzle : MonoBehaviour
 
     void Hook()
     {
+        float ySize = hookImage.rectTransform.rect.height;
+        print("bottom "+bottomPivotHook.position.y.ToString());
+        print("top "+topPivotHook.position.y.ToString());
         if (Input.GetMouseButton(0))
         {
             hookPullVelocity += hookPullPower * Time.deltaTime;
         }
         hookPullVelocity -= hookGravityPower * Time.deltaTime;
         hookPosition += hookPullVelocity;
-        if (hookPosition - hookSize / 2 <= 0f && hookPullVelocity < 0f)
+        
+        if (bottomPivotHook.position.y <= bottomPivot.position.y && hookPullVelocity < 0f)
         {
             hookPullVelocity = 0f;
         }
-        if (hookPosition + hookSize / 2 >= 1f && hookPullVelocity > 0f)
+        // if (hookPosition - hookSize / 2 <= 0f && hookPullVelocity < 0f)
+        // {
+        //     hookPullVelocity = 0f;
+        // }
+        if (topPivotHook.position.y >= topPivot.position.y && hookPullVelocity > 0f)
         {
             hookPullVelocity = 0f;
         }
 
         hookPosition =
             Mathf.Clamp(hookPosition, hookSize / 2, 1 - hookSize / 2);
+
         // print (hookPosition);
-        hook.position =
-            Vector3.Lerp(bottomPivot.position, topPivot.position, hookPosition);
+        hook.position = Vector3.Lerp(bottomPivot.position, topPivot.position, hookPosition);
     }
 
     void Fish()
