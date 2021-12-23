@@ -8,6 +8,7 @@ public class CheckCorrectDegrees : MonoBehaviour
     GameObject circle1;
     GameObject circle2;
     public GameObject Puzzle;
+    public GameObject PuzzleTutorial;
     GameObject circle3;
     GameObject circle4;
 
@@ -46,6 +47,7 @@ public class CheckCorrectDegrees : MonoBehaviour
         if(circle1_solved && circle2_solved && circle3_solved && circle4_solved){
             GenCollectable.challangeSolved = true;
             Puzzle.SetActive(false);
+            PuzzleTutorial.SetActive(false);
         }
     }
     float RoundRotation(GameObject circle)
