@@ -15,11 +15,11 @@ C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/Lacuna_Backup/LACUNA
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62149
+60948
 Successfully changed project path to: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/Lacuna_Backup/LACUNA
 C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/Lacuna_Backup/LACUNA
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 90.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path C:/unity/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -35,48 +35,48 @@ Initialize mono
 Mono path[0] = 'C:/unity/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/unity/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001809 seconds.
+Registered in 0.001306 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 52.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.455 seconds
+- Completed reload, in  0.947 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1455ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (948ms)
+		BeginReloadAssembly (43ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (578ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (377ms)
+			LoadAssemblies (42ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (242ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (163ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (81ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (105ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (71ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003685 seconds.
+Registered in 0.002586 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 81.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 51.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 !!! Lexitron Watcher Initialized
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -92,45 +92,45 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 (Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.544 seconds
+- Completed reload, in  1.009 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1545ms)
-		BeginReloadAssembly (190ms)
+	ReloadAssembly (1010ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1272ms)
-			LoadAssemblies (126ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (835ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (393ms)
+			SetupTypeCache (270ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (506ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (330ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (286ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2412 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2413 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 104.9 MB.
 System memory in use after: 105.1 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2855.
-Total: 4.980000 ms (FindLiveObjects: 0.387800 ms CreateObjectMapping: 0.161800 ms MarkObjects: 4.390900 ms  DeleteObjects: 0.037300 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2856.
+Total: 4.139300 ms (FindLiveObjects: 0.352600 ms CreateObjectMapping: 0.083000 ms MarkObjects: 3.667800 ms  DeleteObjects: 0.033700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -144,18 +144,34 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/Scenes/Chap1.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chap1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec5a675ad608032bca0ceb95d458b36') in 0.011745 seconds 
+  Import took 0.015241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.968562 seconds.
+  path: Assets/Scenes/Chap2.unity
+  artifactKey: Guid(d1a649bf7c2f16e4cb9c8eaba0c3a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chap2.unity using Guid(d1a649bf7c2f16e4cb9c8eaba0c3a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63569eb993898aa808ad57233a0fda09') in 0.002230 seconds 
+  Import took 0.005811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 340.009031 seconds.
   path: Assets/Scenes/Chap1_Pan_house.unity
   artifactKey: Guid(8c9ea7f6fc0eb594e8942c21af7b4232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap1_Pan_house.unity using Guid(8c9ea7f6fc0eb594e8942c21af7b4232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda3bfba6f957ccfa7886563ec806e03') in 0.017910 seconds 
-  Import took 0.022805 seconds .
+Start importing Assets/Scenes/Chap1_Pan_house.unity using Guid(8c9ea7f6fc0eb594e8942c21af7b4232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e43b79e52a9fc81756fc996e064af6') in 0.002980 seconds 
+  Import took 0.008819 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002266 seconds.
+Registered in 0.004488 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 !!! Lexitron Watcher Initialized
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -171,42 +187,387 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 (Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.858 seconds
+- Completed reload, in  1.331 seconds
 Domain Reload Profiling:
-	ReloadAssembly (859ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (1331ms)
+		BeginReloadAssembly (144ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (693ms)
-			LoadAssemblies (70ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1103ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (245ms)
+			SetupTypeCache (382ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (251ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (410ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (178ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (297ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2387 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 103.0 MB.
 System memory in use after: 103.2 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2859.
-Total: 4.675200 ms (FindLiveObjects: 0.305400 ms CreateObjectMapping: 0.111600 ms MarkObjects: 4.230200 ms  DeleteObjects: 0.026100 ms)
+Total: 5.004300 ms (FindLiveObjects: 0.413100 ms CreateObjectMapping: 0.163300 ms MarkObjects: 4.397600 ms  DeleteObjects: 0.027900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003671 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.364 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1365ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1143ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (404ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (408ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (290ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2387 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.0 MB.
+System memory in use after: 103.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2862.
+Total: 5.045000 ms (FindLiveObjects: 0.421400 ms CreateObjectMapping: 0.168700 ms MarkObjects: 4.423200 ms  DeleteObjects: 0.029400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003624 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.334 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1334ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1103ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (389ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2387 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.1 MB.
+System memory in use after: 103.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2865.
+Total: 4.835100 ms (FindLiveObjects: 0.301700 ms CreateObjectMapping: 0.098100 ms MarkObjects: 4.406000 ms  DeleteObjects: 0.027600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003611 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.322 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1322ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1098ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (381ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (404ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (290ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2387 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.1 MB.
+System memory in use after: 103.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2868.
+Total: 5.211600 ms (FindLiveObjects: 0.423400 ms CreateObjectMapping: 0.169000 ms MarkObjects: 4.589900 ms  DeleteObjects: 0.026400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003685 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.345 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1345ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1116ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (390ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (403ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2387 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.1 MB.
+System memory in use after: 103.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2871.
+Total: 5.806000 ms (FindLiveObjects: 0.418100 ms CreateObjectMapping: 0.114900 ms MarkObjects: 5.243600 ms  DeleteObjects: 0.027100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002755 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.857 seconds
+Domain Reload Profiling:
+	ReloadAssembly (857ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (701ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (259ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.2 MB.
+System memory in use after: 103.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2875.
+Total: 3.348800 ms (FindLiveObjects: 0.238700 ms CreateObjectMapping: 0.060200 ms MarkObjects: 3.023400 ms  DeleteObjects: 0.024500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -220,178 +581,456 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 764.490476 seconds.
-  path: Assets/Scenes/Chap2_ArtGallery.unity
-  artifactKey: Guid(380e8edcfa53b8a4e96768e2b81da39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_ArtGallery.unity using Guid(380e8edcfa53b8a4e96768e2b81da39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d7b38e97c8cc634b3c1219f70c1a4a') in 0.020951 seconds 
-  Import took 0.029103 seconds .
+  Time since last request: 562.842779 seconds.
+  path: Assets/Scripts/Item/InteractItem_Img.cs
+  artifactKey: Guid(3dd3b2af2666ded4bbcc72925df8b3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Item/InteractItem_Img.cs using Guid(3dd3b2af2666ded4bbcc72925df8b3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06a381673a391428e3df3ccb4990999') in 0.030390 seconds 
+  Import took 0.035413 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 77.155554 seconds.
-  path: Assets/Scenes/Chap2_Library.unity
-  artifactKey: Guid(ff335c06eea362648bb32b1880edfaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library.unity using Guid(ff335c06eea362648bb32b1880edfaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8fcdd6e7ae50c77b63f241449d3dd3') in 0.004023 seconds 
-  Import took 0.011681 seconds .
+  Time since last request: 473.746981 seconds.
+  path: Assets/picture
+  artifactKey: Guid(08c6cfc2d0d068f43827e4d6662bdd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture using Guid(08c6cfc2d0d068f43827e4d6662bdd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4175bfbb13fc8656147a83a5faa4ead') in 0.002614 seconds 
+  Import took 0.007713 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 107.740831 seconds.
-  path: Assets/Scenes/Chap2_Library2.unity
-  artifactKey: Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library2.unity using Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941824aacea18758b1a3e8c7e0168d61') in 0.004203 seconds 
-  Import took 0.011325 seconds .
+  Time since last request: 1.701007 seconds.
+  path: Assets/picture/chap1
+  artifactKey: Guid(2c9c70112666d874d8af723b0a9df624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/chap1 using Guid(2c9c70112666d874d8af723b0a9df624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60b6e05aa57e553feec741006aed9f3') in 0.002525 seconds 
+  Import took 0.007553 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.011254 seconds.
-  path: Assets/Scenes/Chap2_Library2.unity
-  artifactKey: Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library2.unity using Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941824aacea18758b1a3e8c7e0168d61') in 0.003430 seconds 
-  Import took 0.010389 seconds .
+  Time since last request: 0.054680 seconds.
+  path: Assets/picture/chap1/ใบตรวจตา.png
+  artifactKey: Guid(27e18c747e1f9b140bfbb0e7f2bbc0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/chap1/ใบตรวจตา.png using Guid(27e18c747e1f9b140bfbb0e7f2bbc0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02de820a5e1a0df6ee53b0f400f3e544') in 0.243359 seconds 
+  Import took 0.248288 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 94.389345 seconds.
-  path: Assets/Scenes/Chap1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a78e0808ca3039123ed2ab333a75cdf') in 0.003734 seconds 
-  Import took 0.010769 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003755 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.013 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1013ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (808ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (307ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (270ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.1 MB.
+System memory in use after: 106.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2884.
+Total: 3.507200 ms (FindLiveObjects: 0.248500 ms CreateObjectMapping: 0.059800 ms MarkObjects: 3.174900 ms  DeleteObjects: 0.022700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001898 seconds.
-  path: Assets/Scenes/Chap1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a78e0808ca3039123ed2ab333a75cdf') in 0.003545 seconds 
-  Import took 0.010219 seconds .
+  Time since last request: 406.769273 seconds.
+  path: Assets/Scenes/Chap1_Pan_house.unity
+  artifactKey: Guid(8c9ea7f6fc0eb594e8942c21af7b4232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chap1_Pan_house.unity using Guid(8c9ea7f6fc0eb594e8942c21af7b4232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e65946f050c8493f46fcdc35802b029') in 0.015299 seconds 
+  Import took 0.020601 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 12.248943 seconds.
-  path: Assets/Scenes/Chap2_Library2.unity
-  artifactKey: Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library2.unity using Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24bafe30233a1d7cb78d8e9d129fde98') in 0.004218 seconds 
-  Import took 0.010802 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003513 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.304 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1305ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1092ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (379ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.2 MB.
+System memory in use after: 106.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2887.
+Total: 5.413800 ms (FindLiveObjects: 0.412700 ms CreateObjectMapping: 0.182600 ms MarkObjects: 4.788000 ms  DeleteObjects: 0.027500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 19.463280 seconds.
-  path: Assets/Scenes/Chap2_Library2.unity
-  artifactKey: Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library2.unity using Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de83e6e9eb8f504e9f5e6075c6b35e4') in 0.003822 seconds 
-  Import took 0.010546 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003573 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.283 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1284ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1069ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (365ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (395ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.2 MB.
+System memory in use after: 106.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2890.
+Total: 4.999700 ms (FindLiveObjects: 0.319000 ms CreateObjectMapping: 0.094900 ms MarkObjects: 4.556100 ms  DeleteObjects: 0.028000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000728 seconds.
-  path: Assets/Scenes/Chap2_Library2.unity
-  artifactKey: Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library2.unity using Guid(deb32fafb9100a647b97985e1f5769e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de83e6e9eb8f504e9f5e6075c6b35e4') in 0.003333 seconds 
-  Import took 0.009888 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003485 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.318 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1319ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1098ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (378ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (406ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.1 MB.
+System memory in use after: 106.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2893.
+Total: 4.731500 ms (FindLiveObjects: 0.396600 ms CreateObjectMapping: 0.162600 ms MarkObjects: 4.145000 ms  DeleteObjects: 0.025300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 8.097828 seconds.
-  path: Assets/Scenes/Chap3.unity
-  artifactKey: Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap3.unity using Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eafdb374db264843f545a36e9adcf95') in 0.003632 seconds 
-  Import took 0.011403 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003590 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.326 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1327ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1105ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (388ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (400ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (288ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.2 MB.
+System memory in use after: 106.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2896.
+Total: 4.792200 ms (FindLiveObjects: 0.415800 ms CreateObjectMapping: 0.169800 ms MarkObjects: 4.178000 ms  DeleteObjects: 0.026000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.031543 seconds.
-  path: Assets/Scenes/Chap3.unity
-  artifactKey: Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap3.unity using Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eafdb374db264843f545a36e9adcf95') in 0.003418 seconds 
-  Import took 0.010263 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005637 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+!!! Lexitron Watcher Initialized
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Lexto.Editor.LexitronWatcher:InitLexitronWatcher () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:47)
+Lexto.Editor.LexitronWatcher:OnInitialized () (at C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs:21)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
-========================================================================
-Received Import Request.
-  Time since last request: 151.109306 seconds.
-  path: Assets/Scenes/Chap2_color.unity
-  artifactKey: Guid(5770a0a8eb269aa4692b49988ad91dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_color.unity using Guid(5770a0a8eb269aa4692b49988ad91dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132c77db1cfeea895159251286843034') in 0.004188 seconds 
-  Import took 0.010810 seconds .
+(Filename: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/LACUNA/Library/PackageCache/com.dgn.thaitext@48e7172484/Editor/LexitronWatcher.cs Line: 47)
 
-========================================================================
-Received Import Request.
-  Time since last request: 211.850965 seconds.
-  path: Assets/Scenes/Chap1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10afda4066b064e9d30b1d2b8b18b228') in 0.004001 seconds 
-  Import took 0.012618 seconds .
+Mono: successfully reloaded assembly
+- Completed reload, in  1.305 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1306ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1083ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (374ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (394ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.2 MB.
+System memory in use after: 106.4 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.008548 seconds.
-  path: Assets/Scenes/Chap1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10afda4066b064e9d30b1d2b8b18b228') in 0.003555 seconds 
-  Import took 0.010382 seconds .
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2899.
+Total: 5.195900 ms (FindLiveObjects: 0.398100 ms CreateObjectMapping: 0.167700 ms MarkObjects: 4.601600 ms  DeleteObjects: 0.026300 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 1040.298903 seconds.
-  path: Assets/Scenes/Chap2.unity
-  artifactKey: Guid(d1a649bf7c2f16e4cb9c8eaba0c3a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2.unity using Guid(d1a649bf7c2f16e4cb9c8eaba0c3a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae7a014d4a66ae342d1980142cebee8') in 0.004040 seconds 
-  Import took 0.011265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002603 seconds.
-  path: Assets/Scenes/Chap2.unity
-  artifactKey: Guid(d1a649bf7c2f16e4cb9c8eaba0c3a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2.unity using Guid(d1a649bf7c2f16e4cb9c8eaba0c3a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae7a014d4a66ae342d1980142cebee8') in 0.003848 seconds 
-  Import took 0.010531 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 136.270452 seconds.
-  path: Assets/Scenes/Chap2_afterBookStore.unity
-  artifactKey: Guid(7afbd2392f1d8244ebb3c464c4bea52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_afterBookStore.unity using Guid(7afbd2392f1d8244ebb3c464c4bea52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322159f0b8b7de75ba4a72dbc511b71d') in 0.004101 seconds 
-  Import took 0.010925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000620 seconds.
-  path: Assets/Scenes/Chap2_afterBookStore.unity
-  artifactKey: Guid(7afbd2392f1d8244ebb3c464c4bea52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_afterBookStore.unity using Guid(7afbd2392f1d8244ebb3c464c4bea52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322159f0b8b7de75ba4a72dbc511b71d') in 0.003423 seconds 
-  Import took 0.010151 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.202137 seconds.
-  path: Assets/Scenes/Chap2_Library.unity
-  artifactKey: Guid(ff335c06eea362648bb32b1880edfaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library.unity using Guid(ff335c06eea362648bb32b1880edfaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f964c77396290091d5785252ce69ece') in 0.003478 seconds 
-  Import took 0.009795 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000881 seconds.
-  path: Assets/Scenes/Chap2_Library.unity
-  artifactKey: Guid(ff335c06eea362648bb32b1880edfaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap2_Library.unity using Guid(ff335c06eea362648bb32b1880edfaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f964c77396290091d5785252ce69ece') in 0.003800 seconds 
-  Import took 0.010198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 370.336637 seconds.
-  path: Assets/Scenes/Chap3.unity
-  artifactKey: Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap3.unity using Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81c1788a7e866af75cab25b55351f83') in 0.003755 seconds 
-  Import took 0.010789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008779 seconds.
-  path: Assets/Scenes/Chap3.unity
-  artifactKey: Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Chap3.unity using Guid(85264855f3e25fe4d95a3b5fd8fb8a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81c1788a7e866af75cab25b55351f83') in 0.003746 seconds 
-  Import took 0.010717 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
