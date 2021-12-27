@@ -9,16 +9,23 @@ public class ActivePressE : MonoBehaviour
     public GameObject collider;
 
     public string charType;
+    bool charEnter = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        talkText.SetActive(false);
+        collider.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E) && charEnter)
+            {
+                print("test");
+                talkText.SetActive(false);
+                collider.SetActive(true);
+            }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -26,11 +33,7 @@ public class ActivePressE : MonoBehaviour
         if (collision.gameObject.tag.Equals(charType))
         {
             talkText.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                talkText.SetActive(false);
-                collider.SetActive(true);
-            }
+            charEnter = true;
         }
     }
     void OnTriggerExit2D(Collider2D collision)
@@ -38,6 +41,7 @@ public class ActivePressE : MonoBehaviour
         if (collision.gameObject.tag.Equals(charType))
         {
             talkText.SetActive(false);
+            charEnter = false;
         }
     }
 }

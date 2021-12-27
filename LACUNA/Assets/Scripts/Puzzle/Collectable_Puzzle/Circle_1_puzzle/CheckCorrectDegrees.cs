@@ -46,8 +46,8 @@ public class CheckCorrectDegrees : MonoBehaviour
     void CheckAllCorrected(){
         if(circle1_solved && circle2_solved && circle3_solved && circle4_solved){
             GenCollectable.challangeSolved = true;
-            Puzzle.SetActive(false);
             PuzzleTutorial.SetActive(false);
+            Puzzle.SetActive(false);
         }
     }
     float RoundRotation(GameObject circle)
