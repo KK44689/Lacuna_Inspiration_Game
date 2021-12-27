@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractItem_Img : MonoBehaviour
+public class InteractItem_img : MonoBehaviour
 {
     public GameObject talkText;
     public GameObject Image;
@@ -23,9 +23,9 @@ public class InteractItem_Img : MonoBehaviour
             talkText.SetActive(false);
             Image.SetActive(true);
             trigger.StartDialogue();
-            // Image.SetActive(false);
         }
-        if(DialogueManager.isActive == false){
+
+        if (DialogueManager.isActive == false) {
             Image.SetActive(false);
         }
     }

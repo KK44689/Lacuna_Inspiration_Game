@@ -1,27 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
+//using UnityEngine.Playables;
 
 public class TimelineManager : MonoBehaviour
 {
-    private bool fix = false;
-    public Animator playerAnimator;
-    public RuntimeAnimatorController playerAnim;
-    public PlayableDirector director;
-    // Start is called before the first frame update
-    void OnEnable()
+    public GameObject UI_interface;
+    public GameObject director;
+    public int time_director;
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerAnim = playerAnimator.runtimeAnimatorController;
-        playerAnimator.runtimeAnimatorController = null;
+        this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        //when trigger player disable UI_interface
+        if (collision.gameObject.tag.Equals("Player")) {
+            UI_interface.SetActive(false);
+            // Play Cutscenes
+            director.SetActive(true);
+            Debug.Log("PlayableDirector named" + director.name + "is now playing.");
+            StartCoroutine(FinishCut());
+        }
+        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (director.state != PlayState.Playing && !fix) {
-            fix = true;
-            playerAnimator.runtimeAnimatorController = playerAnim;
-        }
+    IEnumerator FinishCut() {
+        yield return new WaitForSecondsRealtime(time_director);
+        UI_interface.SetActive(true);
+        director.SetActive(false);
     }
+
+
+    // run cutscenes once , dont play again 
+    // maybe run cutscenes in orderss
+    
 }
