@@ -92,7 +92,7 @@ public class FishingPuzzle : MonoBehaviour
         // Bounds b = hookImage.bounds;
         float ySize = hookImage.rectTransform.rect.height;
         Vector3 ls = hook.localScale;
-        hookSize = Random.Range(0.05f, 0.1f);
+        hookSize = Random.Range(0.08f, 0.25f);
         float distance =
             Vector3.Distance(topPivot.position, bottomPivot.position);
         ls.y = (distance / ySize * hookSize);

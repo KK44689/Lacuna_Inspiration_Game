@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckAllBookStorePuzzleSolved : MonoBehaviour
 {
     public GameObject collider;
-
+    bool alreadySolved = false;
     GameObject Pandora;
     public static bool allBookStorePuzzleSolved = false;
 
@@ -20,7 +20,8 @@ public class CheckAllBookStorePuzzleSolved : MonoBehaviour
         if (
             CheckCorrectOrder.star_puzzle_solved &&
             CheckCorrectOrder_sun.sun_puzzle_solved &&
-            CheckCorrectOrder_moon.moon_puzzle_solved
+            CheckCorrectOrder_moon.moon_puzzle_solved &&
+            alreadySolved == false
         )
         {
             print("all solved");
@@ -28,6 +29,7 @@ public class CheckAllBookStorePuzzleSolved : MonoBehaviour
             Pandora = GameObject.FindWithTag("Player");
             collider.SetActive(true);
             collider.transform.position = Pandora.transform.position;
+            alreadySolved = true;
         }
     }
 }
