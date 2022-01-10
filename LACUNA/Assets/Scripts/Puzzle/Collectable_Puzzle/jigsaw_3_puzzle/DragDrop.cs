@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 
 public class DragDrop : MonoBehaviour, IDragHandler
 // , IEndDragHandler
 {
-
+    int OIL = 1;
     public void OnDrag(PointerEventData eventData)
     {
+        // Vector3 tempPos = transform.position;
+        // tempPos.z++; 
+        // transform.position = tempPos;
+        GetComponent<Canvas>().sortingOrder = OIL;
+        OIL++;
+        // print(GetComponent<Canvas>().sortingOrder);
         transform.position = Input.mousePosition;
     }
 

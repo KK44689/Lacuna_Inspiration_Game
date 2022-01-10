@@ -9,6 +9,9 @@ public class TimelineManager : MonoBehaviour
     public GameObject director;
     public int time_director;
 
+    //if rutcutscene finished , then run this object
+    public GameObject enter_box;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,6 +31,7 @@ public class TimelineManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(time_director);
         UI_interface.SetActive(true);
         director.SetActive(false);
+        enter_box.SetActive(true);
     }
 
 
