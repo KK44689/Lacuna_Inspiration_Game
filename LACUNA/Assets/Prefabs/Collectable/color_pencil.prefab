@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8222860007978422223}
   - component: {fileID: 2933510909416700857}
   - component: {fileID: 4360017678368109276}
+  - component: {fileID: 1605279159740923706}
   m_Layer: 0
   m_Name: color_pencil
   m_TagString: Untagged
@@ -117,6 +118,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIGroup: {fileID: 4820712352955549918}
+--- !u!114 &1605279159740923706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847819287411756908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c0446e4e8d00e4fbaebe1a17d7cff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scale: 1
 --- !u!1 &4820712352955549915
 GameObject:
   m_ObjectHideFlags: 0

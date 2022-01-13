@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 3529673960311953591}
   - component: {fileID: 7661591607724289217}
   - component: {fileID: 9108381409122919844}
+  - component: {fileID: 7503701916624851447}
   m_Layer: 0
   m_Name: flower_object_color_29
   m_TagString: Untagged
@@ -312,3 +313,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIGroup: {fileID: 1179000742}
+--- !u!114 &7503701916624851447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575916822125467668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c0446e4e8d00e4fbaebe1a17d7cff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scale: 0.5

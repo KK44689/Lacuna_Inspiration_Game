@@ -11,9 +11,9 @@ public class CheckCorrectDegree_chap2 : MonoBehaviour
     public GameObject Puzzle;
     public GameObject puzzleDetector;
 
-    float targetDegreesEye = -45f;
-    float targetDegreesHeart = 45f;
-    float targetDegreesBrain =  -180f;
+    List<float> targetDegreesEye = new List<float> {-45f};
+    List<float> targetDegreesHeart = new List<float> {45f};
+    List<float> targetDegreesBrain = new List<float> {180f,-180f};
 
     bool eye_solved;
     bool heart_solved;
@@ -58,25 +58,26 @@ public class CheckCorrectDegree_chap2 : MonoBehaviour
 
     void CheckCorrectedDegrees()
     {
+        print("brain " + RoundRotation(brain).ToString());
         // eye
-        if (targetDegreesEye == RoundRotation(eye))
+        if (targetDegreesEye.Contains(RoundRotation(eye)))
         {
             eye_solved = true;
-        }else if(targetDegreesEye != RoundRotation(eye)){
+        }else if(!targetDegreesEye.Contains(RoundRotation(eye))){
             eye_solved = false;
         }
         // heart
-        if (targetDegreesHeart == RoundRotation(heart))
+        if (targetDegreesHeart.Contains(RoundRotation(heart)))
         {
             heart_solved = true;
-        }else if(targetDegreesHeart != RoundRotation(heart)){
+        }else if(!targetDegreesHeart.Contains(RoundRotation(heart))){
             heart_solved = false;
         }
         // brain
-        if (targetDegreesBrain == RoundRotation(brain))
+        if (targetDegreesBrain.Contains(RoundRotation(brain)))
         {
             brain_solved = true;
-        }else if(targetDegreesBrain != RoundRotation(brain)){
+        }else if(!targetDegreesBrain.Contains(RoundRotation(brain))){
             brain_solved = false;
         }
         print("1 " + eye_solved);
