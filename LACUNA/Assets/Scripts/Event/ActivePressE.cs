@@ -15,6 +15,7 @@ public class ActivePressE : MonoBehaviour
     void Start()
     {
         collider.SetActive(false);
+        talkText.SetActive(false);
     }
 
     // Update is called once per frame
