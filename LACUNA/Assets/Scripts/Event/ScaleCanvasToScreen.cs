@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class ScaleCanvasToScreen : MonoBehaviour
 {
-    void Awake()
+    private void Update()
     {
-        RectTransform rt = GetComponent<RectTransform>();
-        float canvasHeight = rt.rect.height;
-        float desiredCanvasWidth = canvasHeight * Camera.main.aspect;
-        rt
-            .SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,
-            desiredCanvasWidth);
+        Vector3 temp = Camera.main.transform.position;
+        temp.z = 0;
+        transform.position = temp;
     }
 }
