@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637732708514131996
-    m_Hash: 3081902649
+      ticks: 637790319041107773
+    m_Hash: 1987832553
   m_LockFileStatus:
     m_FilePath: C:/Users/User/OneDrive/Desktop/Lacuna/LACUNA/Lacuna_Backup/LACUNA/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637732708514222687
-    m_Hash: 1016248214
+      ticks: 637790319041473182
+    m_Hash: 2558711762
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -128,6 +128,8 @@ m_PackageAssets:
         - 3.2.11
         - 3.2.13
         - 3.2.14
+        - 3.2.15
+        - 3.2.16
         - 4.0.0
         - 4.0.1
         - 4.1.0
@@ -149,6 +151,8 @@ m_PackageAssets:
         - 5.0.7
         - 5.0.8
         - 5.0.9
+        - 5.0.10
+        - 5.1.0
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
@@ -161,13 +165,16 @@ m_PackageAssets:
         - 7.0.0
         - 7.0.1
         - 7.0.2
+        - 7.0.3
         - 8.0.0-pre.3
+        - 8.0.0-pre.4
         compatible:
         - 5.0.6
         - 5.0.7
         - 5.0.8
         - 5.0.9
-        verified: 5.0.9
+        - 5.0.10
+        verified: 5.0.10
       dependencies:
       - name: com.unity.2d.common
         version: 4.0.3
@@ -354,6 +361,8 @@ m_PackageAssets:
         - 4.1.0
         - 4.1.1
         - 4.1.2
+        - 4.1.3
+        - 4.2.0
         - 5.0.0-pre.1
         - 5.0.0-pre.2
         - 5.0.1
@@ -365,12 +374,15 @@ m_PackageAssets:
         - 6.0.0-pre.4
         - 6.0.0
         - 6.0.1
+        - 6.0.2
         - 7.0.0-pre.3
+        - 7.0.0-pre.4
         compatible:
         - 4.1.0
         - 4.1.1
         - 4.1.2
-        verified: 4.1.2
+        - 4.1.3
+        verified: 4.1.3
       dependencies:
       - name: com.unity.2d.common
         version: 4.0.3
@@ -528,6 +540,7 @@ m_PackageAssets:
         - 3.0.15
         - 3.0.16
         - 3.0.17
+        - 3.0.18
         - 4.0.0
         - 4.0.1
         - 4.0.2
@@ -548,6 +561,8 @@ m_PackageAssets:
         - 5.1.4
         - 5.1.5
         - 5.1.6
+        - 5.1.7
+        - 5.2.0
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.0
@@ -559,11 +574,13 @@ m_PackageAssets:
         - 7.0.2
         - 7.0.3
         - 8.0.0-pre.4
+        - 8.0.0-pre.5
         compatible:
         - 5.1.4
         - 5.1.5
         - 5.1.6
-        verified: 5.1.6
+        - 5.1.7
+        verified: 5.1.7
       dependencies:
       - name: com.unity.mathematics
         version: 1.1.0
@@ -745,7 +762,10 @@ m_PackageAssets:
         - 2.8.0
         - 2.8.1
         - 2.8.2
+        - 2.8.3
+        - 2.8.4
         - 2.9.0-pre.1
+        - 2.9.0-pre.6
         compatible:
         - 2.5.0
         - 2.6.0-preview.2
@@ -777,7 +797,10 @@ m_PackageAssets:
         - 2.8.0
         - 2.8.1
         - 2.8.2
+        - 2.8.3
+        - 2.8.4
         - 2.9.0-pre.1
+        - 2.9.0-pre.6
         verified: 2.6.11
       dependencies: []
       resolvedDependencies: []
@@ -824,12 +847,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.cinemachine.git
         revision: 21f619698ca31d69054e96556e03097e48e43c5d
         path: 
-    - packageId: com.unity.collab-proxy@1.9.0
+    - packageId: com.unity.collab-proxy@1.15.12
       testable: 0
       isDirectDependency: 1
-      version: 1.9.0
+      version: 1.15.12
       source: 1
-      resolvedPath: C:\Users\User\OneDrive\Desktop\Lacuna\LACUNA\Lacuna_Backup\LACUNA\Library\PackageCache\com.unity.collab-proxy@1.9.0
+      resolvedPath: C:\Users\User\OneDrive\Desktop\Lacuna\LACUNA\Lacuna_Backup\LACUNA\Library\PackageCache\com.unity.collab-proxy@1.15.12
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -876,8 +899,14 @@ m_PackageAssets:
         - 1.13.5
         - 1.14.1
         - 1.14.4
+        - 1.14.7
+        - 1.14.9
+        - 1.14.12
         - 1.15.1
         - 1.15.4
+        - 1.15.7
+        - 1.15.9
+        - 1.15.12
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -896,8 +925,14 @@ m_PackageAssets:
         - 1.13.5
         - 1.14.1
         - 1.14.4
+        - 1.14.7
+        - 1.14.9
+        - 1.14.12
         - 1.15.1
         - 1.15.4
+        - 1.15.7
+        - 1.15.9
+        - 1.15.12
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -909,8 +944,14 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         verified: 1.9.0
-      dependencies: []
-      resolvedDependencies: []
+      dependencies:
+      - name: com.unity.services.core
+        version: 1.0.1
+      resolvedDependencies:
+      - name: com.unity.services.core
+        version: 1.0.1
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
       keywords:
       - backup
       - cloud
@@ -937,13 +978,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637637594290000000
+      datePublishedTicks: 637789721280000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 51447944a1e7d94937e6b7f9e887d58f5097ed13
+        revision: 5ca1fd4ca9f999e087d19e98afaf99905a582771
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -992,6 +1033,9 @@ m_PackageAssets:
         - 3.0.5
         - 3.0.6
         - 3.0.7
+        - 3.0.9
+        - 3.0.10
+        - 3.0.12
         compatible:
         - 1.0.2
         - 1.0.6
@@ -1018,6 +1062,9 @@ m_PackageAssets:
         - 3.0.5
         - 3.0.6
         - 3.0.7
+        - 3.0.9
+        - 3.0.10
+        - 3.0.12
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -1090,6 +1137,7 @@ m_PackageAssets:
         - 2.0.9
         - 2.0.11
         - 2.0.12
+        - 2.0.14
         compatible:
         - 1.0.2
         - 1.0.3
@@ -1107,7 +1155,8 @@ m_PackageAssets:
         - 2.0.9
         - 2.0.11
         - 2.0.12
-        verified: 2.0.12
+        - 2.0.14
+        verified: 2.0.14
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -1264,9 +1313,13 @@ m_PackageAssets:
         - 1.1.27
         - 1.1.29
         - 1.1.30
+        - 2.0.1-pre.12
+        - 2.0.1-pre.18
         compatible:
         - 1.1.29
         - 1.1.30
+        - 2.0.1-pre.12
+        - 2.0.1-pre.18
         verified: 1.1.30
       dependencies:
       - name: com.unity.ext.nunit
@@ -1556,7 +1609,9 @@ m_PackageAssets:
         - 1.6.1
         - 1.6.2
         - 1.6.3
+        - 1.6.4
         - 1.7.0-pre.1
+        - 1.7.0-pre.2
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1580,7 +1635,9 @@ m_PackageAssets:
         - 1.6.1
         - 1.6.2
         - 1.6.3
+        - 1.6.4
         - 1.7.0-pre.1
+        - 1.7.0-pre.2
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -3491,6 +3548,61 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
+        path: 
+    - packageId: com.unity.services.core@1.0.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.1
+      source: 1
+      resolvedPath: C:\Users\User\OneDrive\Desktop\Lacuna\LACUNA\Lacuna_Backup\LACUNA\Library\PackageCache\com.unity.services.core@1.0.1
+      assetPath: Packages/com.unity.services.core
+      name: com.unity.services.core
+      displayName: Services Core
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'This package defines common components used by multiple Game
+        Service packages.
+
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        compatible:
+        - 1.0.1
+        verified: 1.0.1
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
         path: 
     - packageId: com.unity.mathematics@1.1.0
       testable: 0
