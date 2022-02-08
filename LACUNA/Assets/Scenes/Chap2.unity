@@ -4903,7 +4903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 101.715225
+      value: -154.28476
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4915,7 +4915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187136159706, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 101.715225
+      value: -154.28476
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187136159706, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10009,7 +10009,6 @@ GameObject:
   - component: {fileID: 735999842}
   - component: {fileID: 735999845}
   - component: {fileID: 735999843}
-  - component: {fileID: 735999844}
   - component: {fileID: 735999846}
   - component: {fileID: 735999847}
   m_Layer: 0
@@ -10018,7 +10017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &735999842
 Transform:
   m_ObjectHideFlags: 0
@@ -10027,7 +10026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735999841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 245.08, y: -3.78, z: 0}
+  m_LocalPosition: {x: 242.82999, y: -3.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1105873104}
@@ -10046,20 +10045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspireBW: {fileID: 4948931149104201160, guid: 879757676be161b49a37f630dcc2309f, type: 3}
---- !u!114 &735999844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 735999841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b05883a33ee0b3542ae5cfbc22c296df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextCollider: {fileID: 645874972}
-  charType: Player
 --- !u!61 &735999845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10109,9 +10094,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 735999841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5082036e01ecf4d4b82f103949977d3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7901c605871c3214db5244a2d92c9e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpText: {fileID: 667265498}
+  Puzzle: {fileID: 645874972}
 --- !u!1 &745499158
 GameObject:
   m_ObjectHideFlags: 0
@@ -15676,7 +15663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457134, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 250.3
+      value: -5.7
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457134, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15717,6 +15704,10 @@ PrefabInstance:
     - target: {fileID: 3498139857954457136, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_Name
       value: pan_char
+      objectReference: {fileID: 0}
+    - target: {fileID: 3520003293270561634, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4490645287628009065, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: slots.Array.data[0]
@@ -25400,8 +25391,8 @@ GameObject:
   - component: {fileID: 1839300436}
   - component: {fileID: 1839300438}
   - component: {fileID: 1839300440}
-  - component: {fileID: 1839300437}
   - component: {fileID: 1839300439}
+  - component: {fileID: 1839300437}
   m_Layer: 0
   m_Name: penci_puzzle_collider (1)
   m_TagString: Untagged
@@ -25417,7 +25408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839300435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 240.26, y: -3.78, z: 0}
+  m_LocalPosition: {x: 242.1, y: -3.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1105873104}
@@ -25442,7 +25433,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839300435}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

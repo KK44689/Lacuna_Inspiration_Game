@@ -7448,8 +7448,8 @@ GameObject:
   - component: {fileID: 852312000}
   - component: {fileID: 852312003}
   - component: {fileID: 852312001}
-  - component: {fileID: 852312002}
-  - component: {fileID: 852312004}
+  - component: {fileID: 852312006}
+  - component: {fileID: 852312005}
   m_Layer: 0
   m_Name: SisterTellPan
   m_TagString: Untagged
@@ -7503,20 +7503,6 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E0B\u0E34\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E04\u0E32\u0E21\u0E34\u0E25\u0E25\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: 033867baae5dae34e8ff2076383008dd, type: 3}
---- !u!114 &852312002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852311999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5274ae004457c674e83ec4c5ce558591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: {fileID: 852312001}
-  talkText: {fileID: 976560753}
 --- !u!61 &852312003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7543,7 +7529,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.8788233}
   m_EdgeRadius: 0
---- !u!114 &852312004
+--- !u!114 &852312005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7552,11 +7538,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 852311999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6276adbe7fa5412428e9537d1515c17c, type: 3}
+  m_Script: {fileID: 11500000, guid: 461d690416a32cf45b9ba7298ee225e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NextCollider: {fileID: 1746268841}
   characterType: Player
+--- !u!114 &852312006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852311999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2db6fc411aad54289170fe80eb36e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 852312001}
+  charType: Player
 --- !u!1 &855227926
 GameObject:
   m_ObjectHideFlags: 0
@@ -12340,6 +12340,7 @@ GameObject:
   - component: {fileID: 1363853780}
   - component: {fileID: 1363853783}
   - component: {fileID: 1363853784}
+  - component: {fileID: 1363853785}
   m_Layer: 0
   m_Name: giftBox2
   m_TagString: Untagged
@@ -12481,6 +12482,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrevCollider: {fileID: 1539683327}
+  characterType: Player
+--- !u!114 &1363853785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363853778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9827a7706049fa499e926e9396b2650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrevCollider: {fileID: 852311999}
   characterType: Player
 --- !u!1 &1370374114
 GameObject:

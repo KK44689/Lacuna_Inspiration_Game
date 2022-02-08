@@ -4752,7 +4752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6176098557547031940, guid: 464e22945e634f844a1f894f33181a28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.9
+      value: -8.229996
       objectReference: {fileID: 0}
     - target: {fileID: 6176098557547031940, guid: 464e22945e634f844a1f894f33181a28, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5195,12 +5195,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.6397562, y: 0.43250242}
-      - {x: 2.2492461, y: 0.6170778}
-      - {x: 1.8500501, y: 0.62387305}
+    - - {x: 2.6557813, y: 0.37642118}
+      - {x: 2.2171957, y: 0.5690081}
+      - {x: 1.8660753, y: 0.69597757}
       - {x: 1.8734604, y: -0.14402974}
       - {x: 3.8670313, y: -0.17034495}
-      - {x: 3.5162623, y: 0.03216195}
+      - {x: 3.5162623, y: 0.00011553243}
 --- !u!1 &314721645
 GameObject:
   m_ObjectHideFlags: 0
@@ -6805,6 +6805,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6176098557547031941, guid: 464e22945e634f844a1f894f33181a28, type: 3}
   m_PrefabInstance: {fileID: 288508879}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &358191061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358191058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d037262914692c47b185df1603f6e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextCollider: {fileID: 686733182}
+  delay: 5
+--- !u!114 &358191062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358191058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5082036e01ecf4d4b82f103949977d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &360230378
 GameObject:
   m_ObjectHideFlags: 0
@@ -12036,14 +12062,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686733182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c77c018aea268145b510536a8daa152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Character: {fileID: 0}
+  Character: {fileID: 1841809829}
   posName: PanGoToGrandmaPos
-  charType: 
+  charType: Player
 --- !u!114 &686733186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37129,7 +37155,6 @@ GameObject:
   - component: {fileID: 2034413690}
   - component: {fileID: 2034413689}
   - component: {fileID: 2034413693}
-  - component: {fileID: 2034413694}
   - component: {fileID: 2034413695}
   m_Layer: 0
   m_Name: PanGiveFlower
@@ -37258,20 +37283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0bf9905968789343bd46893f12f1385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2034413694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034413687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 461d690416a32cf45b9ba7298ee225e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextCollider: {fileID: 686733182}
-  characterType: Player
 --- !u!114 &2034413695
 MonoBehaviour:
   m_ObjectHideFlags: 0
