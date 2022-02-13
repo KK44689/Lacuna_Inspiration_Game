@@ -371,6 +371,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &21288567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21288568}
+  - component: {fileID: 21288570}
+  - component: {fileID: 21288569}
+  m_Layer: 5
+  m_Name: point(.)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &21288568
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21288567}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346333155}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 17, y: -184}
+  m_SizeDelta: {x: 330, y: 65}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &21288569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21288567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 97
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: .
+--- !u!222 &21288570
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21288567}
+  m_CullTransparentMesh: 1
 --- !u!1 &22952230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,6 +2511,10 @@ PlayableDirector:
     value: {fileID: 908490374}
   - key: {fileID: -4100534570934083656, guid: 65622966d46ff2746860ce3789428927, type: 2}
     value: {fileID: 113933568}
+  - key: {fileID: -6713168992630635391, guid: 65622966d46ff2746860ce3789428927, type: 2}
+    value: {fileID: 21288567}
+  - key: {fileID: 1713002202794509021, guid: 65622966d46ff2746860ce3789428927, type: 2}
+    value: {fileID: 1103089903}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &147183499 stripped
@@ -3140,13 +3223,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E27\u0E34\u0E48\u0E07\u0E21\u0E32\u0E2B\u0E32\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E14\u0E49\u0E27\u0E22\u0E2A\u0E35\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E15\u0E01\u0E15\u0E37\u0E48\u0E19)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E2A\u0E35\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E15\u0E01\u0E15\u0E37\u0E48\u0E19]"
   - actorId: 1
     message: "\u0E2B\u0E19\u0E39\u0E41\u0E1E\u0E19 \u0E22\u0E32\u0E22\u0E02\u0E2D\u0E42\u0E17\u0E29\u0E19\u0E30\u0E08\u0E4A\u0E30
       \u0E2A\u0E07\u0E2A\u0E31\u0E22\u0E22\u0E32\u0E22\u0E04\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E1D\u0E32\u0E01\u0E2B\u0E19\u0E39\u0E40\u0E01\u0E47\u0E1A\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E17\u0E35\u0E48\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E19\u0E30
       \u0E22\u0E32\u0E22\u0E25\u0E37\u0E21\u0E44\u0E1B\u0E19\u0E48\u0E30\u0E27\u0E48\u0E32\u0E22\u0E32\u0E22\u0E2D\u0E1A\u0E04\u0E38\u0E01\u0E01\u0E35\u0E49\u0E17\u0E34\u0E49\u0E07\u0E44\u0E27\u0E49"
   - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E15\u0E2D\u0E1A\u0E23\u0E31\u0E1A)"
+    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E15\u0E2D\u0E1A\u0E23\u0E31\u0E1A]"
   - actorId: 1
     message: "\u0E22\u0E32\u0E22\u0E22\u0E31\u0E07\u0E02\u0E32\u0E14\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E17\u0E35\u0E48\u0E21\u0E35\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E41\u0E1A\u0E1A\u0E19\u0E35\u0E49"
   actors:
@@ -4178,7 +4261,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4812,7 +4895,7 @@ PrefabInstance:
       objectReference: {fileID: 1539753772}
     - target: {fileID: 8093395832474578274, guid: 464e22945e634f844a1f894f33181a28, type: 3}
       propertyPath: time_director
-      value: 33
+      value: 37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 464e22945e634f844a1f894f33181a28, type: 3}
@@ -5533,12 +5616,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E23\u0E2D\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E21\u0E32\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01
-      \u0E41\u0E15\u0E48\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E01\u0E47\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E0B\u0E31\u0E01\u0E17\u0E35)"
+    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E23\u0E2D\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E21\u0E32\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01
+      \u0E41\u0E15\u0E48\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E01\u0E47\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E21\u0E32\u0E0B\u0E31\u0E01\u0E17\u0E35]"
   - actorId: 0
-    message: "(...\u0E17\u0E33\u0E44\u0E21\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E21\u0E32\u0E19\u0E30)"
+    message: "<...\u0E17\u0E33\u0E44\u0E21\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E21\u0E32\u0E19\u0E30>"
   - actorId: 0
-    message: "(\u0E40\u0E14\u0E34\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E14\u0E39\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E41\u0E25\u0E49\u0E27\u0E01\u0E31\u0E19)"
+    message: "<\u0E40\u0E14\u0E34\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E14\u0E39\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E41\u0E25\u0E49\u0E27\u0E01\u0E31\u0E19>"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -6038,7 +6121,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 21288568}
   - {fileID: 2139070211}
+  - {fileID: 1103089904}
   - {fileID: 1275930063}
   - {fileID: 476789773}
   - {fileID: 1586396133}
@@ -6250,14 +6335,10 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 8206085779161221930, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
     value: {fileID: 3498139857125351199}
-  - key: {fileID: -1170774633431628691, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
-    value: {fileID: 3498139857125351199}
   - key: {fileID: -2927986078367124495, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
     value: {fileID: 496618611}
   - key: {fileID: -2920694687637351821, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
     value: {fileID: 1106949888}
-  - key: {fileID: -1668816360687064449, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
-    value: {fileID: 496618611}
   - key: {fileID: -6106097066467907157, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
     value: {fileID: 1890420841}
   - key: {fileID: -2451128194560250231, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
@@ -6294,6 +6375,8 @@ PlayableDirector:
     value: {fileID: 1566093108}
   - key: {fileID: -4682553608533480239, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
     value: {fileID: 1889879540}
+  - key: {fileID: 8681098647515584805, guid: 91d999c372c1ae94a9040971094a4038, type: 2}
+    value: {fileID: 3498139857125351199}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &347932931 stripped
@@ -7797,7 +7880,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7837,7 +7920,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E1E\u0E2D\u0E21\u0E35\u0E41\u0E23\u0E07\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E04\u0E48\u0E2D\u0E22\u0E40\u0E14\u0E34\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E15\u0E48\u0E2D"
+  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E1E\u0E2D\u0E21\u0E35\u0E41\u0E23\u0E07
+    \u0E04\u0E48\u0E2D\u0E22\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E40\u0E14\u0E34\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E15\u0E48\u0E2D"
 --- !u!222 &427562247
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8234,7 +8318,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9749,80 +9833,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &540961913
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 540961916}
-  - component: {fileID: 540961915}
-  - component: {fileID: 540961914}
-  m_Layer: 0
-  m_Name: grandmaTalkToPanAfterGetShears
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &540961914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540961913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea49fbbc498bfd64fb323e1dfd01e665, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talkText: {fileID: 405387231}
-  collider: {fileID: 1583109561}
-  charType: NPC
---- !u!61 &540961915
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540961913}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7698288, y: 7.23027}
-  m_EdgeRadius: 0
---- !u!4 &540961916
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540961913}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.57, y: -0.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1583109567}
-  m_Father: {fileID: 803134873}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544232070
 GameObject:
   m_ObjectHideFlags: 0
@@ -9935,7 +9945,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10408,7 +10418,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12484,18 +12494,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E1E\u0E39\u0E14\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E01\u0E31\u0E1A\u0E01\u0E2D\u0E14\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E44\u0E27\u0E49)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E1E\u0E39\u0E14\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E01\u0E31\u0E1A\u0E01\u0E2D\u0E14\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E44\u0E27\u0E49]"
   - actorId: 1
     message: "\u0E16\u0E49\u0E32\u0E2B\u0E19\u0E39\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E04\u0E27\u0E32\u0E21\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E2D\u0E30\u0E44\u0E23
       \u0E01\u0E47\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E01\u0E23\u0E07\u0E43\u0E08
       \u0E21\u0E32\u0E2B\u0E32\u0E22\u0E32\u0E22\u0E44\u0E14\u0E49\u0E15\u0E25\u0E2D\u0E14
       \u0E22\u0E32\u0E22\u0E08\u0E30\u0E23\u0E2D\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E23\u0E07\u0E19\u0E35\u0E49\u0E40\u0E2A\u0E21\u0E2D\u0E19\u0E30"
   - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1C\u0E25\u0E30\u0E2D\u0E2D\u0E01\u0E21\u0E32)"
+    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1C\u0E25\u0E30\u0E2D\u0E2D\u0E01\u0E21\u0E32]"
   - actorId: 0
     message: "\u0E02\u0E2D\u0E1A\u0E04\u0E38\u0E13\u0E04\u0E48\u0E30"
   - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E25\u0E32)"
+    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E25\u0E32]"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -13773,8 +13783,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 540961916}
-  - {fileID: 1110377547}
   - {fileID: 1035486118}
   m_Father: {fileID: 861202536}
   m_RootOrder: 4
@@ -13941,7 +13949,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E19\u0E31\u0E48\u0E19\u0E21\u0E31\u0E19 \u0E21\u0E2D\u0E19\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E19\u0E35\u0E48"
+  m_Text: "(\u0E19\u0E31\u0E48\u0E19\u0E21\u0E31\u0E19\u0E21\u0E2D\u0E19\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E19\u0E35\u0E48)"
 --- !u!222 &813486068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14689,8 +14697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: "\u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E22\u0E32\u0E22\u0E08\u0E30\u0E2B\u0E32\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E2D\u0E22\u0E39\u0E48\u0E1D\u0E31\u0E48\u0E07\u0E19\u0E35\u0E49\u0E19\u0E30
-      \u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E2B\u0E19\u0E39\u0E01\u0E47\u0E40\u0E23\u0E35\u0E22\u0E01\u0E22\u0E32\u0E22\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22"
+    message: "\u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E22\u0E32\u0E22\u0E08\u0E30\u0E2B\u0E32\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E2D\u0E22\u0E39\u0E48\u0E1D\u0E31\u0E48\u0E07\u0E19\u0E35\u0E49\u0E19\u0E30\u0E08\u0E4A\u0E30"
   actors:
   - name: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E42\u0E23\u0E0B\u0E32\u0E25\u0E34\u0E19\u0E14\u0E4C"
     sprite: {fileID: 21300000, guid: 61232e06068ddf8479d2778a95886c6c, type: 3}
@@ -15664,7 +15671,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16389,7 +16396,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16778,7 +16785,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16818,8 +16825,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E2B\u0E32\u0E41\u0E19\u0E27\u0E17\u0E32\u0E07\u0E43\u0E2B\u0E21\u0E48\u0E46
-    \u0E08\u0E30\u0E44\u0E14\u0E49\u0E1E\u0E31\u0E01\u0E1C\u0E48\u0E2D\u0E19\u0E14\u0E49\u0E27\u0E22"
+  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E40\u0E1C\u0E37\u0E48\u0E2D\u0E44\u0E14\u0E49\u0E25\u0E2D\u0E07\u0E2B\u0E32\u0E17\u0E32\u0E07\u0E43\u0E2B\u0E21\u0E48\u0E46
+    \u0E08\u0E30\u0E44\u0E14\u0E49\u0E1E\u0E31\u0E01\u0E1C\u0E48\u0E2D\u0E19\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22"
 --- !u!222 &987323259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17017,8 +17024,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E1B\u0E01\u0E15\u0E34\u0E40\u0E14\u0E34\u0E19\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E43\u0E01\u0E25\u0E49
-    \u0E21\u0E31\u0E19\u0E01\u0E47\u0E2B\u0E19\u0E35\u0E44\u0E1B\u0E40\u0E2D\u0E07\u0E41\u0E2B\u0E25\u0E30"
+  m_Text: "(\u0E44\u0E21\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E44\u0E23\u0E2B\u0E23\u0E2D\u0E01\u0E21\u0E31\u0E49\u0E07
+    \u0E1B\u0E01\u0E15\u0E34\u0E40\u0E27\u0E25\u0E32\u0E40\u0E14\u0E34\u0E19\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E43\u0E01\u0E25\u0E49\n\u0E21\u0E31\u0E19\u0E01\u0E47\u0E2B\u0E19\u0E35\u0E44\u0E1B\u0E40\u0E2D\u0E07\u0E19\u0E35\u0E48\u0E19\u0E32)"
 --- !u!222 &991277399
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17186,7 +17193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6176098557547031940, guid: 464e22945e634f844a1f894f33181a28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -131.7
+      value: -131.32
       objectReference: {fileID: 0}
     - target: {fileID: 6176098557547031940, guid: 464e22945e634f844a1f894f33181a28, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17242,7 +17249,7 @@ PrefabInstance:
       objectReference: {fileID: 1539753772}
     - target: {fileID: 8093395832474578274, guid: 464e22945e634f844a1f894f33181a28, type: 3}
       propertyPath: time_director
-      value: 56
+      value: 54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 464e22945e634f844a1f894f33181a28, type: 3}
@@ -17688,9 +17695,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 14.57, y: -0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1110377547}
   m_Father: {fileID: 803134873}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1035486119
 MonoBehaviour:
@@ -18134,13 +18142,13 @@ MonoBehaviour:
     message: "\u0E1E\u0E2D\u0E44\u0E14\u0E49\u0E21\u0E32\u0E40\u0E14\u0E34\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E17\u0E38\u0E48\u0E07\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E01\u0E31\u0E1A\u0E2B\u0E19\u0E39\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E35\u0E49\u0E41\u0E25\u0E49\u0E27\u0E22\u0E32\u0E22\u0E19\u0E36\u0E01\u0E16\u0E36\u0E07\u0E15\u0E2D\u0E19\u0E2B\u0E19\u0E39\u0E22\u0E49\u0E32\u0E22\u0E21\u0E32\u0E43\u0E2B\u0E21\u0E48\u0E46
       \u0E40\u0E25\u0E22\u0E19\u0E30"
   - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E2B\u0E31\u0E19\u0E44\u0E1B\u0E22\u0E34\u0E49\u0E21\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22)"
+    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E2B\u0E31\u0E19\u0E44\u0E1B\u0E22\u0E34\u0E49\u0E21\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22]"
   - actorId: 1
     message: "\u0E15\u0E2D\u0E19\u0E19\u0E31\u0E49\u0E19\u0E22\u0E32\u0E22\u0E40\u0E2D\u0E32\u0E0A\u0E48\u0E2D\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E17\u0E35\u0E48\u0E22\u0E32\u0E22\u0E08\u0E31\u0E14\u0E44\u0E1B\u0E43\u0E2B\u0E49\u0E2B\u0E19\u0E39
       \u0E41\u0E25\u0E49\u0E27\u0E01\u0E47\u0E0A\u0E27\u0E19\u0E2B\u0E19\u0E39\u0E21\u0E32\u0E40\u0E01\u0E47\u0E1A\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E35\u0E49
       \u0E01\u0E27\u0E48\u0E32\u0E2B\u0E19\u0E39\u0E08\u0E30\u0E22\u0E2D\u0E21\u0E21\u0E32\u0E01\u0E31\u0E1A\u0E22\u0E32\u0E22\u0E19\u0E35\u0E48\u0E40\u0E25\u0E48\u0E19\u0E40\u0E2D\u0E32\u0E22\u0E32\u0E22\u0E40\u0E2B\u0E19\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E25\u0E22\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E19\u0E30"
   - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E1E\u0E39\u0E14\u0E44\u0E1B\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E01\u0E31\u0E1A\u0E2B\u0E31\u0E27\u0E40\u0E23\u0E32\u0E30\u0E40\u0E1A\u0E32\u0E46)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E1E\u0E39\u0E14\u0E41\u0E1A\u0E1A\u0E02\u0E33\u0E46]"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -18716,6 +18724,86 @@ Canvas:
   m_SortingLayerID: 608627833
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1103089903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103089904}
+  - component: {fileID: 1103089906}
+  - component: {fileID: 1103089905}
+  m_Layer: 5
+  m_Name: back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1103089904
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103089903}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346333155}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 17, y: -184}
+  m_SizeDelta: {x: 330, y: 65}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1103089905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103089903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 97
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E17\u0E35\u0E48\u0E17\u0E33\u0E41\u0E1C\u0E25\u0E43\u0E2B\u0E49\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32
+    \u0E17\u0E31\u0E49\u0E07\u0E04\u0E39\u0E48\u0E01\u0E47\u0E21\u0E32\u0E14\u0E37\u0E48\u0E21\u0E0A\u0E32\u0E01\u0E31\u0E19\u0E43\u0E19\u0E2A\u0E27\u0E19\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22"
+--- !u!222 &1103089906
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103089903}
+  m_CullTransparentMesh: 1
 --- !u!1 &1104833175
 GameObject:
   m_ObjectHideFlags: 0
@@ -19073,11 +19161,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110377542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.570007, y: -0.53, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 803134873}
-  m_RootOrder: 1
+  m_Father: {fileID: 1035486118}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1111125055
 GameObject:
@@ -20878,7 +20966,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20918,7 +21006,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E41\u0E15\u0E48\u0E43\u0E2B\u0E49\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E22\u0E32\u0E22\u0E2D\u0E22\u0E39\u0E48\u0E02\u0E49\u0E32\u0E07\u0E46\u0E2B\u0E19\u0E39\u0E40\u0E2A\u0E21\u0E2D\u0E21\u0E32\u0E19\u0E30"
+  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E41\u0E25\u0E49\u0E27\u0E22\u0E32\u0E22\u0E40\u0E2D\u0E07
+    \u0E01\u0E47\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E02\u0E49\u0E32\u0E07\u0E46\u0E2B\u0E19\u0E39\u0E40\u0E2A\u0E21\u0E2D\u0E19\u0E30"
 --- !u!222 &1226339068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21721,7 +21810,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22105,7 +22194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: "(\u0E44\u0E1B\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E01\u0E48\u0E2D\u0E19\u0E44\u0E1B\u0E14\u0E35\u0E01\u0E27\u0E48\u0E32)"
+    message: "<\u0E44\u0E1B\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E01\u0E48\u0E2D\u0E19\u0E44\u0E1B\u0E14\u0E35\u0E01\u0E27\u0E48\u0E32>"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -22528,8 +22617,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E04\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E2B\u0E32\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E32\u0E02\u0E27\u0E32\u0E07\u0E21\u0E31\u0E19
-    \u0E09\u0E31\u0E19\u0E08\u0E30\u0E44\u0E14\u0E49\u0E44\u0E1B\u0E15\u0E48\u0E2D"
+  m_Text: "(\u0E04\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E2B\u0E32\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E32\u0E02\u0E27\u0E32\u0E07\u0E21\u0E31\u0E19
+    \u0E09\u0E31\u0E19\u0E08\u0E30\u0E44\u0E14\u0E49\u0E44\u0E1B\u0E15\u0E48\u0E2D)"
 --- !u!222 &1292123645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23144,12 +23233,12 @@ MonoBehaviour:
   - actorId: 1
     message: "\u0E02\u0E2D\u0E42\u0E17\u0E29\u0E19\u0E30\u0E08\u0E4A\u0E30 \u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E22\u0E32\u0E22\u0E08\u0E30\u0E25\u0E37\u0E21\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E1B\u0E34\u0E14\u0E1B\u0E23\u0E30\u0E15\u0E39\u0E44\u0E1B\u0E41\u0E25\u0E49\u0E27"
   - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E23\u0E38\u0E48\u0E19\u0E04\u0E34\u0E14
-      \u0E41\u0E25\u0E49\u0E27\u0E1E\u0E36\u0E21\u0E1E\u0E33\u0E01\u0E31\u0E1A\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E40\u0E1A\u0E32\u0E46)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E34\u0E14\u0E46
+      \u0E1E\u0E36\u0E21\u0E1E\u0E33\u0E01\u0E31\u0E1A\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07]"
   - actorId: 1
     message: "\u0E2D\u0E37\u0E21 \u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E25\u0E32\u0E22\u0E1A\u0E19\u0E1B\u0E23\u0E30\u0E15\u0E39\u0E19\u0E35\u0E48\u0E41\u0E2B\u0E25\u0E30"
   - actorId: 0
-    message: "(\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E25\u0E32\u0E22\u0E1A\u0E19\u0E1B\u0E23\u0E30\u0E15\u0E39\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E31\u0E49\u0E19\u0E40\u0E2B\u0E23\u0E2D?)"
+    message: "<\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E25\u0E32\u0E22\u0E1A\u0E19\u0E1B\u0E23\u0E30\u0E15\u0E39\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E31\u0E49\u0E19\u0E40\u0E2B\u0E23\u0E2D?> "
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -26474,7 +26563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda06259eb6664246a273dbb526f885f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCollider: {fileID: 540961913}
+  nextCollider: {fileID: 1035486117}
 --- !u!114 &1425509886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27837,9 +27926,9 @@ MonoBehaviour:
   - actorId: 1
     message: "\u0E15\u0E01\u0E25\u0E07\u0E2B\u0E19\u0E39\u0E08\u0E30\u0E44\u0E1B\u0E07\u0E32\u0E19\u0E2A\u0E34\u0E19\u0E30"
   - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E23\u0E31\u0E1A)"
+    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32]"
   - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E2B\u0E22\u0E34\u0E1A\u0E16\u0E38\u0E07\u0E04\u0E38\u0E01\u0E01\u0E35\u0E49\u0E17\u0E35\u0E48\u0E21\u0E35\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E1B\u0E23\u0E30\u0E14\u0E31\u0E1A\u0E2D\u0E22\u0E39\u0E48\u0E21\u0E32\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E2B\u0E22\u0E34\u0E1A\u0E16\u0E38\u0E07\u0E04\u0E38\u0E01\u0E01\u0E35\u0E49\u0E17\u0E35\u0E48\u0E21\u0E35\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E1B\u0E23\u0E30\u0E14\u0E31\u0E1A\u0E2D\u0E22\u0E39\u0E48\u0E21\u0E32\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32]"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -29091,139 +29180,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1882800567094638365, guid: 8f484eae53dc0374e871fd7569149588, type: 3}
   m_PrefabInstance: {fileID: 1882800566255309591}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1583109561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1583109567}
-  - component: {fileID: 1583109566}
-  - component: {fileID: 1583109564}
-  - component: {fileID: 1583109563}
-  - component: {fileID: 1583109565}
-  - component: {fileID: 1583109562}
-  m_Layer: 0
-  m_Name: grandmaTalkToPanAfterGetShears
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1583109562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583109561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e25cd2fc5fe7ded4facc386d1484473f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1583109563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583109561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 461d690416a32cf45b9ba7298ee225e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextCollider: {fileID: 1110377542}
-  characterType: NPC
---- !u!114 &1583109564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583109561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06dadafa49f9d034badfcd47b0e67a94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - actorId: 1
-    message: "\u0E02\u0E2D\u0E1A\u0E43\u0E08\u0E19\u0E30\u0E08\u0E4A\u0E30 \u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E2B\u0E19\u0E39\u0E41\u0E1E\u0E19\u0E19\u0E35\u0E48
-      \u0E22\u0E32\u0E22\u0E04\u0E07\u0E40\u0E1B\u0E34\u0E14\u0E42\u0E01\u0E14\u0E31\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E41\u0E19\u0E48\u0E46
-      \u0E40\u0E25\u0E22"
-  - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E22\u0E34\u0E49\u0E21\u0E1A\u0E32\u0E07\u0E46)"
-  - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E22\u0E34\u0E49\u0E21\u0E41\u0E2B\u0E49\u0E07\u0E15\u0E2D\u0E1A\u0E23\u0E31\u0E1A\u0E04\u0E33\u0E1E\u0E39\u0E14\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22)"
-  - actorId: 1
-    message: "\u0E07\u0E31\u0E49\u0E19\u0E40\u0E23\u0E32\u0E44\u0E1B\u0E40\u0E01\u0E47\u0E1A\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E01\u0E31\u0E19\u0E40\u0E25\u0E22
-      \u0E14\u0E35\u0E01\u0E27\u0E48\u0E32\u0E19\u0E30 \u0E40\u0E1E\u0E23\u0E32\u0E30\u0E22\u0E32\u0E22\u0E02\u0E35\u0E49\u0E25\u0E37\u0E21\u0E40\u0E25\u0E22\u0E40\u0E2A\u0E35\u0E22\u0E40\u0E27\u0E25\u0E32\u0E44\u0E1B\u0E40\u0E22\u0E2D\u0E30\u0E41\u0E25\u0E49\u0E27"
-  - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E2B\u0E31\u0E27\u0E40\u0E23\u0E32\u0E30\u0E40\u0E1A\u0E32\u0E46
-      \u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E40\u0E14\u0E34\u0E19\u0E19\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E44\u0E1B)"
-  actors:
-  - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
-    sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
-  - name: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E42\u0E23\u0E0B\u0E32\u0E25\u0E34\u0E19\u0E14\u0E4C"
-    sprite: {fileID: 21300000, guid: 61232e06068ddf8479d2778a95886c6c, type: 3}
---- !u!114 &1583109565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583109561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb2db6fc411aad54289170fe80eb36e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: {fileID: 1583109564}
-  charType: NPC
---- !u!61 &1583109566
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583109561}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7698288, y: 7.23027}
-  m_EdgeRadius: 0
---- !u!4 &1583109567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583109561}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 540961916}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1583115791
 GameObject:
   m_ObjectHideFlags: 0
@@ -29329,7 +29285,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30660,7 +30616,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E08\u0E4A\u0E30
+  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E08\u0E49\u0E30
     \u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
 --- !u!222 &1633838001
 CanvasRenderer:
@@ -30857,7 +30813,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32013,7 +31969,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -33345,8 +33301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: "(\u0E44\u0E14\u0E49\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E04\u0E23\u0E1A\u0E41\u0E25\u0E49\u0E27
-      \u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E2B\u0E32\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E01\u0E48\u0E2D\u0E19\u0E14\u0E35\u0E01\u0E27\u0E48\u0E32)"
+    message: "<\u0E44\u0E14\u0E49\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E04\u0E23\u0E1A\u0E41\u0E25\u0E49\u0E27
+      \u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E2B\u0E32\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E01\u0E48\u0E2D\u0E19\u0E14\u0E35\u0E01\u0E27\u0E48\u0E32>"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -34043,7 +33999,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E17\u0E33\u0E44\u0E21\u0E21\u0E31\u0E19\u0E16\u0E36\u0E07\u0E40\u0E02\u0E49\u0E32\u0E21\u0E32\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E17\u0E33\u0E23\u0E49\u0E32\u0E22\u0E09\u0E31\u0E19\u0E25\u0E48\u0E30"
+  m_Text: "(\u0E40\u0E2D\u0E4A\u0E30! \u0E17\u0E33\u0E44\u0E21\u0E21\u0E31\u0E19\u0E16\u0E36\u0E07\u0E40\u0E02\u0E49\u0E32\u0E21\u0E32\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E17\u0E33\u0E23\u0E49\u0E32\u0E22\u0E09\u0E31\u0E19\u0E25\u0E48\u0E30?!)\r\n"
 --- !u!222 &1867624406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34926,7 +34882,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34966,7 +34922,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E2B\u0E19\u0E39\u0E01\u0E47\u0E41\u0E04\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E25\u0E2D\u0E07\u0E2B\u0E32\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E43\u0E2B\u0E21\u0E48"
+  m_Text: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22:\n\u0E22\u0E32\u0E22\u0E27\u0E48\u0E32
+    \u0E2B\u0E19\u0E39\u0E01\u0E47\u0E41\u0E04\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E25\u0E2D\u0E07\u0E2B\u0E32\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E43\u0E2B\u0E21\u0E48"
 --- !u!222 &1928435308
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35363,7 +35320,7 @@ MonoBehaviour:
       \u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E21\u0E35\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E2D\u0E22\u0E39\u0E48\u0E41\u0E16\u0E27\u0E17\u0E38\u0E48\u0E07\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E40\u0E25\u0E47\u0E01\u0E46
       \u0E15\u0E23\u0E07\u0E17\u0E32\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E21\u0E32\u0E16\u0E36\u0E07\u0E42\u0E01\u0E14\u0E31\u0E07\u0E15\u0E23\u0E07\u0E19\u0E35\u0E49"
   - actorId: 0
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E23\u0E38\u0E48\u0E19\u0E04\u0E34\u0E14)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E23\u0E38\u0E48\u0E19\u0E04\u0E34\u0E14]"
   - actorId: 0
     message: "\u0E41\u0E25\u0E49\u0E27\u0E01\u0E47\u0E19\u0E48\u0E32\u0E08\u0E30\u0E21\u0E35\u0E15\u0E23\u0E07\u0E17\u0E38\u0E48\u0E07\u0E17\u0E32\u0E07\u0E02\u0E27\u0E32\u0E2D\u0E35\u0E01\u0E2A\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E19\u0E30"
   - actorId: 1
@@ -35371,8 +35328,6 @@ MonoBehaviour:
   - actorId: 0
     message: "\u0E02\u0E2D\u0E1A\u0E43\u0E08\u0E19\u0E30\u0E08\u0E4A\u0E30 \u0E16\u0E49\u0E32\u0E2B\u0E19\u0E39\u0E40\u0E01\u0E47\u0E1A\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E41\u0E25\u0E49\u0E27\u0E01\u0E47\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E40\u0E08\u0E2D\u0E22\u0E32\u0E22\u0E17\u0E35\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E19\u0E30
       \u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E22\u0E32\u0E22\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E0A\u0E32\u0E01\u0E31\u0E1A\u0E02\u0E19\u0E21\u0E44\u0E27\u0E49\u0E43\u0E2B\u0E49"
-  - actorId: 0
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E23\u0E35\u0E1A\u0E23\u0E49\u0E2D\u0E19\u0E40\u0E14\u0E34\u0E19\u0E08\u0E32\u0E01\u0E44\u0E1B)"
   actors:
   - name: "\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E42\u0E23\u0E0B\u0E32\u0E25\u0E34\u0E19\u0E14\u0E4C"
     sprite: {fileID: 21300000, guid: 61232e06068ddf8479d2778a95886c6c, type: 3}
@@ -35657,7 +35612,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36917,7 +36872,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37395,7 +37350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E2A\u0E31\u0E07\u0E40\u0E01\u0E15\u0E40\u0E2B\u0E47\u0E19\u0E17\u0E35\u0E48\u0E40\u0E02\u0E48\u0E32\u0E02\u0E2D\u0E07\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E21\u0E35\u0E41\u0E1C\u0E25\u0E16\u0E25\u0E2D\u0E01\u0E2D\u0E22\u0E39\u0E48)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E2A\u0E31\u0E07\u0E40\u0E01\u0E15\u0E40\u0E2B\u0E47\u0E19\u0E17\u0E35\u0E48\u0E40\u0E02\u0E48\u0E32\u0E02\u0E2D\u0E07\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E21\u0E35\u0E41\u0E1C\u0E25\u0E16\u0E25\u0E2D\u0E01\u0E2D\u0E22\u0E39\u0E48]"
   - actorId: 1
     message: "\u0E15\u0E32\u0E22\u0E41\u0E25\u0E49\u0E27\u0E2B\u0E19\u0E39\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E31\u0E49\u0E22\u0E08\u0E4A\u0E30!"
   - actorId: 0
@@ -37403,7 +37358,7 @@ MonoBehaviour:
   - actorId: 1
     message: "\u0E41\u0E25\u0E49\u0E27\u0E2B\u0E19\u0E39\u0E1A\u0E32\u0E14\u0E40\u0E08\u0E47\u0E1A\u0E15\u0E23\u0E07\u0E44\u0E2B\u0E19\u0E23\u0E36\u0E40\u0E1B\u0E25\u0E48\u0E32\u0E40\u0E19\u0E35\u0E48\u0E22!"
   - actorId: 1
-    message: "(\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E08\u0E31\u0E1A\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E25\u0E34\u0E01\u0E44\u0E1B\u0E21\u0E32)"
+    message: "[\u0E04\u0E38\u0E13\u0E22\u0E32\u0E22\u0E08\u0E31\u0E1A\u0E41\u0E1E\u0E19\u0E1E\u0E25\u0E34\u0E01\u0E44\u0E1B\u0E21\u0E32]"
   - actorId: 1
     message: "\u0E15\u0E2D\u0E19\u0E41\u0E23\u0E01\u0E22\u0E32\u0E22\u0E01\u0E30\u0E08\u0E30\u0E0A\u0E27\u0E19\u0E2B\u0E19\u0E39\u0E14\u0E37\u0E48\u0E21\u0E0A\u0E32\u0E0B\u0E31\u0E01\u0E2B\u0E19\u0E48\u0E2D\u0E22
       \u0E41\u0E15\u0E48\u0E40\u0E2B\u0E47\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E2B\u0E19\u0E39\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E40\u0E08\u0E2D\u0E21\u0E32\u0E41\u0E25\u0E49\u0E27
@@ -37415,7 +37370,7 @@ MonoBehaviour:
     message: "\u0E07\u0E31\u0E49\u0E19\u0E16\u0E49\u0E32\u0E2B\u0E19\u0E39\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E44\u0E21\u0E48\u0E14\u0E35\u0E15\u0E23\u0E07\u0E44\u0E2B\u0E19
       \u0E15\u0E49\u0E2D\u0E07\u0E23\u0E35\u0E1A\u0E1A\u0E2D\u0E01\u0E22\u0E32\u0E22\u0E40\u0E25\u0E22\u0E19\u0E30"
   - actorId: 0
-    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E23\u0E35\u0E1A\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32)"
+    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E23\u0E35\u0E1A\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32]"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
@@ -38960,7 +38915,7 @@ RectTransform:
   m_LocalScale: {x: 7.9315324, y: 7.9315324, z: 0.88127005}
   m_Children: []
   m_Father: {fileID: 346333155}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -39255,7 +39210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -150.92946
+      value: -150.80946
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39267,7 +39222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187136159706, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -150.92946
+      value: -150.80946
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187136159706, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39694,7 +39649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457134, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -131.4
+      value: -131.28
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457134, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40101,6 +40056,10 @@ PrefabInstance:
     - target: {fileID: 5990751825070691458, guid: af9b92d01c3fcce44816fa1210c02ec4, type: 3}
       propertyPath: m_Name
       value: Puzzle Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990751825070691458, guid: af9b92d01c3fcce44816fa1210c02ec4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5990751825070691484, guid: af9b92d01c3fcce44816fa1210c02ec4, type: 3}
       propertyPath: pandora

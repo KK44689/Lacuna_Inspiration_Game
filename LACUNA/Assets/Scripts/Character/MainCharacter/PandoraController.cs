@@ -54,6 +54,10 @@ public class PandoraController : MonoBehaviour
     {
         npc = GameObject.FindWithTag("NPC");
         // generateBouquet();
+        if(CharStopMove.charStop){
+            animator.SetBool("walk", false);
+            return;
+        }
         if (DialogueManager.isActive == true)
         {
             if (transform.position.x >= npc.transform.position.x)

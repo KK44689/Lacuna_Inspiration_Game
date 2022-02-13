@@ -14,7 +14,7 @@ public class InactiveAfterSolvedPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GenCollectable.challangeSolved){
+        if(GenInspireItem.puzzleSolved){
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
