@@ -198,7 +198,7 @@ Transform:
   - {fileID: 1011458839}
   - {fileID: 1907925106}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &26065104
 GameObject:
@@ -621,14 +621,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E1A\u0E1A\u0E04\u0E34\u0E14\u0E02\u0E36\u0E49\u0E19\u0E44\u0E14\u0E49]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E1A\u0E1A\u0E04\u0E34\u0E14\u0E02\u0E36\u0E49\u0E19\u0E44\u0E14\u0E49)"
   - actorId: 1
     message: "\u0E44\u0E2B\u0E19\u0E46 \u0E1E\u0E35\u0E48\u0E21\u0E32\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E41\u0E25\u0E49\u0E27
       \u0E1E\u0E35\u0E48\u0E01\u0E47\u0E25\u0E2D\u0E07\u0E41\u0E27\u0E30\u0E44\u0E1B\u0E17\u0E35\u0E48
       Starryshade \u0E14\u0E39\u0E21\u0E31\u0E49\u0E22"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E07\u0E07\u0E46]"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E07\u0E07\u0E46)"
   - actorId: 1
     message: "\u0E21\u0E31\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E1C\u0E32\u0E41\u0E16\u0E1A\u0E17\u0E35\u0E48\u0E15\u0E34\u0E14\u0E17\u0E30\u0E40\u0E25\u0E02\u0E2D\u0E07\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49\u0E19\u0E48\u0E30
       \u0E40\u0E1B\u0E47\u0E19\u0E08\u0E38\u0E14\u0E14\u0E39\u0E14\u0E32\u0E27\u0E17\u0E35\u0E48\u0E2A\u0E27\u0E22\u0E21\u0E32\u0E01\u0E46
@@ -640,62 +640,64 @@ MonoBehaviour:
       \u0E01\u0E47\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E14\u0E32\u0E27\u0E0A\u0E31\u0E14\u0E21\u0E32\u0E01\u0E46
       \u0E2B\u0E19\u0E39\u0E01\u0E47\u0E44\u0E1B\u0E14\u0E39\u0E14\u0E32\u0E27\u0E01\u0E31\u0E1A\u0E04\u0E38\u0E13\u0E1E\u0E48\u0E2D\u0E04\u0E38\u0E13\u0E41\u0E21\u0E48
       \u0E15\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E1E\u0E48\u0E2D\u0E41\u0E21\u0E48\u0E22\u0E31\u0E07\u0E07\u0E32\u0E19\u0E44\u0E21\u0E48\u0E22\u0E38\u0E48\u0E07\u0E40\u0E17\u0E48\u0E32\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49"
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E28\u0E23\u0E49\u0E32\u0E46]"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E35\u0E48\u0E40\u0E2B\u0E47\u0E19\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E28\u0E23\u0E49\u0E32\u0E46
-      \u0E40\u0E25\u0E22\u0E25\u0E39\u0E1A\u0E2B\u0E31\u0E27\u0E1B\u0E25\u0E2D\u0E1A\u0E43\u0E08\u0E40\u0E1A\u0E32\u0E46]"
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E40\u0E07\u0E35\u0E22\u0E1A\u0E44\u0E1B\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01
-      \u0E01\u0E48\u0E2D\u0E19\u0E08\u0E30\u0E40\u0E07\u0E22\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32\u0E1E\u0E39\u0E14\u0E01\u0E31\u0E1A\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E28\u0E23\u0E49\u0E32\u0E46)"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E35\u0E48\u0E40\u0E2B\u0E47\u0E19\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E28\u0E23\u0E49\u0E32\u0E46
+      \u0E40\u0E25\u0E22\u0E25\u0E39\u0E1A\u0E2B\u0E31\u0E27\u0E1B\u0E25\u0E2D\u0E1A\u0E43\u0E08\u0E40\u0E1A\u0E32\u0E46)"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E40\u0E07\u0E35\u0E22\u0E1A\u0E44\u0E1B\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01
+      \u0E01\u0E48\u0E2D\u0E19\u0E08\u0E30\u0E40\u0E07\u0E22\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32\u0E1E\u0E39\u0E14\u0E01\u0E31\u0E1A\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32)"
   - actorId: 1
     message: "\u0E2B\u0E19\u0E39\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19\u0E41\u0E25\u0E49\u0E27\u0E25\u0E48\u0E30"
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E2B\u0E07\u0E32\u0E46]"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E35\u0E48\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E2A\u0E07\u0E2A\u0E32\u0E23\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19
-      \u0E40\u0E25\u0E22\u0E16\u0E32\u0E21\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E2B\u0E07\u0E32\u0E46)"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E35\u0E48\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E2A\u0E07\u0E2A\u0E32\u0E23\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19
+      \u0E40\u0E25\u0E22\u0E16\u0E32\u0E21\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32)"
   - actorId: 0
     message: "\u0E16\u0E49\u0E32\u0E1E\u0E35\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E44\u0E1B\u0E14\u0E39\u0E14\u0E32\u0E27\u0E19\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E1B\u0E15\u0E2D\u0E19\u0E01\u0E35\u0E48\u0E42\u0E21\u0E07\u0E40\u0E2B\u0E23\u0E2D
       ?"
   - actorId: 1
     message: "\u0E0A\u0E48\u0E27\u0E07\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13\u0E2A\u0E35\u0E48\u0E17\u0E38\u0E48\u0E21\u0E04\u0E48\u0E30"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E23\u0E38\u0E48\u0E19\u0E04\u0E34\u0E14\u0E19\u0E34\u0E14\u0E2B\u0E19\u0E48\u0E2D\u0E22
-      \u0E01\u0E48\u0E2D\u0E19\u0E08\u0E30\u0E1E\u0E39\u0E14\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E15\u0E31\u0E14\u0E2A\u0E34\u0E19\u0E43\u0E08\u0E44\u0E14\u0E49]"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E23\u0E38\u0E48\u0E19\u0E04\u0E34\u0E14\u0E19\u0E34\u0E14\u0E2B\u0E19\u0E48\u0E2D\u0E22
+      \u0E01\u0E48\u0E2D\u0E19\u0E08\u0E30\u0E1E\u0E39\u0E14\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E15\u0E31\u0E14\u0E2A\u0E34\u0E19\u0E43\u0E08\u0E44\u0E14\u0E49)"
   - actorId: 0
     message: "...\u0E08\u0E34\u0E25\u0E44\u0E1B\u0E14\u0E39\u0E14\u0E32\u0E27\u0E01\u0E31\u0E1A\u0E1E\u0E35\u0E48\u0E21\u0E31\u0E49\u0E22"
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E21\u0E2D\u0E19\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E14\u0E49\u0E27\u0E22\u0E15\u0E32\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E22]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E21\u0E2D\u0E07\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E14\u0E49\u0E27\u0E22\u0E15\u0E32\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E22)"
   - actorId: 1
     message: "\u0E2B\u0E19\u0E39\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22\u0E44\u0E14\u0E49\u0E40\u0E2B\u0E23\u0E2D\u0E04\u0E30!"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32]"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32)"
   - actorId: 1
     message: "\u0E07\u0E31\u0E49\u0E19\u0E2B\u0E19\u0E39\u0E02\u0E2D\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E02\u0E2D\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15\u0E34\u0E01\u0E31\u0E1A\u0E04\u0E38\u0E13\u0E1E\u0E48\u0E2D\u0E01\u0E31\u0E1A\u0E04\u0E38\u0E13\u0E41\u0E21\u0E48\u0E01\u0E48\u0E2D\u0E19\u0E19\u0E30\u0E04\u0E30
       \u0E41\u0E25\u0E49\u0E27\u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E2B\u0E19\u0E39\u0E21\u0E32\u0E1A\u0E2D\u0E01\u0E04\u0E33\u0E15\u0E2D\u0E1A\u0E1E\u0E35\u0E48\u0E1E\u0E23\u0E38\u0E48\u0E07\u0E19\u0E35\u0E49"
   - actorId: 1
     message: "\u0E07\u0E31\u0E49\u0E19\u0E1E\u0E23\u0E38\u0E48\u0E07\u0E19\u0E35\u0E49
       \u0E1E\u0E35\u0E48\u0E41\u0E27\u0E30\u0E21\u0E32\u0E40\u0E08\u0E2D\u0E2B\u0E19\u0E39\u0E17\u0E35\u0E48\u0E2A\u0E19\u0E32\u0E21\u0E40\u0E14\u0E47\u0E01\u0E40\u0E25\u0E48\u0E19\u0E15\u0E2D\u0E19..."
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E23\u0E38\u0E48\u0E19\u0E04\u0E34\u0E14]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E04\u0E23\u0E38\u0E48\u0E19\u0E04\u0E34\u0E14)"
   - actorId: 1
     message: "..\u0E0B\u0E31\u0E01\u0E2A\u0E34\u0E1A\u0E42\u0E21\u0E07\u0E44\u0E14\u0E49\u0E21\u0E31\u0E49\u0E22?"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32]"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32)"
   - actorId: 1
     message: "\u0E07\u0E31\u0E49\u0E19\u0E2B\u0E19\u0E39\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19\u0E01\u0E48\u0E2D\u0E19\u0E19\u0E30\u0E04\u0E30
       \u0E1A\u0E4A\u0E32\u0E22\u0E1A\u0E32\u0E22"
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E25\u0E32]"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E25\u0E32\u0E15\u0E2D\u0E1A\u0E01\u0E25\u0E31\u0E1A
-      \u0E01\u0E48\u0E2D\u0E19\u0E08\u0E30\u0E2B\u0E31\u0E19\u0E2B\u0E25\u0E31\u0E07\u0E40\u0E14\u0E34\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E17\u0E35\u0E48\u0E1E\u0E31\u0E01]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E25\u0E32)"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E25\u0E32\u0E15\u0E2D\u0E1A\u0E01\u0E25\u0E31\u0E1A
+      \u0E01\u0E48\u0E2D\u0E19\u0E08\u0E30\u0E2B\u0E31\u0E19\u0E2B\u0E25\u0E31\u0E07\u0E40\u0E14\u0E34\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E17\u0E35\u0E48\u0E1E\u0E31\u0E01)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19"
     sprite: {fileID: 21300000, guid: 5dc987b26fa0c194d9368b1d93dce4dc, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!114 &102484246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,21 +918,21 @@ MonoBehaviour:
   - actorId: 1
     message: "\u0E2D\u0E31\u0E19\u0E19\u0E35\u0E49\u0E2B\u0E19\u0E39\u0E43\u0E2B\u0E49\u0E1E\u0E35\u0E48\u0E19\u0E30
       \u0E40\u0E1B\u0E47\u0E19\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E1A\u0E04\u0E38\u0E13\u0E17\u0E35\u0E48\u0E1E\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E2B\u0E19\u0E39"
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E22\u0E34\u0E49\u0E21\u0E41\u0E1B\u0E49\u0E19\u0E43\u0E2B\u0E49\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E22\u0E34\u0E49\u0E21\u0E41\u0E1B\u0E49\u0E19\u0E43\u0E2B\u0E49\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32)"
   - actorId: 1
     message: "\u0E2A\u0E48\u0E27\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E1B\u0E14\u0E39\u0E14\u0E32\u0E27.."
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E28\u0E23\u0E49\u0E32\u0E46
-      \u0E19\u0E34\u0E14\u0E2B\u0E19\u0E48\u0E2D\u0E22]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E28\u0E23\u0E49\u0E32\u0E46
+      \u0E19\u0E34\u0E14\u0E2B\u0E19\u0E48\u0E2D\u0E22)"
   - actorId: 1
     message: "\u0E1E\u0E48\u0E2D\u0E41\u0E21\u0E48\u0E2B\u0E19\u0E39\u0E44\u0E21\u0E48\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15\u0E34\u0E43\u0E2B\u0E49\u0E44\u0E1B\u0E01\u0E31\u0E1A\u0E1E\u0E35\u0E48..."
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E25\u0E39\u0E1A\u0E2B\u0E31\u0E27\u0E1B\u0E25\u0E2D\u0E1A\u0E43\u0E08\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E40\u0E1A\u0E32\u0E46]"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E25\u0E39\u0E1A\u0E2B\u0E31\u0E27\u0E1B\u0E25\u0E2D\u0E1A\u0E43\u0E08\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E40\u0E1A\u0E32\u0E46)"
   - actorId: 0
     message: "\u0E07\u0E31\u0E49\u0E19\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E44\u0E1B\u0E40\u0E14\u0E34\u0E19\u0E40\u0E25\u0E48\u0E19\u0E01\u0E31\u0E1A\u0E1E\u0E35\u0E48\u0E41\u0E17\u0E19\u0E21\u0E31\u0E49\u0E22?"
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E01\u0E23\u0E30\u0E15\u0E37\u0E2D\u0E23\u0E37\u0E2D\u0E23\u0E49\u0E19]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E01\u0E23\u0E30\u0E15\u0E37\u0E2D\u0E23\u0E37\u0E2D\u0E23\u0E49\u0E19)"
   - actorId: 1
     message: "\u0E04\u0E48\u0E30!"
   actors:
@@ -938,6 +940,8 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19"
     sprite: {fileID: 21300000, guid: 5dc987b26fa0c194d9368b1d93dce4dc, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!114 &117058303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2199,7 +2203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171636777856134617, guid: 5e2bd3087079ba34196356b52c30e80c, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6171636777856134617, guid: 5e2bd3087079ba34196356b52c30e80c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2714,13 +2718,15 @@ MonoBehaviour:
       \u0E15\u0E2D\u0E19\u0E41\u0E23\u0E01\u0E1E\u0E35\u0E48\u0E01\u0E30\u0E27\u0E48\u0E32\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E14\u0E39\u0E19\u0E34\u0E17\u0E23\u0E23\u0E28\u0E01\u0E32\u0E23\u0E41\u0E25\u0E49\u0E27\u0E01\u0E25\u0E31\u0E1A\u0E40\u0E25\u0E22"
   - actorId: 1
     message: "\u0E07\u0E31\u0E49\u0E19\u0E40\u0E2B\u0E23\u0E2D..."
-  - actorId: 1
-    message: "[\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E2B\u0E07\u0E32\u0E46]"
+  - actorId: 2
+    message: "(\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E2B\u0E07\u0E32\u0E46)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19"
     sprite: {fileID: 21300000, guid: 5dc987b26fa0c194d9368b1d93dce4dc, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!114 &473477426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3348,7 +3354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643229883
 GameObject:
@@ -4293,7 +4299,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &823170695
 GameObject:
@@ -4895,7 +4901,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &942162187
 GameObject:
@@ -8025,7 +8031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -59.104767
+      value: -59.10476
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8053,6 +8059,161 @@ PrefabInstance:
       objectReference: {fileID: 2031004335}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
+--- !u!1 &1450535481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450535485}
+  - component: {fileID: 1450535484}
+  - component: {fileID: 1450535483}
+  - component: {fileID: 1450535482}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1450535482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450535481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cec9a1d0da606418493f3a4b035f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1450535483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450535481}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0e56024c809f84a862d3a84ca0062a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSrc: {fileID: 1450535484}
+  musicStart: {fileID: 8300000, guid: 7ffdabd0485316843b0cf065e7247a0e, type: 3}
+--- !u!82 &1450535484
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450535481}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d5fb5e42dd761e248b9816859783eaae, type: 2}
+  m_audioClip: {fileID: 8300000, guid: d1e4a46ee60f4af4cb9e4462ed157c87, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1450535485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450535481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 298.26782, y: 129.05235, z: -1152.3188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461367090
 GameObject:
   m_ObjectHideFlags: 0
@@ -9123,15 +9284,16 @@ MonoBehaviour:
   messages:
   - actorId: 1
     message: "\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E04\u0E48\u0E30 \u0E1E\u0E35\u0E48\u0E2A\u0E32\u0E27"
-  - actorId: 1
-    message: "[\u0E1E\u0E2D\u0E27\u0E34\u0E48\u0E07\u0E21\u0E32\u0E16\u0E36\u0E07\u0E15\u0E31\u0E27
-      \u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E01\u0E47\u0E22\u0E37\u0E48\u0E19\u0E20\u0E32\u0E1E\u0E27\u0E32\u0E14\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E23\u0E39\u0E1B\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E08\u0E31\u0E1A\u0E21\u0E37\u0E2D\u0E01\u0E31\u0E1A\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E43\u0E2B\u0E49
-      ]"
+  - actorId: 2
+    message: "(\u0E1E\u0E2D\u0E27\u0E34\u0E48\u0E07\u0E21\u0E32\u0E16\u0E36\u0E07\u0E15\u0E31\u0E27
+      \u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E01\u0E47\u0E22\u0E37\u0E48\u0E19\u0E20\u0E32\u0E1E\u0E27\u0E32\u0E14\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E23\u0E39\u0E1B\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E08\u0E31\u0E1A\u0E21\u0E37\u0E2D\u0E01\u0E31\u0E1A\u0E15\u0E31\u0E27\u0E40\u0E18\u0E2D\u0E40\u0E2D\u0E07\u0E43\u0E2B\u0E49)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19"
     sprite: {fileID: 21300000, guid: 5dc987b26fa0c194d9368b1d93dce4dc, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!61 &1633072761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9735,19 +9897,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: "<\u0E19\u0E35\u0E48\u0E21\u0E31\u0E19\u0E01\u0E47\u0E40\u0E22\u0E47\u0E19\u0E41\u0E25\u0E49\u0E27\u0E41\u0E2E\u0E30..>"
+    message: "(\u0E19\u0E35\u0E48\u0E21\u0E31\u0E19\u0E01\u0E47\u0E40\u0E22\u0E47\u0E19\u0E41\u0E25\u0E49\u0E27\u0E41\u0E2E\u0E30..)"
   - actorId: 0
     message: "\u0E08\u0E34\u0E25\u0E1A\u0E49\u0E32\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19\u0E40\u0E2B\u0E23\u0E2D\u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E1E\u0E35\u0E48\u0E44\u0E1B\u0E2A\u0E48\u0E07"
   - actorId: 1
     message: "\u0E2D\u0E22\u0E39\u0E48\u0E41\u0E16\u0E27\u0E46 \u0E2A\u0E19\u0E32\u0E21\u0E40\u0E14\u0E47\u0E01\u0E40\u0E25\u0E48\u0E19\u0E41\u0E2B\u0E25\u0E30\u0E04\u0E48\u0E30
       \u0E1E\u0E35\u0E48\u0E44\u0E1B\u0E2A\u0E48\u0E07\u0E2B\u0E19\u0E39\u0E15\u0E23\u0E07\u0E19\u0E31\u0E49\u0E19\u0E01\u0E47\u0E44\u0E14\u0E49"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32]"
+  - actorId: 2
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19"
     sprite: {fileID: 21300000, guid: 5dc987b26fa0c194d9368b1d93dce4dc, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!61 &1748508709
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10018,14 +10182,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E21\u0E32\u0E22\u0E37\u0E19\u0E23\u0E2D\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E19\u0E31\u0E14\u0E01\u0E31\u0E19
-      \u0E17\u0E35\u0E48\u0E2A\u0E19\u0E32\u0E21\u0E40\u0E14\u0E47\u0E01\u0E40\u0E25\u0E48\u0E19]"
-  - actorId: 0
-    message: "[\u0E23\u0E2D\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01 \u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E43\u0E2B\u0E49\u0E41\u0E1E\u0E19\u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E27\u0E34\u0E48\u0E07\u0E21\u0E32\u0E2B\u0E32]"
+  - actorId: 1
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E21\u0E32\u0E22\u0E37\u0E19\u0E23\u0E2D\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E19\u0E31\u0E14\u0E01\u0E31\u0E19
+      \u0E17\u0E35\u0E48\u0E2A\u0E19\u0E32\u0E21\u0E40\u0E14\u0E47\u0E01\u0E40\u0E25\u0E48\u0E19)"
+  - actorId: 1
+    message: "(\u0E23\u0E2D\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01 \u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19\u0E42\u0E1A\u0E01\u0E21\u0E37\u0E2D\u0E43\u0E2B\u0E49\u0E41\u0E1E\u0E19\u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E27\u0E34\u0E48\u0E07\u0E21\u0E32\u0E2B\u0E32)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!114 &1763004399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11057,7 +11223,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2023539058
 PrefabInstance:
@@ -11925,7 +12091,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!320 &2129134574
 PlayableDirector:
@@ -12090,7 +12256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2137016035
 PrefabInstance:
@@ -12269,7 +12435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8112781341311105570, guid: 36372b0c52ab4504591a5e7bd8af12b7, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8112781341311105570, guid: 36372b0c52ab4504591a5e7bd8af12b7, type: 3}
       propertyPath: m_AnchorMax.x

@@ -809,7 +809,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: d5fb5e42dd761e248b9816859783eaae, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b73f65b7a2f48164195088f0f27cf97c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -2241,7 +2241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5612868043567060951, guid: 79c0d8a89307abc47925c685b6f2830a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.308025
+      value: -38.32182
       objectReference: {fileID: 0}
     - target: {fileID: 5612868043567060951, guid: 79c0d8a89307abc47925c685b6f2830a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6195,13 +6195,15 @@ MonoBehaviour:
   messages:
   - actorId: 1
     message: "\u0E07\u0E31\u0E49\u0E19\u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E2B\u0E19\u0E39\u0E08\u0E31\u0E14\u0E2B\u0E19\u0E31\u0E07\u0E2A\u0E37\u0E2D\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E23\u0E07\u0E19\u0E35\u0E49\u0E19\u0E30\u0E04\u0E30"
-  - actorId: 0
+  - actorId: 2
     message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E23\u0E31\u0E1A)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E08\u0E34\u0E25\u0E40\u0E25\u0E35\u0E22\u0E19"
     sprite: {fileID: 21300000, guid: 5dc987b26fa0c194d9368b1d93dce4dc, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!61 &1540293163
 BoxCollider2D:
   m_ObjectHideFlags: 0

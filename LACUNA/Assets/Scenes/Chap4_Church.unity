@@ -497,13 +497,15 @@ MonoBehaviour:
   - actorId: 1
     message: "\u0E07\u0E31\u0E49\u0E19\u0E1E\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E25\u0E2D\u0E07\u0E44\u0E1B\u0E16\u0E32\u0E21\u0E1E\u0E27\u0E01\u0E19\u0E31\u0E49\u0E19\u0E14\u0E39
       \u0E2B\u0E19\u0E39\u0E40\u0E2B\u0E47\u0E19\u0E1E\u0E27\u0E01\u0E19\u0E31\u0E49\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E41\u0E22\u0E01\u0E01\u0E31\u0E1A\u0E0B\u0E34\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E44\u0E1B\u0E40\u0E2D\u0E07"
-  - actorId: 1
-    message: "[\u0E40\u0E14\u0E47\u0E01\u0E2B\u0E0D\u0E34\u0E07\u0E0A\u0E35\u0E49\u0E44\u0E1B\u0E22\u0E31\u0E07\u0E01\u0E25\u0E38\u0E48\u0E21\u0E40\u0E14\u0E47\u0E01
-      \u0E17\u0E35\u0E48\u0E01\u0E33\u0E25\u0E31\u0E07\u0E08\u0E31\u0E1A\u0E01\u0E25\u0E38\u0E48\u0E21\u0E40\u0E25\u0E48\u0E19\u0E02\u0E2D\u0E07\u0E40\u0E25\u0E48\u0E19\u0E01\u0E31\u0E19\u0E2D\u0E22\u0E39\u0E48] "
+  - actorId: 2
+    message: "(\u0E40\u0E14\u0E47\u0E01\u0E2B\u0E0D\u0E34\u0E07\u0E0A\u0E35\u0E49\u0E44\u0E1B\u0E22\u0E31\u0E07\u0E01\u0E25\u0E38\u0E48\u0E21\u0E40\u0E14\u0E47\u0E01
+      \u0E17\u0E35\u0E48\u0E01\u0E33\u0E25\u0E31\u0E07\u0E08\u0E31\u0E1A\u0E01\u0E25\u0E38\u0E48\u0E21\u0E40\u0E25\u0E48\u0E19\u0E02\u0E2D\u0E07\u0E40\u0E25\u0E48\u0E19\u0E01\u0E31\u0E19\u0E2D\u0E22\u0E39\u0E48)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
   - name: "\u0E40\u0E14\u0E47\u0E01\u0E2B\u0E0D\u0E34\u0E07"
+    sprite: {fileID: 0}
+  - name: 
     sprite: {fileID: 0}
 --- !u!114 &157635217
 MonoBehaviour:
@@ -798,7 +800,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &318411672
 PrefabInstance:
@@ -995,7 +997,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437787314
 GameObject:
@@ -1391,22 +1393,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - actorId: 0
-    message: "[\u0E1E\u0E2D\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E21\u0E32\u0E16\u0E36\u0E07
+  - actorId: 1
+    message: "(\u0E1E\u0E2D\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E21\u0E32\u0E16\u0E36\u0E07
       \u0E01\u0E47\u0E44\u0E14\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E27\u0E48\u0E32\u0E40\u0E14\u0E47\u0E01\u0E46
-      \u0E02\u0E2D\u0E07\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E40\u0E14\u0E47\u0E01\u0E01\u0E33\u0E1E\u0E23\u0E49\u0E32\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E42\u0E1A\u0E2A\u0E16\u0E4C\u0E19\u0E35\u0E49\u0E41\u0E17\u0E19\u0E41\u0E1A\u0E1A\u0E0A\u0E31\u0E48\u0E27\u0E04\u0E23\u0E32\u0E27]"
+      \u0E02\u0E2D\u0E07\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E40\u0E14\u0E47\u0E01\u0E01\u0E33\u0E1E\u0E23\u0E49\u0E32\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E42\u0E1A\u0E2A\u0E16\u0E4C\u0E19\u0E35\u0E49\u0E41\u0E17\u0E19\u0E41\u0E1A\u0E1A\u0E0A\u0E31\u0E48\u0E27\u0E04\u0E23\u0E32\u0E27)"
   - actorId: 0
-    message: "<\u0E0B\u0E34\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19\u0E01\u0E31\u0E19\u0E19\u0E30?>"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E32\u0E22\u0E32\u0E21\u0E21\u0E2D\u0E07\u0E2B\u0E32\u0E0B\u0E34\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C
-      \u0E41\u0E15\u0E48\u0E01\u0E47\u0E2B\u0E32\u0E44\u0E21\u0E48\u0E40\u0E08\u0E2D]"
-  - actorId: 0
-    message: "[\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E22\u0E37\u0E19\u0E21\u0E2D\u0E07\u0E2B\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01
+    message: "(\u0E0B\u0E34\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19\u0E01\u0E31\u0E19\u0E19\u0E30?)"
+  - actorId: 1
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E1E\u0E22\u0E32\u0E22\u0E32\u0E21\u0E21\u0E2D\u0E07\u0E2B\u0E32\u0E0B\u0E34\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C
+      \u0E41\u0E15\u0E48\u0E01\u0E47\u0E2B\u0E32\u0E44\u0E21\u0E48\u0E40\u0E08\u0E2D)"
+  - actorId: 1
+    message: "(\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32\u0E22\u0E37\u0E19\u0E21\u0E2D\u0E07\u0E2B\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E0B\u0E31\u0E01\u0E1E\u0E31\u0E01
       \u0E41\u0E15\u0E48\u0E2B\u0E32\u0E44\u0E21\u0E48\u0E40\u0E08\u0E2D\u0E0B\u0E31\u0E01\u0E17\u0E35
-      \u0E40\u0E25\u0E22\u0E40\u0E14\u0E34\u0E19\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E16\u0E32\u0E21\u0E40\u0E14\u0E47\u0E01\u0E41\u0E16\u0E27\u0E19\u0E31\u0E49\u0E19]"
+      \u0E40\u0E25\u0E22\u0E40\u0E14\u0E34\u0E19\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E16\u0E32\u0E21\u0E40\u0E14\u0E47\u0E01\u0E41\u0E16\u0E27\u0E19\u0E31\u0E49\u0E19)"
   actors:
   - name: "\u0E41\u0E1E\u0E19\u0E42\u0E14\u0E23\u0E48\u0E32"
     sprite: {fileID: 21300000, guid: ada6b735aa335c441a2d95c5ea76e979, type: 3}
+  - name: 
+    sprite: {fileID: 0}
 --- !u!114 &469003302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2277,6 +2281,148 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656063966}
   m_CullTransparentMesh: 1
+--- !u!1 &708520983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 708520986}
+  - component: {fileID: 708520985}
+  - component: {fileID: 708520984}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &708520984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708520983}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0e56024c809f84a862d3a84ca0062a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSrc: {fileID: 708520985}
+  musicStart: {fileID: 8300000, guid: 986b672178ea18c4188394902975eb70, type: 3}
+--- !u!82 &708520985
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708520983}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d5fb5e42dd761e248b9816859783eaae, type: 2}
+  m_audioClip: {fileID: 8300000, guid: d7074b7daf86ceb42981e43182ba52ca, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &708520986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708520983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.38893384, y: -0.33629617, z: -1053.8015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &710271347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,7 +3959,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1158656348 stripped
 GameObject:
@@ -4732,7 +4878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171636777856134617, guid: 5e2bd3087079ba34196356b52c30e80c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6171636777856134617, guid: 5e2bd3087079ba34196356b52c30e80c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5205,7 +5351,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648265586
 GameObject:
@@ -5672,7 +5818,7 @@ Transform:
   - {fileID: 919487697}
   - {fileID: 998778551}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867515816
 GameObject:
@@ -6726,7 +6872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.7452393
+      value: 6.7452545
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
