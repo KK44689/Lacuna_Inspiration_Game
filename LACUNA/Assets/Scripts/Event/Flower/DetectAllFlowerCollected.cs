@@ -27,28 +27,20 @@ public class DetectAllFlowerCollected : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // when
         if (DestroyFlowerUI.flowerAllCollected && alreadyTalk == false)
         {
-            print("flower collected");
+            // active grandma
             Npc.SetActive(true);
+
+            // play dialogue when all flower collected
             trigger.StartDialogue();
             allFlowerCollectedDialogue.SetActive(true);
+
+            // active next hint and delete prev hint
             hintButtonPrev.SetActive(false);
             hintButtonNext.SetActive(true);
             alreadyTalk = true;
         }
     }
-
-    // private void OnTriggerEnter2D(Collider2D collider)
-    // {
-    //     if (collider.gameObject.tag.Equals("NPC"))
-    //     {
-    //         if (DestroyFlowerUI.flowerAllCollected == false)
-    //         {
-    //             GameObject temp;
-    //             temp = GameObject.FindWithTag("NPC");
-    //             temp.SetActive(false);
-    //         }
-    //     }
-    // }
 }
