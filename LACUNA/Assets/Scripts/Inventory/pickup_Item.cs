@@ -26,7 +26,6 @@ public class pickup_Item : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            print("souvenir");
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 if (inventory.isFull[i] == false)
