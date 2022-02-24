@@ -6,9 +6,13 @@ using UnityEngine.Rendering;
 public class pieceScript2 : MonoBehaviour
 {
     public Vector3 RightPosition;
+
     public Transform rightPos;
+
     public Transform leftPos;
+
     public Transform topPos;
+
     public Transform bottomPos;
 
     public bool InRightPosition;
@@ -18,7 +22,8 @@ public class pieceScript2 : MonoBehaviour
     {
         RightPosition = transform.position;
         transform.position =
-            new Vector3(Random.Range(leftPos.position.x, rightPos.position.x), Random.Range(bottomPos.position.y, topPos.position.y));
+            new Vector3(Random.Range(leftPos.position.x, rightPos.position.x),
+                Random.Range(bottomPos.position.y, topPos.position.y));
     }
 
     // Update is called once per frame
@@ -26,7 +31,6 @@ public class pieceScript2 : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, RightPosition) < 10f)
         {
-            // print("right pos");
             if (InRightPosition == false)
             {
                 transform.position = RightPosition;

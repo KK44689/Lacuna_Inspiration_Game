@@ -32,12 +32,9 @@ public class DragScriptVertical : MonoBehaviour
             Vector2 mousePosition =
                 Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // Vector2 temp = transform.position;
-            // temp.y = mousePosition.y;
             Vector2 position = rb.position;
             position.y = mousePosition.y;
 
-            // transform.position = temp;
             rb.MovePosition (position);
         }
     }

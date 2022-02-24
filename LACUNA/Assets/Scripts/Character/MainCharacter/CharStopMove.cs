@@ -6,10 +6,14 @@ public class CharStopMove : MonoBehaviour
 {
     public static bool charStop = false;
 
-    void OnTriggerEnter2D(Collider2D other) {
+    // change charStop in PandoraController on collide
+    void OnTriggerEnter2D(Collider2D other)
+    {
         charStop = true;
     }
-    void OnTriggerExit2D(Collider2D other) {
+
+    void OnTriggerExit2D(Collider2D other)
+    {
         charStop = false;
     }
 }

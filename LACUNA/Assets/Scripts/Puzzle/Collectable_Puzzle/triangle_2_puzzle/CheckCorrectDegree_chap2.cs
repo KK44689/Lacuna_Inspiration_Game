@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class CheckCorrectDegree_chap2 : MonoBehaviour
 {
-    // public GameObject checkCollider;
     GameObject eye;
+
     GameObject heart;
+
     GameObject brain;
+
     public GameObject Puzzle;
+
     public GameObject puzzleDetector;
 
-    List<float> targetDegreesEye = new List<float> {-45f};
-    List<float> targetDegreesHeart = new List<float> {45f};
-    List<float> targetDegreesBrain = new List<float> {180f,-180f};
+    List<float> targetDegreesEye = new List<float> { -45f };
+
+    List<float> targetDegreesHeart = new List<float> { 45f };
+
+    List<float> targetDegreesBrain = new List<float> { 180f, -180f };
 
     bool eye_solved;
+
     bool heart_solved;
+
     bool brain_solved;
 
     void Start()
@@ -35,13 +42,16 @@ public class CheckCorrectDegree_chap2 : MonoBehaviour
         CheckAllCorrected();
     }
 
-    void CheckAllCorrected(){
-        if(eye_solved && heart_solved && brain_solved){
+    void CheckAllCorrected()
+    {
+        if (eye_solved && heart_solved && brain_solved)
+        {
             GenCollectable.challangeSolved = true;
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             Puzzle.SetActive(false);
         }
     }
+
     float RoundRotation(GameObject circle)
     {
         float Rotation;
@@ -59,30 +69,35 @@ public class CheckCorrectDegree_chap2 : MonoBehaviour
     void CheckCorrectedDegrees()
     {
         print("brain " + RoundRotation(brain).ToString());
+
         // eye
         if (targetDegreesEye.Contains(RoundRotation(eye)))
         {
             eye_solved = true;
-        }else if(!targetDegreesEye.Contains(RoundRotation(eye))){
+        }
+        else if (!targetDegreesEye.Contains(RoundRotation(eye)))
+        {
             eye_solved = false;
         }
+
         // heart
         if (targetDegreesHeart.Contains(RoundRotation(heart)))
         {
             heart_solved = true;
-        }else if(!targetDegreesHeart.Contains(RoundRotation(heart))){
+        }
+        else if (!targetDegreesHeart.Contains(RoundRotation(heart)))
+        {
             heart_solved = false;
         }
+
         // brain
         if (targetDegreesBrain.Contains(RoundRotation(brain)))
         {
             brain_solved = true;
-        }else if(!targetDegreesBrain.Contains(RoundRotation(brain))){
+        }
+        else if (!targetDegreesBrain.Contains(RoundRotation(brain)))
+        {
             brain_solved = false;
         }
-        print("1 " + eye_solved);
-        print("2 " + heart_solved);
-        print("3 " + brain_solved);
-        // print(Mathf.Round(Rotation));
     }
 }

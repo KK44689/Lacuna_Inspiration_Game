@@ -5,17 +5,11 @@ using UnityEngine;
 public class ActiveAfterGetInspireItem1 : MonoBehaviour
 {
     public GameObject collider;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+        // player collect inspire item -> active collider (chapter 2,3,4)
         if(GenInspireItem.inspireItemPicked){
-            print("move");
             collider.SetActive(true);
         }
     }

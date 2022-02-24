@@ -17,10 +17,6 @@ public class RefreshLog : MonoBehaviour
         RefreshButton.onClick.AddListener (TaskOnClick);
     }
 
-    // // Update is called once per frame
-    // void Update()
-    // {
-    // }
     void TaskOnClick()
     {
         LogRolled.transform.position = LogRoll.startPos;

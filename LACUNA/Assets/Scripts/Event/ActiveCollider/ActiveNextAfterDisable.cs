@@ -5,10 +5,15 @@ using UnityEngine;
 public class ActiveNextAfterDisable : MonoBehaviour
 {
     public GameObject NextCollider;
-    private void Start() {
+
+    private void Start()
+    {
         NextCollider.SetActive(false);
     }
-    private void OnDisable() {
+
+    private void OnDisable()
+    {
+        // current object inactive -> active collider
         NextCollider.SetActive(true);
     }
 }

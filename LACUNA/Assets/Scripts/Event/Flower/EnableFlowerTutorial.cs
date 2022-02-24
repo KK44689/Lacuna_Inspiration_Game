@@ -6,18 +6,9 @@ public class EnableFlowerTutorial : MonoBehaviour
 {
     public static bool flowerTutorialAwake = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     void OnTriggerEnter2D(Collider2D collider)
     {
+        // active flower tutorial
         if (collider.gameObject.tag.Equals("NPC"))
         {
             flowerTutorialAwake = true;

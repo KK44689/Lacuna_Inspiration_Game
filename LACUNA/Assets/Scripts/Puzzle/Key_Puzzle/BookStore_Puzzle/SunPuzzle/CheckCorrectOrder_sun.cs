@@ -100,7 +100,6 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             box8_solved
         )
         {
-            Debug.Log("star puzzle solved");
             Puzzle.SetActive(false);
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             sun_puzzle_solved = true;
@@ -223,15 +222,5 @@ public class CheckCorrectOrder_sun : MonoBehaviour
         {
             box8_solved = true;
         }
-
-        print("1 " + box1_solved);
-        print("2 " + box2_solved);
-        print("3 " + box3_solved);
-        print("4 " + box4_solved);
-        print("5 " + box5_solved);
-        print("6 " + box6_solved);
-        print("7 " + box7_solved);
-        print("8 " + box8_solved);
-        // print(Mathf.Round(Rotation));
     }
 }

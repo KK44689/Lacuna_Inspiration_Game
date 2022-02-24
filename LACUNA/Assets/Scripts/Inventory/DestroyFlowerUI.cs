@@ -14,6 +14,7 @@ public class DestroyFlowerUI : MonoBehaviour
 
     void Awake()
     {
+        // get inventory from player
         inventory =
             GameObject
                 .FindGameObjectWithTag("Player")
@@ -22,6 +23,7 @@ public class DestroyFlowerUI : MonoBehaviour
 
     void Update()
     {
+        // all flower collected delete all flower icon in inventory
         if (
             FlowerPicked.flowerC_Collected &&
             FlowerPicked.flowerE_Collected &&
@@ -30,7 +32,7 @@ public class DestroyFlowerUI : MonoBehaviour
         )
         {
             destroyFlowerUI();
-            for (int i = 4 ;i>0;i--)
+            for (int i = 4; i > 0; i--)
             {
                 inventory.isFull[i] = false;
             }
@@ -46,7 +48,6 @@ public class DestroyFlowerUI : MonoBehaviour
                     flowerAllCollected == false
                 )
                 {
-                    // print(itemButton.name);
                     if (inventory.isFull[i] == false)
                     {
                         inventory.isFull[i] = true;
@@ -54,9 +55,6 @@ public class DestroyFlowerUI : MonoBehaviour
                         inventory.slots[i].transform,
                         false);
                         flowerAllCollected = true;
-
-                        // Destroy (gameObject);
-                        // break;
                     }
                 }
             }
@@ -65,6 +63,7 @@ public class DestroyFlowerUI : MonoBehaviour
 
     public void destroyFlowerUI()
     {
+        // delete item icon in inventory
         foreach (Transform child in transform)
         {
             GameObject.Destroy(child.gameObject);

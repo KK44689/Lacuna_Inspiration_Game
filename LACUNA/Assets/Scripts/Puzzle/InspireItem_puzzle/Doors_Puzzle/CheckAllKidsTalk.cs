@@ -43,7 +43,6 @@ public class CheckAllKidsTalk : MonoBehaviour
                 return false;
             }
         }
-        print("all talked");
         return true;
     }
 }

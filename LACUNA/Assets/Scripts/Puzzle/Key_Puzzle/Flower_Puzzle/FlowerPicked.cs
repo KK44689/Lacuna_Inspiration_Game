@@ -19,12 +19,10 @@ public class FlowerPicked : MonoBehaviour
     public static bool flowerE_Collected = false;
 
     public static bool flowerG_Collected = false;
-    // public static bool flowerAllCollected = false;
 
     private Inventory inventory;
 
     public GameObject itemButton;
-    // GameObject currentButton;
 
     private void Awake()
     {
@@ -44,41 +42,6 @@ public class FlowerPicked : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (
-        //     FlowerPicked.flowerC_Collected &&
-        //     FlowerPicked.flowerE_Collected &&
-        //     FlowerPicked.flowerG_Collected &&
-        //     flowerAllCollected == false
-        // )
-        // {
-        //     flowerAllCollected = true;
-        // }
-        // flowerAllCollected = true; // for test
-        // if (flowerAllCollected)
-        // {
-        //     for (int i = 0; i < inventory.slots.Length; i++)
-        //     {
-        //         if (
-        //             inventory.isFull[i] &&
-        //             itemButton.name == "flower_C_button" ||
-        //             itemButton.name == "flower_E_button" ||
-        //             itemButton.name == "flower_G_button"
-        //         )
-        //         {
-        //             Destroy(currentButton);
-        //         }
-        //         if (inventory.isFull[i] == false)
-        //         {
-        //             inventory.isFull[i] = true;
-        //             currentButton = Instantiate(itemButton,
-        //             inventory.slots[i].transform,
-        //             false);
-        //             Destroy (gameObject);
-        //             break;
-        //         }
-        //     }
-        //     return;
-        // }
         if (
             pickUpAllowed &&
             Input.GetKeyDown(KeyCode.E) &&
@@ -95,12 +58,6 @@ public class FlowerPicked : MonoBehaviour
                 flowerC_Collected = true;
                 for (int i = 0; i < inventory.slots.Length; i++)
                 {
-                    // if (
-                    //     PuzzleCollider.alreadyPickup &&
-                    //     InspireItem.pickUpAllowed
-                    // )
-                    // {
-                    // print(itemButton.name);
                     if (inventory.isFull[i] == false)
                     {
                         inventory.isFull[i] = true;
@@ -110,7 +67,6 @@ public class FlowerPicked : MonoBehaviour
                         Destroy (gameObject);
                         break;
                     }
-                    // }
                 }
             }
             else if (flowerSound.ToString() == "E_cut (UnityEngine.AudioClip)")
@@ -118,12 +74,6 @@ public class FlowerPicked : MonoBehaviour
                 flowerE_Collected = true;
                 for (int i = 0; i < inventory.slots.Length; i++)
                 {
-                    // if (
-                    //     PuzzleCollider.alreadyPickup &&
-                    //     InspireItem.pickUpAllowed
-                    // )
-                    // {
-                    // print(itemButton.name);
                     if (inventory.isFull[i] == false)
                     {
                         inventory.isFull[i] = true;
@@ -133,7 +83,6 @@ public class FlowerPicked : MonoBehaviour
                         Destroy (gameObject);
                         break;
                     }
-                    // }
                 }
             }
             else if (flowerSound.ToString() == "G_cut (UnityEngine.AudioClip)")
@@ -141,12 +90,6 @@ public class FlowerPicked : MonoBehaviour
                 flowerG_Collected = true;
                 for (int i = 0; i < inventory.slots.Length; i++)
                 {
-                    // if (
-                    //     PuzzleCollider.alreadyPickup &&
-                    //     InspireItem.pickUpAllowed
-                    // )
-                    // {
-                    // print(itemButton.name);
                     if (inventory.isFull[i] == false)
                     {
                         inventory.isFull[i] = true;
@@ -156,10 +99,8 @@ public class FlowerPicked : MonoBehaviour
                         Destroy (gameObject);
                         break;
                     }
-                    // }
                 }
             }
-            print(flowerSound.ToString());
 
             // delete flower
             Destroy (gameObject);
@@ -171,7 +112,6 @@ public class FlowerPicked : MonoBehaviour
     {
         PandoraController controller =
             collision.GetComponent<PandoraController>();
-        print(PuzzleCollider.alreadyPickup);
         if (
             collision.gameObject.tag.Equals("Player") &&
             PuzzleCollider.alreadyPickup
@@ -179,7 +119,6 @@ public class FlowerPicked : MonoBehaviour
         {
             pickUpText.SetActive(true);
             pickUpAllowed = true;
-            print (flowerSound);
             controller.PlaySound (flowerSound);
         }
     }

@@ -10,11 +10,6 @@ public class CollectableText : MonoBehaviour
 
     float delay = 0.8f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -25,9 +20,8 @@ public class CollectableText : MonoBehaviour
         }
         if (delay <= 0)
         {
-            print("fade out");
             print(UIGroup.alpha);
-            UIGroup.alpha -= 1.5f*Time.deltaTime;
+            UIGroup.alpha -= 1.5f * Time.deltaTime;
         }
     }
 }

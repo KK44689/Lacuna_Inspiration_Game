@@ -8,10 +8,6 @@ public class SetBoolDoors : MonoBehaviour
 
     bool charEnter = false;
 
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {

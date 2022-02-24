@@ -9,7 +9,6 @@ public class LogRoll : MonoBehaviour
 
     public GameObject enemy;
 
-    // public static bool monsterFall = false;
     public Button RefreshButton;
 
     Rigidbody2D rb2D;
@@ -24,13 +23,13 @@ public class LogRoll : MonoBehaviour
 
     float delayLog = 2f;
 
-    // // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         stopRolling = false;
         hitEnemy = false;
         startPos = transform.position;
-        rb2D = gameObject.AddComponent<Rigidbody2D>();
+        rb2D = GetComponent<Rigidbody2D>();
         RefreshButton.gameObject.SetActive(false);
     }
 
@@ -45,11 +44,10 @@ public class LogRoll : MonoBehaviour
                 GetComponent<Collider2D>(),
                 false);
 
-            rb2D.AddForce(transform.right * 8f);
+            rb2D.AddForce(transform.right * 500f);
         }
         if (hitFloor)
         {
-            print("hit floor");
             stopRolling = true;
             RefreshButton.gameObject.SetActive(true);
             rb2D.Sleep();
@@ -60,7 +58,6 @@ public class LogRoll : MonoBehaviour
         }
         if (hitEnemy)
         {
-            print("hit enemy");
             hitFloor = false;
             RefreshButton.gameObject.SetActive(false);
         }

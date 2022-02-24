@@ -7,22 +7,18 @@ public class MoveCharacter : MonoBehaviour
     public GameObject Character;
 
     public string posName;
+
     public string charType;
 
     bool Return = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     void Update()
     {
         GameObject destinationPoint = GameObject.Find(posName);
+        // move character to position
         if (Return)
         {
-            print("return");
             Character.transform.position = destinationPoint.transform.position;
             Return = false;
         }

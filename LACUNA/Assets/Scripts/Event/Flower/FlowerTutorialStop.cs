@@ -4,21 +4,10 @@ using UnityEngine;
 
 public class FlowerTutorialStop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
+    // detect flower tutorial complete
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (
-            collision.gameObject.tag.Equals("NPC")
-        )
+        if (collision.gameObject.tag.Equals("NPC"))
         {
             FlowerTutorial.flowerTutorial_stop = false;
         }

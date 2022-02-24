@@ -5,6 +5,7 @@ using UnityEngine;
 public class winZone : MonoBehaviour
 {
     public GameObject puzzle;
+
     public GameObject puzzleCollider;
 
     bool target_block_enter = false;
@@ -13,7 +14,6 @@ public class winZone : MonoBehaviour
     {
         if (target_block_enter)
         {
-            print("win");
             GenCollectable.challangeSolved = true;
             puzzleCollider.GetComponent<BoxCollider2D>().enabled = false;
             puzzle.SetActive(false);

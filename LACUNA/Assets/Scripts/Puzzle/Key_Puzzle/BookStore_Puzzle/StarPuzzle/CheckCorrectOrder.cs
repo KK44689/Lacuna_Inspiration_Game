@@ -79,7 +79,6 @@ public class CheckCorrectOrder : MonoBehaviour
             piece5_solved
         )
         {
-            Debug.Log("star puzzle solved");
             Puzzle.SetActive(false);
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             star_puzzle_solved = true;
@@ -145,18 +144,13 @@ public class CheckCorrectOrder : MonoBehaviour
         {
             piece5_solved = true;
         }
-        else{
+        else
+        {
             piece1_solved = false;
             piece2_solved = false;
             piece3_solved = false;
             piece4_solved = false;
             piece5_solved = false;
         }
-        print("1 " + piece1_solved);
-        print("2 " + piece2_solved);
-        print("3 " + piece3_solved);
-        print("4 " + piece4_solved);
-        print("5 " + piece5_solved);
-        // print(Mathf.Round(Rotation));
     }
 }

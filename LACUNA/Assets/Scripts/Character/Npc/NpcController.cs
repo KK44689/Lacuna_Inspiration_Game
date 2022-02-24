@@ -4,34 +4,36 @@ using UnityEngine;
 
 public class NpcController : MonoBehaviour
 {
-    Rigidbody2D rigidbody2d;
+    // Gameobject variables
+    private Rigidbody2D rigidbody2d;
 
-    GameObject pandora;
-
-    public static int direction = 1;
-
-    // public static int sceneID = 0;
-    float speed = 8.4f;
+    private GameObject pandora;
 
     public GameObject talkText;
 
-    // public GameObject dialogueBox;
-    int lookDirecTemp = 1;
+    // Npc movement variables
+    public static int direction = 1;
 
-    // bool talking = false;
-    // bool StopTalking = false;
-    // bool endText = false; // for test
-    public static bool move = false; // for test
+    private float speed = 8.4f;
 
-    public static bool moveNotWait = false; // for test
+    private int lookDirecTemp = 1;
 
+    public static bool move = false;
+
+    public static bool moveNotWait = false;
+
+    private Vector2 position;
+
+    private Transform pandoraTransform;
+
+    private Vector2 pandoraPosition;
+
+    // Animation variables
     Animator animator;
 
-    Vector2 position;
-
-    Transform pandoraTransform;
-
-    Vector2 pandoraPosition;
+    // load/save variables
+    [SerializeField]
+    private NpcData NpcData;
 
     // Start is called before the first frame update
     void Start()
@@ -40,8 +42,19 @@ public class NpcController : MonoBehaviour
 
         talkText.SetActive(false);
 
-        // dialogueBox.SetActive(false);
         animator = gameObject.GetComponent<Animator>();
+
+        // make npc position equals data
+        Vector3 temp = transform.position;
+        temp.x = NpcData.position_npc_x;
+        transform.position = temp;
+    }
+
+    void Update()
+    {
+        // save data
+        NpcData.position_npc_x = transform.position.x;
+        // Debug.Log(NpcData.position_npc_x);
     }
 
     // Update is called once per frame
@@ -55,20 +68,18 @@ public class NpcController : MonoBehaviour
 
         pandoraPosition = pandoraTransform.position;
 
+        // npc move but wait for player
         if (move)
         {
             NpcMove (direction);
-        }
+        } // npc move and not wait for player
         else if (moveNotWait)
         {
             NpcMoveNotWait (direction);
         }
         else
         {
-            // Vector2 position = rigidbody2d.position;
-            // pandora = GameObject.FindWithTag("Player");
-            // Transform pandoraTransform = pandora.transform;
-            // Vector2 pandoraPosition = pandoraTransform.position;
+            // turn npc face direction to player direction
             if (pandoraPosition.x >= position.x)
             {
                 lookDirection(-1);
@@ -84,19 +95,13 @@ public class NpcController : MonoBehaviour
 
     void NpcMove(int direction)
     {
-
-        // Vector2 position = rigidbody2d.position;
-        // pandora = GameObject.FindWithTag("Player");
-        // pandora = GameObject.FindWithTag("Player");
-        // Transform pandoraTransform = pandora.transform;
-        // Vector2 pandoraPosition = pandoraTransform.position;
+        // npc move to the right
         if (direction > 0)
         {
             lookDirection(-1);
             lookDirecTemp = -1;
 
-            // print("grandma right");
-            // stop waiting for Pandora
+            // npc wait for player
             if (Mathf.Abs(position.x) > (pandoraPosition.x + (5f * direction)))
             {
                 animator.SetBool("walk", false);
@@ -109,18 +114,21 @@ public class NpcController : MonoBehaviour
                 position.x = position.x + speed * Time.deltaTime * direction;
                 rigidbody2d.MovePosition (position);
             }
-        }
+        } // npc move to the left
         else if (direction < 0)
         {
             // print("grandma left");
             lookDirection(1);
             lookDirecTemp = 1;
+
+            // npc wait for player
             if (position.x < (pandoraPosition.x + (5f * direction)))
             {
                 animator.SetBool("walk", false);
                 position.x = position.x + 0 * Time.deltaTime * direction;
             }
             else
+            // start walking
             {
                 animator.SetBool("walk", true);
                 position.x = position.x + speed * Time.deltaTime * direction;
@@ -136,11 +144,7 @@ public class NpcController : MonoBehaviour
 
     void NpcMoveNotWait(int direction)
     {
-
-        // Vector2 position = rigidbody2d.position;
-        // pandora = GameObject.FindWithTag("Player");
-        // Transform pandoraTransform = pandora.transform;
-        // Vector2 pandoraPosition = pandoraTransform.position;
+        // npc move to the right
         if (direction > 0)
         {
             lookDirection(-1);
@@ -148,12 +152,11 @@ public class NpcController : MonoBehaviour
             animator.SetBool("walk", true);
             position.x = position.x + speed * Time.deltaTime * direction;
             rigidbody2d.MovePosition (position);
-        }
+        } // npc move to the left
         else if (direction < 0)
         {
             lookDirection(1);
             lookDirecTemp = 1;
-
             animator.SetBool("walk", true);
             position.x = position.x + speed * Time.deltaTime * direction;
             rigidbody2d.MovePosition (position);
@@ -165,6 +168,7 @@ public class NpcController : MonoBehaviour
         }
     }
 
+    // conrtol look direction
     void lookDirection(int direction)
     {
         Vector3 tempScale = transform.localScale;

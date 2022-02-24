@@ -8,12 +8,7 @@ public class ActiveNextCollider : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        // active collider on first active current gameobject
         NextCollider.SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

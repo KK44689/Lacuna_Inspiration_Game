@@ -19,6 +19,7 @@ public class ActiveNextAfterConver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // active collider after dialogue end
         if (
             !(
             DialogueManager.activeMessage <

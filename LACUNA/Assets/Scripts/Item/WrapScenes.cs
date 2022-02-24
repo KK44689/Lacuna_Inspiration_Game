@@ -6,14 +6,10 @@ using UnityEngine.SceneManagement;
 public class WrapScenes : MonoBehaviour
 {
     public GameObject Item;
+
     public int sceneIndex;
 
     private bool isTrigger;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -24,11 +20,12 @@ public class WrapScenes : MonoBehaviour
             warp();
         }
     }
-    public void warp() {
-        Debug.Log("loading..." + sceneIndex);
-        SceneManager.LoadScene(sceneIndex);
-    }
 
+    public void warp()
+    {
+        Debug.Log("loading..." + sceneIndex);
+        SceneManager.LoadScene (sceneIndex);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

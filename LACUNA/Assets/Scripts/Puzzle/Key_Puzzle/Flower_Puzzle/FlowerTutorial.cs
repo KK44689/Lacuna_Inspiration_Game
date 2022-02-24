@@ -103,7 +103,6 @@ public class FlowerTutorial : MonoBehaviour
             pickUpText.SetActive(true);
             pickUpAllowed = true;
 
-            // print (flowerSound);
             controller.PlaySound (flowerSound);
         }
     }

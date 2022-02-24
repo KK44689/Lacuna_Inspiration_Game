@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class DestroyAllItemUI : MonoBehaviour
 {
-    // bool alreadyDestroy = false;
     private Inventory inventory;
 
     public int i;
 
-    // public GameObject keyItemButton;
     // Start is called before the first frame update
     void Start()
     {
+        // get inventory from player
         inventory =
             GameObject
                 .FindGameObjectWithTag("Player")
@@ -22,6 +21,7 @@ public class DestroyAllItemUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // make inventory empty
         for (int i = 0; i < inventory.slots.Length; i++)
         {
             inventory.isFull[i] = false;
@@ -30,6 +30,7 @@ public class DestroyAllItemUI : MonoBehaviour
 
     public void destroyItemUI()
     {
+        // delete item icon in inventory
         for (int i = 0; i < inventory.slots.Length; i++)
         {
             foreach (Transform child in inventory.slots[i].transform)
@@ -37,7 +38,6 @@ public class DestroyAllItemUI : MonoBehaviour
                 GameObject.Destroy(child.gameObject);
             }
         }
-        // alreadyDestroy = true;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

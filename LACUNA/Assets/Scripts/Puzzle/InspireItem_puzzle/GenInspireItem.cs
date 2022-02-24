@@ -12,8 +12,6 @@ public class GenInspireItem : MonoBehaviour
 
     GameObject pandora;
 
-    // public static bool deletePuzzle = false;
-    // Start is called before the first frame update
     void Start()
     {
         puzzleSolved = false;
@@ -30,8 +28,6 @@ public class GenInspireItem : MonoBehaviour
     {
         if (puzzleSolved && inspireItemPicked == false)
         {
-            // InteractPuzzle.SetActive(false);
-            // Puzzle.SetActive(false);
             Physics2D
                 .IgnoreCollision(pandora.GetComponent<Collider2D>(),
                 GetComponent<Collider2D>());
@@ -41,13 +37,8 @@ public class GenInspireItem : MonoBehaviour
             GameObject InspireObject =
                 (GameObject)
                 Instantiate(inspireBW, tempPos, Quaternion.identity);
-            Destroy(gameObject);
+            Destroy (gameObject);
             puzzleSolved = false;
-            // deletePuzzle = true;
-            // if (deletePuzzle)
-            // {
-            //     Destroy(InspireObject);
-            // }
         }
     }
 }

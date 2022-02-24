@@ -5,6 +5,7 @@ using UnityEngine;
 public class DragScriptHorizontal : MonoBehaviour
 {
     private bool isDragging;
+
     Rigidbody2D rb;
 
     bool collided = false;
@@ -31,12 +32,9 @@ public class DragScriptHorizontal : MonoBehaviour
             Vector2 mousePosition =
                 Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // Vector2 temp = transform.position;
-            // temp.y = mousePosition.y;
             Vector2 position = rb.position;
             position.x = mousePosition.x;
 
-            // transform.position = temp;
             rb.MovePosition (position);
         }
     }

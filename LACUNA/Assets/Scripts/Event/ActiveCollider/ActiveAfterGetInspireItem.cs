@@ -14,6 +14,7 @@ public class ActiveAfterGetInspireItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // player collect inspire item -> active collider (chapter 1)
         if(PuzzleCollider.alreadyPickup){
             nextCollider.SetActive(true);
         }

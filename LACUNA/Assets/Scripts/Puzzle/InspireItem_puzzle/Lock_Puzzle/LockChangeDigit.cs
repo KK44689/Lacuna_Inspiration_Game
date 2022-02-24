@@ -41,7 +41,6 @@ public class LockChangeDigit : MonoBehaviour
                 (hit.collider.gameObject.name == ("arrowUp" + orderArrow))
             )
             {
-                // Debug.Log(hit.collider.gameObject.name);
                 digit++;
                 textMesh.text = digit.ToString();
                 if (digit > 9)
@@ -55,7 +54,6 @@ public class LockChangeDigit : MonoBehaviour
                 (hit.collider.gameObject.name == ("arrowDown" + orderArrow))
             )
             {
-                // Debug.Log(hit.collider.gameObject.name);
                 digit--;
                 textMesh.text = digit.ToString();
                 if (digit < 0)

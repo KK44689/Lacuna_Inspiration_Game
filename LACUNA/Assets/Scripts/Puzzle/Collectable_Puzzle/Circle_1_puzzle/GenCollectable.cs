@@ -5,19 +5,20 @@ using UnityEngine;
 public class GenCollectable : MonoBehaviour
 {
     public GameObject collectable;
-    // float delay = 0.3f;
-
 
     public static bool challangeSolved = false;
 
     bool destroyCollectable = false;
+
     Animator animator;
 
+    // load/save puzzle variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        challangeSolved = PuzzleData.puzzle_circle1_solved;
     }
 
     // Update is called once per frame
@@ -39,9 +40,13 @@ public class GenCollectable : MonoBehaviour
             CollectableObject.transform.parent = transform;
             animator = CollectableObject.GetComponent<Animator>();
             animator.SetBool("challenge_solve", true);
-            Destroy(CollectableObject,3f);
-            // Destroy(CollectableObject, 0.5f);
+            Destroy(CollectableObject, 3f);
             destroyCollectable = true;
+            PuzzleData.puzzle_circle1_solved = challangeSolved;
         }
+        Debug
+            .Log("puzzle_circle1_solved_load/save--" +
+            PuzzleData.puzzle_circle1_solved);
+        Debug.Log("puzzle_circle1_solved--" + challangeSolved);
     }
 }

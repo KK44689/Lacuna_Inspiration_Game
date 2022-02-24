@@ -4,60 +4,60 @@ using UnityEngine;
 
 public class PandoraController : MonoBehaviour
 {
+    // Player movement variables
+    private float horizontal;
+
+    [SerializeField]
+    private float speed = 10.0f;
+
+    private int lookDirecTemp = 1;
+
+    // gameobject variables
     Rigidbody2D rigidbody2d;
 
-    float horizontal;
+    private GameObject npc;
 
-    public float speed = 10.0f;
-
-    int lookDirecTemp = 1;
-
-    // public static bool challangeSolved;
-
-    // bool destroyCollectable = false;
-
-    // public GameObject collectable;
-    GameObject npc;
-
-
-    // public GameObject gameOver;
-    // public Transform checkPoint;
-    public GameObject bouquet;
-
-    // public static bool flowerAllCollected = false;
-    // public static bool ReturnCheckPoint = false;
+    // Sound variables
     AudioSource audioSource;
 
+    // Animation variables
     Animator animator;
+
+    // load/save player variables
+    [SerializeField]
+    private PlayerData PlayerData;
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
-        // challangeSolved = false;
+
+        // make player position equals data
+        Vector3 temp = transform.position;
+        temp.x = PlayerData.position_player_x;
+        transform.position = temp;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // if (ReturnCheckPoint)
-        // {
-        //     transform.position = checkPoint.position;
-        //     EnemyController.gameover = false;
-        //     ReturnCheckPoint = false;
-        //     gameOver.SetActive(false);
-        // }
+        // save data
+        PlayerData.position_player_x = transform.position.x;
+        // Debug.Log(PlayerData.position_player_x);
     }
 
     void FixedUpdate()
     {
         npc = GameObject.FindWithTag("NPC");
-        // generateBouquet();
-        if(CharStopMove.charStop){
+
+        // stop pandora when collide to collider
+        if (CharStopMove.charStop)
+        {
             animator.SetBool("walk", false);
             return;
         }
+
+        // pandora stop moving when dialogue box active
         if (DialogueManager.isActive == true)
         {
             if (transform.position.x >= npc.transform.position.x)
@@ -79,16 +79,19 @@ public class PandoraController : MonoBehaviour
             animator.SetBool("walk", false);
             return;
         }
+
+        // pandora control walking
         PlayerWalk();
-        // generateCollectable();
+
+        // play collect item sound
         PlayCollectitemSound();
     }
 
     void PlayCollectitemSound()
     {
+        // if pandora collect inspire item play sound
         if (InspireItem.PlayPickupSound)
         {
-            // print("test");
             SoundManager.PlaySoundItem("receiveItem");
             InspireItem.PlayPickupSound = false;
         }
@@ -104,20 +107,17 @@ public class PandoraController : MonoBehaviour
             lookDirection(-1);
             lookDirecTemp = -1;
             animator.SetBool("walk", true);
-            // Debug.Log("right");
         }
         else if (horizontal < 0)
         {
             lookDirection(1);
             lookDirecTemp = 1;
             animator.SetBool("walk", true);
-            // Debug.Log("left");
         }
         else
         {
             lookDirection (lookDirecTemp);
             animator.SetBool("walk", false);
-            // Debug.Log("idle");
         }
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
@@ -131,24 +131,6 @@ public class PandoraController : MonoBehaviour
         tempScale.x = direction;
         transform.localScale = tempScale;
     }
-
-    // void generateCollectable()
-    // {
-    //     if (challangeSolved && destroyCollectable == false)
-    //     {
-    //         print("show collectable");
-    //         Vector2 tempPos = transform.position;
-    //         tempPos.y = transform.position.y + 3f;
-
-    //         GameObject CollectableObject =
-    //             (GameObject)
-    //             Instantiate(collectable, tempPos, Quaternion.identity);
-    //         PositionPickedUpItem CollectableObjectPos =
-    //             CollectableObject.GetComponent<PositionPickedUpItem>();
-    //         Destroy(CollectableObject, 0.5f);
-    //         destroyCollectable = true;
-    //     }
-    // }
 
     public void PlaySound(AudioClip clip)
     {

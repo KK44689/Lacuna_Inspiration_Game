@@ -15,6 +15,7 @@ public class FixXAxis_E : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // make E button not inverse on npc
         Vector2 temp = transform.localScale;
         if (npc.transform.localScale.x > 0)
         {

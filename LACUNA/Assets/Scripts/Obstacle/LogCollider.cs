@@ -8,13 +8,9 @@ public class LogCollider : MonoBehaviour
 
     public GameObject logRoll;
 
-    bool alreadyTest = true; // test purpose
-
     public static bool hideLog = false;
 
     bool pickUpAllowed;
-
-    // public GameObject RefreshButton;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +23,11 @@ public class LogCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E) && PuzzleCollider.alreadyPickup)
+        if (
+            pickUpAllowed &&
+            Input.GetKeyDown(KeyCode.E) &&
+            PuzzleCollider.alreadyPickup
+        )
         {
             LogRoll.hitFloor = false;
             LogRoll.hitEnemy = false;
@@ -38,8 +38,10 @@ public class LogCollider : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // real one : PuzzleCollider.alreadyPickup
-        if (collision.gameObject.tag.Equals("Player") && alreadyTest && PuzzleCollider.alreadyPickup)
+        if (
+            collision.gameObject.tag.Equals("Player") &&
+            PuzzleCollider.alreadyPickup
+        )
         {
             pickUpText.SetActive(true);
             pickUpAllowed = true;

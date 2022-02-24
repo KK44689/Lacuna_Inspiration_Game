@@ -25,8 +25,8 @@ public class CheckCorrectOrder_moon : MonoBehaviour
     public GameObject Puzzle;
 
     public GameObject puzzleDetector;
-    public GameObject getInspireItemDetector;
 
+    public GameObject getInspireItemDetector;
 
     bool
 
@@ -78,7 +78,7 @@ public class CheckCorrectOrder_moon : MonoBehaviour
             square3_solved &&
             square4_solved &&
             square5_solved &&
-            square6_solved 
+            square6_solved
         )
         {
             Debug.Log("star puzzle solved");
@@ -162,13 +162,5 @@ public class CheckCorrectOrder_moon : MonoBehaviour
         {
             square6_solved = true;
         }
-
-        print("1 " + square1_solved);
-        print("2 " + square2_solved);
-        print("3 " + square3_solved);
-        print("4 " + square4_solved);
-        print("5 " + square5_solved);
-        print("6 " + square6_solved);
-        // print(Mathf.Round(Rotation));
     }
 }

@@ -7,6 +7,8 @@ public class Detect_ActiveNextCollider : MonoBehaviour
     public GameObject NextCollider;
 
     public string charType;
+
+    // active collider when character collide
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals(charType))

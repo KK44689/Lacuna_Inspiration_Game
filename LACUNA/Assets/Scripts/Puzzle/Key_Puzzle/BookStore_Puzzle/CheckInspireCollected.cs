@@ -17,7 +17,6 @@ public class CheckInspireCollected : MonoBehaviour
     {
         if (GenInspireItem.inspireItemPicked)
         {
-            print("inspire item collected");
             PuzzleCollider.GetComponent<BoxCollider2D>().enabled = true;
         }
     }

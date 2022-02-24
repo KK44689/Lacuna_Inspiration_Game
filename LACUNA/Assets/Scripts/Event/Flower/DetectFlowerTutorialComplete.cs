@@ -15,6 +15,7 @@ public class DetectFlowerTutorialComplete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // active collider when flower tutorial complete
         if (FlowerTutorial.flowerCorrect_Collected)
         {
             nextCollider.SetActive(true);

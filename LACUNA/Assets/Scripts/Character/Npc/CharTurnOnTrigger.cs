@@ -6,6 +6,7 @@ public class CharTurnOnTrigger : MonoBehaviour
 {
     public GameObject character;
 
+    // when collide turn face direction of a character
     private void OnTriggerEnter2D(Collider2D other)
     {
         character.transform.localScale =

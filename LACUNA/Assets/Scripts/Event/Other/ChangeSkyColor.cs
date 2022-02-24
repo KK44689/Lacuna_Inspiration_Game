@@ -16,12 +16,8 @@ public class ChangeSkyColor : MonoBehaviour
     {
         //Fetch the SpriteRenderer from the GameObject
         SpriteRenderer = sky.GetComponent<SpriteRenderer>();
+
         //Set the GameObject's Color quickly to a set Color (blue)
         SpriteRenderer.color = NewColor;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

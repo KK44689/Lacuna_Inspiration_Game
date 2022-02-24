@@ -11,18 +11,10 @@ public class CheckCorrectDigits : MonoBehaviour
 
     public int orderDigit;
 
-    // bool
-
-    //         digit1_solve,
-    //         digit2_solve,
-    //         digit3_solve,
-    //         digit4_solve;
-
     public static bool[] isCorrect;
 
     bool correct = false;
 
-    // List<bool> allCorrect = new List<bool> { false, false, false, false };
     void Start()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
@@ -35,7 +27,6 @@ public class CheckCorrectDigits : MonoBehaviour
         allCorrect();
         if (correct)
         {
-            print("gen inspire");
             GenInspireItem.puzzleSolved = true;
         }
     }
@@ -59,7 +50,8 @@ public class CheckCorrectDigits : MonoBehaviour
         {
             isCorrect[orderDigit] = true;
         }
-        else{
+        else
+        {
             isCorrect[orderDigit] = false;
         }
     }

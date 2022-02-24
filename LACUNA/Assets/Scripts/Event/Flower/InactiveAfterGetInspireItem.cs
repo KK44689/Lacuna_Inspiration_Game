@@ -5,16 +5,12 @@ using UnityEngine;
 public class InactiveAfterGetInspireItem : MonoBehaviour
 {
     public GameObject Button;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if(PuzzleCollider.alreadyPickup){
+        if (PuzzleCollider.alreadyPickup)
+        {
             Button.SetActive(false);
         }
     }

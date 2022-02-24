@@ -10,8 +10,6 @@ public class CollectableDetecter : MonoBehaviour
 
     public static bool showPuzzle = false;
 
-    // public GameObject Puzzle;
-    // Start is called before the first frame update
     void Start()
     {
         pickUpText.SetActive(false);

@@ -16,12 +16,10 @@ public class EnemyController : MonoBehaviour
 
     public static bool monsterInactive = false;
 
-    // private bool flip;
     public GameObject pandora;
 
     public GameObject gameOver;
 
-    // public static bool monsterFall = false;
     public GameObject
 
             startPos,
@@ -48,8 +46,6 @@ public class EnemyController : MonoBehaviour
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
-        // startPos = GameObject.Find("startPos").GetComponent<Transform>();
-        // stopPos = GameObject.Find("stopPos").GetComponent<Transform>();
     }
 
     void Update()
@@ -57,6 +53,8 @@ public class EnemyController : MonoBehaviour
         float distanceToPlayer =
             Vector2.Distance(transform.position, pandora.transform.position);
         ReturnToStartPoint();
+
+        // Attack player when player in attack range
         if ((distanceToPlayer < attackRange) && mustDetect)
         {
             if (gameObject.name == "Monster03" || gameObject.name == "Monster04"
@@ -68,27 +66,24 @@ public class EnemyController : MonoBehaviour
                 }
                 else
                 {
-                    print("chase player mon 3/4");
                     ChasePlayer();
                 }
             }
             else
             {
-                print("chase player");
                 ChasePlayer();
             }
         }
         else
         {
             rb.velocity = new Vector2(0, 0);
-
-            // detectedPlayer = false;
             if (mustPatrol)
             {
                 monsterWalk();
             }
             else
             {
+                // make monster inactive
                 mustDetect = false;
                 animator.SetBool("walk", false);
                 monsterInactive = true;
@@ -169,6 +164,7 @@ public class EnemyController : MonoBehaviour
 
     void ReturnToStartPoint()
     {
+        // monster return to start position when player gameover
         if (ReturnToCheckPoint.ReturnCheckPoint)
         {
             transform.position = startPos.transform.position;
@@ -177,11 +173,12 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // when player collide with monster -> gameover
         if (collision.gameObject.tag.Equals("Player") && gameover == false)
         {
             gameover = true;
             gameOver.SetActive(true);
-            
+
             if (gameObject.name == "Monster02")
             {
                 ReturnToCheckPoint.checkPoint = "checkpoint1";
@@ -190,8 +187,8 @@ public class EnemyController : MonoBehaviour
             {
                 ReturnToCheckPoint.checkPoint = "checkpoint2";
             }
-            // gameObject.transform.position = stopPos.transform.position;
         }
+        // log collide with monster -> monster inactive
         if (collision.gameObject.tag.Equals("Log") && gameover == false)
         {
             mustPatrol = false;

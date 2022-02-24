@@ -13,12 +13,15 @@ public class DialogueDetectPressE : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // hide E button
+
         talkText.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // when player collide and E button pressed start dialogue
         if (PlayerEnter && Input.GetKeyDown(KeyCode.E))
         {
             trigger.StartDialogue();
@@ -27,6 +30,7 @@ public class DialogueDetectPressE : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        // player collide show E button
         if (collider.gameObject.tag.Equals("Player"))
         {
             PlayerEnter = true;
@@ -36,6 +40,7 @@ public class DialogueDetectPressE : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
+        // when player exit hide E button
         if (collider.gameObject.tag.Equals("Player"))
         {
             PlayerEnter = false;

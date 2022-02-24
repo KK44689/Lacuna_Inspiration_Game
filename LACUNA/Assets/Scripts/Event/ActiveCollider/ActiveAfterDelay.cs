@@ -12,6 +12,7 @@ public class ActiveAfterDelay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // active collider after delays
         if (delay > 0)
         {
             delay -= Time.deltaTime;

@@ -10,6 +10,7 @@ public class FishingPuzzle : MonoBehaviour
 
     [SerializeField]
     Transform bottomPivot;
+
     [SerializeField]
     Transform topPivotHook;
 
@@ -63,9 +64,6 @@ public class FishingPuzzle : MonoBehaviour
     [SerializeField]
     Transform progressBarContainer;
 
-    // [SerializeField]
-    // Transform HookAreaContainer;
-
     bool pause = false;
 
     [SerializeField]
@@ -89,7 +87,6 @@ public class FishingPuzzle : MonoBehaviour
 
     private void ResizeHookArea()
     {
-        // Bounds b = hookImage.bounds;
         float ySize = hookImage.rectTransform.rect.height;
         Vector3 ls = hook.localScale;
         hookSize = Random.Range(0.08f, 0.25f);
@@ -122,7 +119,6 @@ public class FishingPuzzle : MonoBehaviour
         if (min < fishPosition && fishPosition < max)
         {
             hookProgress += hookPower * Time.deltaTime;
-            // failTimer = 5f;
         }
         else
         {
@@ -147,7 +143,6 @@ public class FishingPuzzle : MonoBehaviour
         fishRod.SetActive(true);
         gameObject.SetActive(false);
         DelayBeforeFishing.delay = Random.Range(1f, 5f);
-        print("lose");
     }
 
     void Win()
@@ -157,30 +152,29 @@ public class FishingPuzzle : MonoBehaviour
         DelayBeforeFishing.delay = Random.Range(1f, 5f);
         fishRod.SetActive(true);
         gameObject.SetActive(false);
-        print("fish caughted");
     }
 
     void Hook()
     {
         float ySize = hookImage.rectTransform.rect.height;
-        print("bottom "+bottomPivotHook.position.y.ToString());
-        print("top "+topPivotHook.position.y.ToString());
         if (Input.GetMouseButton(0))
         {
             hookPullVelocity += hookPullPower * Time.deltaTime;
         }
         hookPullVelocity -= hookGravityPower * Time.deltaTime;
         hookPosition += hookPullVelocity;
-        
-        if (bottomPivotHook.position.y <= bottomPivot.position.y && hookPullVelocity < 0f)
+
+        if (
+            bottomPivotHook.position.y <= bottomPivot.position.y &&
+            hookPullVelocity < 0f
+        )
         {
             hookPullVelocity = 0f;
         }
-        // if (hookPosition - hookSize / 2 <= 0f && hookPullVelocity < 0f)
-        // {
-        //     hookPullVelocity = 0f;
-        // }
-        if (topPivotHook.position.y >= topPivot.position.y && hookPullVelocity > 0f)
+        if (
+            topPivotHook.position.y >= topPivot.position.y &&
+            hookPullVelocity > 0f
+        )
         {
             hookPullVelocity = 0f;
         }
@@ -188,8 +182,8 @@ public class FishingPuzzle : MonoBehaviour
         hookPosition =
             Mathf.Clamp(hookPosition, hookSize / 2, 1 - hookSize / 2);
 
-        // print (hookPosition);
-        hook.position = Vector3.Lerp(bottomPivot.position, topPivot.position, hookPosition);
+        hook.position =
+            Vector3.Lerp(bottomPivot.position, topPivot.position, hookPosition);
     }
 
     void Fish()

@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Wrap : MonoBehaviour
 {
-    public int sceneIndex;
+    public int currentScene;
+    public int sceneTo;
+
+    [SerializeField]
+    private IndexSceneData IndexSceneData;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,7 +19,18 @@ public class Wrap : MonoBehaviour
 
     public void warp()
     {
-        Debug.Log("loading..." + sceneIndex);
-        SceneManager.LoadScene(sceneIndex);
+        Debug.Log("loading..." + sceneTo);
+        SceneManager.LoadScene(sceneTo);
+    }
+
+    public void Update()
+    {
+        //PlayerPrefs.SetInt("currentSceneIndex", sceneIndex);
+
+
+        // do another method 
+        // save in SystemData.currentSceneIndex 
+        IndexSceneData.currentSceneIndex = currentScene;
+        Debug.Log(IndexSceneData.currentSceneIndex);
     }
 }

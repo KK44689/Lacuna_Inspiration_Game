@@ -18,12 +18,6 @@ public class ChangeDigits : MonoBehaviour
         digit = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void IncreaseDigit()
     {
         this.digit++;

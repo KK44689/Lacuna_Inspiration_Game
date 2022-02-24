@@ -13,8 +13,9 @@ public class LoadNextSceneWithParameter : MonoBehaviour
 
     void Update()
     {
-        StaticClass.CrossSceneInformation =
-            CheckAllBookStorePuzzleSolved.allBookStorePuzzleSolved;
+        // collect variable from current scenes
+        // StaticClass.CrossSceneInformation =
+        //     CheckAllBookStorePuzzleSolved.allBookStorePuzzleSolved;
         if (startFade)
         {
             if (delay > 0)

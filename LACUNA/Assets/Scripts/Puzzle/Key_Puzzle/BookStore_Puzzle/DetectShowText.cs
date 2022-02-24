@@ -10,7 +10,6 @@ public class DetectShowText : MonoBehaviour
 
     bool showPuzzle = false;
 
-    // public GameObject Puzzle;
     // Start is called before the first frame update
     void Start()
     {

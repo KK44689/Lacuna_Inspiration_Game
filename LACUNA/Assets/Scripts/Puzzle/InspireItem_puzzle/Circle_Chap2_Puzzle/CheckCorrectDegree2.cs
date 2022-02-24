@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class CheckCorrectDegree2 : MonoBehaviour
 {
-    // public GameObject checkCollider;
     GameObject circle1;
+
     GameObject circle2;
+
     public GameObject Puzzle;
+
     GameObject circle3;
+
     GameObject circle4;
 
-    List<float> targetDegrees1 = new List<float> { -45f};
-    List<float> targetDegrees2 = new List<float> {-90f};
-    List<float> targetDegrees3 = new List<float> { -135f};
+    List<float> targetDegrees1 = new List<float> { -45f };
+
+    List<float> targetDegrees2 = new List<float> { -90f };
+
+    List<float> targetDegrees3 = new List<float> { -135f };
 
     bool circle1_solved;
 
@@ -37,14 +42,16 @@ public class CheckCorrectDegree2 : MonoBehaviour
         CheckAllCorrected();
     }
 
-    void CheckAllCorrected(){
-        if(circle1_solved && circle2_solved && circle3_solved){
-            // GenCollectable.challangeSolved = true;
+    void CheckAllCorrected()
+    {
+        if (circle1_solved && circle2_solved && circle3_solved)
+        {
             GenInspireItem.puzzleSolved = true;
             print("Pencil Gen");
             Puzzle.SetActive(false);
         }
     }
+
     float RoundRotation(GameObject circle)
     {
         float Rotation;
@@ -65,27 +72,30 @@ public class CheckCorrectDegree2 : MonoBehaviour
         if (targetDegrees1.Contains(RoundRotation(circle1)))
         {
             circle1_solved = true;
-        }else if(!targetDegrees1.Contains(RoundRotation(circle1))){
+        }
+        else if (!targetDegrees1.Contains(RoundRotation(circle1)))
+        {
             circle1_solved = false;
         }
+
         // circle_2
         if (targetDegrees2.Contains(RoundRotation(circle2)))
         {
             circle2_solved = true;
-        }else if(!targetDegrees2.Contains(RoundRotation(circle2))){
+        }
+        else if (!targetDegrees2.Contains(RoundRotation(circle2)))
+        {
             circle2_solved = false;
         }
+
         // circle_3
         if (targetDegrees3.Contains(RoundRotation(circle3)))
         {
             circle3_solved = true;
-        }else if(!targetDegrees3.Contains(RoundRotation(circle3))){
+        }
+        else if (!targetDegrees3.Contains(RoundRotation(circle3)))
+        {
             circle3_solved = false;
         }
-        
-        print("1 " + circle1_solved);
-        print("2 " + circle2_solved);
-        print("3 " + circle3_solved);
-        // print(Mathf.Round(Rotation));
     }
 }

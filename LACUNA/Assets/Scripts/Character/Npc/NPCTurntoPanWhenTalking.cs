@@ -15,6 +15,8 @@ public class NPCTurntoPanWhenTalking : MonoBehaviour
         {
             pandora = GameObject.FindWithTag("Player");
             pandoraPosition = pandora.transform.position;
+            
+            // npc turn head to player direction
             if (pandoraPosition.x >= transform.position.x)
             {
                 Vector3 tempScale = transform.localScale;

@@ -28,7 +28,6 @@ public class DelayBeforeFishing : MonoBehaviour
         if (delay <= 0)
         {
             fishingPuzzle.SetActive(true);
-            // delay = Random.Range(1f, 5f);
         }
         if (gameObject.active)
         {

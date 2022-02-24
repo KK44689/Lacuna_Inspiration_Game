@@ -15,6 +15,7 @@ public class DetectAlreadyFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // active collider after return from black fade
         if (FadeBlack.alreadyFade)
         {
             nextCollider.SetActive(true);

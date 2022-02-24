@@ -18,6 +18,7 @@ public class ActiveAfterPlaySound : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        // active after play sound
         if (!audioSource.isPlaying)
         {
             nextCollider.SetActive(true);

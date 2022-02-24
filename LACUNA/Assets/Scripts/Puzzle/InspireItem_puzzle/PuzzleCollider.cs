@@ -1,26 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 // Show puzzle + gen inspire item
 public class PuzzleCollider : MonoBehaviour
 {
     public GameObject pickUpText;
 
     public GameObject Puzzle;
+
     public GameObject pandora;
 
     public GameObject InteractPuzzle;
 
     public GameObject inspireBW;
 
-    public static bool puzzleSolved;
+    public static bool puzzleSolved = false;
 
     public static bool alreadyPickup = false;
+
     public static bool puzzleAwake = false;
 
     bool showPuzzle = false;
 
     public static bool deletePuzzle = false;
+
+    // load/save puzzle variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +35,9 @@ public class PuzzleCollider : MonoBehaviour
         pickUpText.SetActive(false);
         Puzzle.SetActive(false);
         InteractPuzzle.SetActive(false);
-        puzzleSolved = false;
+
+        // puzzleSolved = false;
+        puzzleSolved = PuzzleData.puzzle_storage_solved;
     }
 
     // Update is called once per frame
@@ -40,19 +49,17 @@ public class PuzzleCollider : MonoBehaviour
             Puzzle.SetActive(true);
             InteractPuzzle.SetActive(true);
         }
-    }
-
-    void FixedUpdate()
-    {
         generateInspireItem();
     }
+
+    // void FixedUpdate()
+    // {
+    // }
 
     void generateInspireItem()
     {
         if (puzzleSolved)
         {
-            // InteractPuzzle.SetActive(false);
-            // Puzzle.SetActive(false);
             Physics2D
                 .IgnoreCollision(pandora.GetComponent<Collider2D>(),
                 GetComponent<Collider2D>());
@@ -62,18 +69,22 @@ public class PuzzleCollider : MonoBehaviour
             GameObject InspireObject =
                 (GameObject)
                 Instantiate(inspireBW, tempPos, Quaternion.identity);
-            puzzleSolved = false;
+            Destroy(gameObject);
+            // puzzleSolved = false;
             deletePuzzle = true;
-            // if (deletePuzzle)
-            // {
-            //     Destroy(InspireObject);
-            // }
+            PuzzleData.puzzle_storage_solved = puzzleSolved;
         }
+        Debug.Log("puzzle_storage_solved_load/save--" + PuzzleData.puzzle_storage_solved);
+        Debug.Log("puzzle_storage_solved_solved--" + puzzleSolved);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Player") && deletePuzzle == false && puzzleAwake)
+        if (
+            collision.gameObject.tag.Equals("Player") &&
+            deletePuzzle == false &&
+            puzzleAwake
+        )
         {
             pickUpText.SetActive(true);
             showPuzzle = true;

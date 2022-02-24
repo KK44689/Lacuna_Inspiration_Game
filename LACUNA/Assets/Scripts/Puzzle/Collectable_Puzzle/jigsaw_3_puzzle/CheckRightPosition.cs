@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckRightPosition : MonoBehaviour
 {
     List<bool> CheckRightPos = new List<bool>();
+
     public GameObject PuzzleContainer;
 
     bool allCorrect = false;
@@ -16,7 +17,6 @@ public class CheckRightPosition : MonoBehaviour
         for (int i = 0; i < 36; i++)
         {
             CheckRightPos.Add(false);
-            // print(i.ToString() + CheckRightPos[i].ToString());
         }
     }
 

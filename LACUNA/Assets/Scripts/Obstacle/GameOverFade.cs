@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class GameOverFade : MonoBehaviour
 {
-    // public static Animator animator;
     public Image blackFade;
 
     float delay = 2f;
@@ -15,7 +14,6 @@ public class GameOverFade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // animator = gameObject.GetComponent<Animator>();
         blackFade.canvasRenderer.SetAlpha(0.0f);
     }
 
@@ -24,7 +22,6 @@ public class GameOverFade : MonoBehaviour
     {
         if (EnemyController.gameover)
         {
-            // animator.SetBool("Fade_In", true);
             fadeIn();
             if (delayFadeIn > 0)
             {
@@ -41,7 +38,6 @@ public class GameOverFade : MonoBehaviour
                     ReturnToCheckPoint.ReturnCheckPoint = true;
                     fadeOut();
                     delay = 2f;
-                    // gameObject.SetActive(false);
                 }
             }
         }

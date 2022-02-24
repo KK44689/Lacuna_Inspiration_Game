@@ -11,15 +11,11 @@ public class pickup_Item : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // get inventory from player
         inventory =
             GameObject
                 .FindGameObjectWithTag("Player")
                 .GetComponent<Inventory>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -34,7 +30,7 @@ public class pickup_Item : MonoBehaviour
                     Instantiate(itemButton,
                     inventory.slots[i].transform,
                     false);
-                    // Destroy (gameObject);
+
                     break;
                 }
             }

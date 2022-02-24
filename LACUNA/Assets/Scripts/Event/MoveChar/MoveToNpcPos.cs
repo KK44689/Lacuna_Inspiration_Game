@@ -5,15 +5,11 @@ using UnityEngine;
 public class MoveToNpcPos : MonoBehaviour
 {
     GameObject npc;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        // move this gameobject to npc position
         npc = GameObject.FindWithTag("NPC");
         transform.position = npc.transform.position;
     }

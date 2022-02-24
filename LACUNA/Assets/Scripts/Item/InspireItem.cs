@@ -5,13 +5,10 @@ using UnityEngine;
 public class InspireItem : MonoBehaviour
 {
     // pop up E
-    public GameObject pickUpText;
-
+    // public GameObject pickUpText;
     // check that it's player who pick up
     public static bool pickUpAllowed = false;
 
-    // show that already pick up item
-    // public static bool alreadyPickup = false;
     public static bool destroyInspireBW = false;
 
     public static bool PlayPickupSound = false;
@@ -19,30 +16,30 @@ public class InspireItem : MonoBehaviour
     // get colored item
     public ConvertToColor convert_color;
 
+    // load/save puzzle variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     // Start is called before the first frame update
     void Start()
     {
         // hide E
-        pickUpText.SetActive(false);
-        // alreadyPickup = false;
+        // pickUpText.SetActive(false);
+        PuzzleCollider.alreadyPickup = PuzzleData.puzzle_storage_alreadyPicked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
+        //  && Input.GetKeyDown(KeyCode.E)
+        if (pickUpAllowed)
         {
             PuzzleCollider.alreadyPickup = true;
             GenInspireItem.inspireItemPicked = true;
             PlayPickupSound = true;
-            pickUpText.SetActive(false);
-            // convert_color.GenColorObj();
-            PuzzleCollider.deletePuzzle = true;            
-            // destroyInspireBW = false;
-            // delete Black-White item
-            // Destroy(gameObject);
-            // PandoraController.inspireItemPuzzleSolved = false;
-            // gameObject.SetActive(false);
+            PuzzleData.puzzle_storage_alreadyPicked = PuzzleCollider.alreadyPickup;
+            // pickUpText.SetActive(false);
+            PuzzleCollider.deletePuzzle = true;
         }
     }
 
@@ -50,7 +47,7 @@ public class InspireItem : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            pickUpText.SetActive(true);
+            // pickUpText.SetActive(true);
             pickUpAllowed = true;
         }
     }
@@ -59,7 +56,7 @@ public class InspireItem : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            pickUpText.SetActive(false);
+            // pickUpText.SetActive(false);
             pickUpAllowed = false;
         }
     }

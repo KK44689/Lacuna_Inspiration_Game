@@ -15,6 +15,7 @@ public class FixXAxis_E_Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // make E button not inverse on player
         Vector2 temp = transform.localScale;
         if (player.transform.localScale.x > 0)
         {

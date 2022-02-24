@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class MultipleFadeBlack : MonoBehaviour
 {
     public Image blackFade;
 
     float delay = 2f;
+
     public static bool alreadyFade = false;
 
     float delayFadeIn = 5f;
@@ -16,7 +16,6 @@ public class MultipleFadeBlack : MonoBehaviour
     // Start is called before the first frame update
     private void OnEnable()
     {
-        // animator = gameObject.GetComponent<Animator>();
         blackFade.canvasRenderer.SetAlpha(0.0f);
         delay = 2f;
         delayFadeIn = 5f;

@@ -6,23 +6,15 @@ public class ReturnToCheckPoint : MonoBehaviour
 {
     public static bool ReturnCheckPoint = false;
 
-    // GameObject pandora;
     public static string checkPoint;
 
     GameObject checkPointPos;
 
     public GameObject gameOver;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // pandora = GameObject.FindWithTag("Player");
-    }
-
     // Update is called once per frame
     void Update()
     {
-        // checkPoint = " ";
         if (ReturnCheckPoint)
         {
             ReturnPandoraToCheckpoint(checkPoint);
@@ -31,6 +23,7 @@ public class ReturnToCheckPoint : MonoBehaviour
 
     void ReturnPandoraToCheckpoint(string checkpoint)
     {
+        // move player to checkpoint base on monster position
         switch (checkpoint)
         {
             case "checkpoint1":

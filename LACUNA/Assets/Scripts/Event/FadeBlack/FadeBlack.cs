@@ -15,7 +15,6 @@ public class FadeBlack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // animator = gameObject.GetComponent<Animator>();
         blackFade.canvasRenderer.SetAlpha(0.0f);
     }
 

@@ -10,6 +10,7 @@ public class pickup_InspireItem : MonoBehaviour
 
     private void Awake()
     {
+        // get inventory from player
         inventory =
             GameObject
                 .FindGameObjectWithTag("Player")
@@ -18,14 +19,10 @@ public class pickup_InspireItem : MonoBehaviour
 
     void Update()
     {
-        // print(inventory.slots.Length);
-        // if (others.CompareTag("Player"))
-        // {
         for (int i = 0; i < inventory.slots.Length; i++)
         {
             if (PuzzleCollider.alreadyPickup && InspireItem.pickUpAllowed)
             {
-                // print(itemButton.name);
                 if (inventory.isFull[i] == false)
                 {
                     inventory.isFull[i] = true;
@@ -37,6 +34,5 @@ public class pickup_InspireItem : MonoBehaviour
                 }
             }
         }
-        // }
     }
 }

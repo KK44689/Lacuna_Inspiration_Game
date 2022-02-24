@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    // add text and actor to array
     public Message[] messages;
+
     public Actor[] actors;
-    public void StartDialogue(){
-        FindObjectOfType<DialogueManager>().OpenDialogue(messages,actors);
+
+    public void StartDialogue()
+    {
+        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
     }
 }
 
 [System.Serializable]
-public class Message {
-        public int actorId;
-        public string message;
-    }
+public class Message
+{
+    public int actorId;
+
+    public string message;
+}
 
 [System.Serializable]
-    public class Actor {
-        public string name;
-        public Sprite sprite;
-    }
+public class Actor
+{
+    public string name;
+
+    public Sprite sprite;
+}

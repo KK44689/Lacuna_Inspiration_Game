@@ -10,6 +10,7 @@ public class piecesScript : MonoBehaviour
     public bool InRightPosition;
 
     public bool Selected;
+
     GameObject pandora;
 
     // Start is called before the first frame update

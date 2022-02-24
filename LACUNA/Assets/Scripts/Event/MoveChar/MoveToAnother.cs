@@ -15,6 +15,7 @@ public class MoveToAnother : MonoBehaviour
 
     private void Update()
     {
+        // move to another scene after delays
         if (delay > 0)
         {
             delay-= Time.deltaTime;

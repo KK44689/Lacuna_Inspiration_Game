@@ -5,14 +5,12 @@ using UnityEngine;
 public class CheckAllBookStorePuzzleSolved : MonoBehaviour
 {
     public GameObject collider;
-    bool alreadySolved = false;
-    GameObject Pandora;
-    public static bool allBookStorePuzzleSolved = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    bool alreadySolved = false;
+
+    GameObject Pandora;
+
+    public static bool allBookStorePuzzleSolved = false;
 
     // Update is called once per frame
     void Update()
@@ -24,7 +22,6 @@ public class CheckAllBookStorePuzzleSolved : MonoBehaviour
             alreadySolved == false
         )
         {
-            print("all solved");
             allBookStorePuzzleSolved = true;
             Pandora = GameObject.FindWithTag("Player");
             collider.SetActive(true);
