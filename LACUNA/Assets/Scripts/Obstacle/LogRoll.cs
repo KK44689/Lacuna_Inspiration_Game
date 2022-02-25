@@ -23,14 +23,23 @@ public class LogRoll : MonoBehaviour
 
     float delayLog = 2f;
 
+    // load/save variables
+    [SerializeField]
+    private ObstacleData ObstacleData;
+
     // Start is called before the first frame update
     void Start()
     {
-        stopRolling = false;
-        hitEnemy = false;
         startPos = transform.position;
         rb2D = GetComponent<Rigidbody2D>();
         RefreshButton.gameObject.SetActive(false);
+
+        // variable equals data
+        // stopRolling = false;
+        // hitEnemy = false;
+        stopRolling = ObstacleData.logRollStop;
+        hitEnemy = ObstacleData.logRollHitEnemy;
+        hitFloor = ObstacleData.logRollHitFloor;
     }
 
     // Update is called once per frame
@@ -61,6 +70,9 @@ public class LogRoll : MonoBehaviour
             hitFloor = false;
             RefreshButton.gameObject.SetActive(false);
         }
+        ObstacleData.logRollStop = stopRolling;
+        ObstacleData.logRollHitEnemy = hitEnemy;
+        ObstacleData.logRollHitFloor = hitFloor;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

@@ -25,7 +25,7 @@ public class InspireItem : MonoBehaviour
     {
         // hide E
         // pickUpText.SetActive(false);
-        PuzzleCollider.alreadyPickup = PuzzleData.puzzle_storage_alreadyPicked;
+        PuzzleCollider.alreadyPickup = PuzzleData.inspireItem_alreadyPicked;
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class InspireItem : MonoBehaviour
             PuzzleCollider.alreadyPickup = true;
             GenInspireItem.inspireItemPicked = true;
             PlayPickupSound = true;
-            PuzzleData.puzzle_storage_alreadyPicked = PuzzleCollider.alreadyPickup;
+            PuzzleData.inspireItem_alreadyPicked = PuzzleCollider.alreadyPickup;
             // pickUpText.SetActive(false);
             PuzzleCollider.deletePuzzle = true;
         }

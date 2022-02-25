@@ -37,7 +37,7 @@ public class PuzzleCollider : MonoBehaviour
         InteractPuzzle.SetActive(false);
 
         // puzzleSolved = false;
-        puzzleSolved = PuzzleData.puzzle_storage_solved;
+        puzzleSolved = PuzzleData.inspireItem_puzzle_solved;
     }
 
     // Update is called once per frame
@@ -72,10 +72,10 @@ public class PuzzleCollider : MonoBehaviour
             Destroy(gameObject);
             // puzzleSolved = false;
             deletePuzzle = true;
-            PuzzleData.puzzle_storage_solved = puzzleSolved;
+            PuzzleData.inspireItem_puzzle_solved = puzzleSolved;
         }
-        Debug.Log("puzzle_storage_solved_load/save--" + PuzzleData.puzzle_storage_solved);
-        Debug.Log("puzzle_storage_solved_solved--" + puzzleSolved);
+        Debug.Log("inspireItem_puzzle_solved_load/save--" + PuzzleData.inspireItem_puzzle_solved);
+        Debug.Log("inspireItem_puzzle_solved_solved--" + puzzleSolved);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

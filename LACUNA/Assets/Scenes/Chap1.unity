@@ -615,6 +615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 31450740}
+  - component: {fileID: 31450741}
   m_Layer: 0
   m_Name: monster2
   m_TagString: Untagged
@@ -639,6 +640,20 @@ Transform:
   m_Father: {fileID: 1307115759}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31450741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31450739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2911b703f85517d4ebb0252df21bd0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1550718103}
+  MonsterData: {fileID: 11400000, guid: 49106a652e9072543a0b380a7337872e, type: 2}
 --- !u!1 &47359263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5310,6 +5325,37 @@ PolygonCollider2D:
       - {x: 1.8734604, y: -0.14402974}
       - {x: 3.8670313, y: -0.17034495}
       - {x: 3.510864, y: -0.00020929426}
+--- !u!1 &310138033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 310138034}
+  m_Layer: 0
+  m_Name: deleteMonsters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &310138034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310138033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2134496008}
+  m_Father: {fileID: 861202536}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &314721645
 GameObject:
   m_ObjectHideFlags: 0
@@ -7108,6 +7154,10 @@ PrefabInstance:
       value: Monster01
       objectReference: {fileID: 0}
     - target: {fileID: 8506737564333258128, guid: 535b46e3c10de6f40a148586da6f4ee6, type: 3}
+      propertyPath: ObstacleData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9dfebe1fdca1a184c9a07ba8544fc303, type: 2}
+    - target: {fileID: 8506737564333258128, guid: 535b46e3c10de6f40a148586da6f4ee6, type: 3}
       propertyPath: RefreshButton
       value: 
       objectReference: {fileID: 949115798}
@@ -7806,10 +7856,10 @@ GameObject:
   m_Component:
   - component: {fileID: 385593901}
   - component: {fileID: 385593900}
-  - component: {fileID: 385593899}
   - component: {fileID: 385593898}
   - component: {fileID: 385593897}
   - component: {fileID: 385593896}
+  - component: {fileID: 385593899}
   m_Layer: 0
   m_Name: deleteMonCollider
   m_TagString: Untagged
@@ -7826,9 +7876,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 385593895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5082036e01ecf4d4b82f103949977d3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 43fcbfc4ca4a7e24d97274100c9ec014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 1550718103}
+  Log: {fileID: 340084117}
+  blankLog: {fileID: 3494476053820609585, guid: 23efd342664d4cb43b13327d4c21cc03, type: 3}
+  RefreshButton: {fileID: 1962995572}
+  ObstacleData: {fileID: 11400000, guid: 9dfebe1fdca1a184c9a07ba8544fc303, type: 2}
 --- !u!114 &385593897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7841,7 +7896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9827a7706049fa499e926e9396b2650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrevCollider: {fileID: 1343394657}
+  PrevCollider: {fileID: 1260970563}
   characterType: Player
 --- !u!114 &385593898
 MonoBehaviour:
@@ -7855,7 +7910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9827a7706049fa499e926e9396b2650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrevCollider: {fileID: 1478188256}
+  PrevCollider: {fileID: 1739098114}
   characterType: Player
 --- !u!114 &385593899
 MonoBehaviour:
@@ -7869,7 +7924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9827a7706049fa499e926e9396b2650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrevCollider: {fileID: 31450739}
+  PrevCollider: {fileID: 2134496007}
   characterType: Player
 --- !u!61 &385593900
 BoxCollider2D:
@@ -12413,6 +12468,7 @@ GameObject:
   - component: {fileID: 686733189}
   - component: {fileID: 686733185}
   - component: {fileID: 686733188}
+  - component: {fileID: 686733190}
   m_Layer: 0
   m_Name: PanBackHome
   m_TagString: Untagged
@@ -12454,7 +12510,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686733182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c77c018aea268145b510536a8daa152, type: 3}
   m_Name: 
@@ -12528,6 +12584,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextCollider: {fileID: 350051670}
+--- !u!114 &686733190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686733182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461d690416a32cf45b9ba7298ee225e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextCollider: {fileID: 385593895}
+  characterType: Player
 --- !u!1 &697480867
 GameObject:
   m_ObjectHideFlags: 0
@@ -15228,6 +15298,7 @@ Transform:
   - {fileID: 1496255353}
   - {fileID: 481962110}
   - {fileID: 299903458}
+  - {fileID: 310138034}
   m_Father: {fileID: 991593706}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17445,7 +17516,7 @@ Transform:
   - {fileID: 1688303799}
   - {fileID: 218089167}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995320808
 GameObject:
@@ -24552,6 +24623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1343394658}
+  - component: {fileID: 1343394659}
   m_Layer: 0
   m_Name: monster4
   m_TagString: Untagged
@@ -24576,6 +24648,20 @@ Transform:
   m_Father: {fileID: 1307115759}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1343394659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343394657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2911b703f85517d4ebb0252df21bd0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1260970563}
+  MonsterData: {fileID: 11400000, guid: f6be9d8a39ea7bd4491e9651edc5144f, type: 2}
 --- !u!1 &1343446618
 GameObject:
   m_ObjectHideFlags: 0
@@ -24711,6 +24797,7 @@ MonoBehaviour:
   Log: {fileID: 1061644269}
   blankLog: {fileID: 3494476053820609585, guid: 23efd342664d4cb43b13327d4c21cc03, type: 3}
   RefreshButton: {fileID: 1962995572}
+  ObstacleData: {fileID: 11400000, guid: c725a740b285b684c8222ad3ee20875e, type: 2}
 --- !u!61 &1357932189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25099,6 +25186,10 @@ PrefabInstance:
       propertyPath: logRoll
       value: 
       objectReference: {fileID: 340084117}
+    - target: {fileID: 3876785491425152170, guid: a17fbed915783b44eb33946753e4feeb, type: 3}
+      propertyPath: ObstacleData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9dfebe1fdca1a184c9a07ba8544fc303, type: 2}
     - target: {fileID: 3876785491425152170, guid: a17fbed915783b44eb33946753e4feeb, type: 3}
       propertyPath: RefreshButton
       value: 
@@ -27627,6 +27718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1478188257}
+  - component: {fileID: 1478188258}
   m_Layer: 0
   m_Name: monster3
   m_TagString: Untagged
@@ -27651,6 +27743,20 @@ Transform:
   m_Father: {fileID: 1307115759}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1478188258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478188256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2911b703f85517d4ebb0252df21bd0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1739098114}
+  MonsterData: {fileID: 11400000, guid: 835a76595160a69438bfc0d62cdd349b, type: 2}
 --- !u!1 &1484922514
 GameObject:
   m_ObjectHideFlags: 0
@@ -28674,7 +28780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171636777856134617, guid: 5e2bd3087079ba34196356b52c30e80c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6171636777856134617, guid: 5e2bd3087079ba34196356b52c30e80c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -29303,7 +29409,7 @@ RectTransform:
   m_Children:
   - {fileID: 1583115794}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -32159,6 +32265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1721237710}
+  - component: {fileID: 1721237711}
   m_Layer: 0
   m_Name: monster1
   m_TagString: Untagged
@@ -32183,6 +32290,20 @@ Transform:
   m_Father: {fileID: 1307115759}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1721237711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721237709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2911b703f85517d4ebb0252df21bd0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 2125668950}
+  MonsterData: {fileID: 11400000, guid: 7aba86f16176ca5439af8f37251f06c8, type: 2}
 --- !u!1 &1725519643
 GameObject:
   m_ObjectHideFlags: 0
@@ -37531,9 +37652,8 @@ GameObject:
   - component: {fileID: 2034413690}
   - component: {fileID: 2034413689}
   - component: {fileID: 2034413693}
-  - component: {fileID: 2034413694}
   - component: {fileID: 2034413695}
-  - component: {fileID: 2034413696}
+  - component: {fileID: 2034413694}
   m_Layer: 0
   m_Name: PanGiveFlower
   m_TagString: Untagged
@@ -37690,20 +37810,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextCollider: {fileID: 358191058}
-  characterType: Player
---- !u!114 &2034413696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034413687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 461d690416a32cf45b9ba7298ee225e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextCollider: {fileID: 385593895}
   characterType: Player
 --- !u!1 &2044548837
 GameObject:
@@ -38798,6 +38904,10 @@ PrefabInstance:
       propertyPath: chaseSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 563399440, guid: a33bdf8f44e22904c8619e7ab8cfa119, type: 3}
+      propertyPath: MonsterData
+      value: 
+      objectReference: {fileID: 11400000, guid: f6be9d8a39ea7bd4491e9651edc5144f, type: 2}
     - target: {fileID: 2125668956, guid: a33bdf8f44e22904c8619e7ab8cfa119, type: 3}
       propertyPath: m_Mass
       value: 5
@@ -39052,6 +39162,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2134496007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2134496008}
+  - component: {fileID: 2134496010}
+  - component: {fileID: 2134496009}
+  m_Layer: 0
+  m_Name: deleteMon2_3_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2134496008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134496007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 463.09, y: -1.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 310138034}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2134496009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134496007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05883a33ee0b3542ae5cfbc22c296df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextCollider: {fileID: 385593895}
+  charType: Player
+--- !u!61 &2134496010
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134496007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.20809865}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.688021}
+  m_EdgeRadius: 0
 --- !u!1 &2134534376
 GameObject:
   m_ObjectHideFlags: 0
@@ -39232,6 +39414,10 @@ PrefabInstance:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 982803270}
+    - target: {fileID: 563399440, guid: a33bdf8f44e22904c8619e7ab8cfa119, type: 3}
+      propertyPath: MonsterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 835a76595160a69438bfc0d62cdd349b, type: 2}
     - target: {fileID: 2125668956, guid: a33bdf8f44e22904c8619e7ab8cfa119, type: 3}
       propertyPath: m_Mass
       value: 8
@@ -39343,6 +39529,10 @@ PrefabInstance:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 1077963672}
+    - target: {fileID: 563399440, guid: a33bdf8f44e22904c8619e7ab8cfa119, type: 3}
+      propertyPath: MonsterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7aba86f16176ca5439af8f37251f06c8, type: 2}
     - target: {fileID: 4398855482105810733, guid: a33bdf8f44e22904c8619e7ab8cfa119, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -39459,7 +39649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -150.82947
+      value: -150.52946
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187128655171, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39471,7 +39661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187136159706, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -150.82947
+      value: -150.52946
       objectReference: {fileID: 0}
     - target: {fileID: 1052738187136159706, guid: 81c8e116d437a2b44a2d227f91de7a05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39918,7 +40108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457134, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -131.3
+      value: -131
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457134, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40119,6 +40309,10 @@ PrefabInstance:
       propertyPath: logRoll
       value: 
       objectReference: {fileID: 1061644269}
+    - target: {fileID: 3876785491425152170, guid: a17fbed915783b44eb33946753e4feeb, type: 3}
+      propertyPath: ObstacleData
+      value: 
+      objectReference: {fileID: 11400000, guid: c725a740b285b684c8222ad3ee20875e, type: 2}
     - target: {fileID: 3876785491425152170, guid: a17fbed915783b44eb33946753e4feeb, type: 3}
       propertyPath: RefreshButton
       value: 
@@ -40704,6 +40898,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1563265895}
     - target: {fileID: 8506737564333258128, guid: 535b46e3c10de6f40a148586da6f4ee6, type: 3}
+      propertyPath: ObstacleData
+      value: 
+      objectReference: {fileID: 11400000, guid: c725a740b285b684c8222ad3ee20875e, type: 2}
+    - target: {fileID: 8506737564333258128, guid: 535b46e3c10de6f40a148586da6f4ee6, type: 3}
       propertyPath: RefreshButton
       value: 
       objectReference: {fileID: 1296754430}
@@ -40784,6 +40982,10 @@ PrefabInstance:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 1758772612}
+    - target: {fileID: 294349466, guid: e443126541d2293439621da286059e2e, type: 3}
+      propertyPath: MonsterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 49106a652e9072543a0b380a7337872e, type: 2}
     - target: {fileID: 3868621804986595240, guid: e443126541d2293439621da286059e2e, type: 3}
       propertyPath: m_Name
       value: Monster01

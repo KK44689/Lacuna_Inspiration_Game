@@ -18,7 +18,7 @@ public class GenCollectable : MonoBehaviour
 
     void Start()
     {
-        challangeSolved = PuzzleData.puzzle_circle1_solved;
+        challangeSolved = PuzzleData.collectable_puzzle_solved;
     }
 
     // Update is called once per frame
@@ -42,11 +42,11 @@ public class GenCollectable : MonoBehaviour
             animator.SetBool("challenge_solve", true);
             Destroy(CollectableObject, 3f);
             destroyCollectable = true;
-            PuzzleData.puzzle_circle1_solved = challangeSolved;
+            PuzzleData.collectable_puzzle_solved = challangeSolved;
         }
         Debug
-            .Log("puzzle_circle1_solved_load/save--" +
-            PuzzleData.puzzle_circle1_solved);
-        Debug.Log("puzzle_circle1_solved--" + challangeSolved);
+            .Log("collectable_puzzle_solved_load/save--" +
+            PuzzleData.collectable_puzzle_solved);
+        Debug.Log("collectable_puzzle_solved--" + challangeSolved);
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    // enemy movement variables
     public float speed;
 
     public float chaseSpeed;
@@ -14,30 +15,37 @@ public class EnemyController : MonoBehaviour
 
     private bool mustDetect;
 
-    public static bool monsterInactive = false;
-
-    public GameObject pandora;
-
-    public GameObject gameOver;
+    bool movingRight = true;
 
     public GameObject
 
             startPos,
             stopPos;
 
-    bool movingRight = true;
+    // gameobject variables
+    public static bool monsterInactive = false;
 
-    Vector3 localScale;
-
-    public float attackRange;
+    public GameObject pandora;
 
     private Rigidbody2D rb;
 
-    Animator animator;
+    Vector3 localScale;
+
+    public float monSize = 0.5f;
+
+    // gameover variables
+    public GameObject gameOver;
 
     public static bool gameover = false;
 
-    public float monSize = 0.5f;
+    public float attackRange;
+
+    // animation variables
+    Animator animator;
+
+    // load/save variables
+    [SerializeField]
+    private MonsterData MonsterData;
 
     void Start()
     {
@@ -46,6 +54,21 @@ public class EnemyController : MonoBehaviour
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+
+        // make monster position equals data
+        // position
+        Vector3 temp = transform.position;
+        temp.x = MonsterData.monsterPos;
+        transform.position = temp;
+
+        // is active
+        gameObject.SetActive(MonsterData.monsterActive);
+
+        // monster must detect player
+        mustDetect = MonsterData.monsterMustDetect;
+
+        // monster walk
+        mustPatrol = MonsterData.monsterMustPatrol;
     }
 
     void Update()
@@ -94,6 +117,11 @@ public class EnemyController : MonoBehaviour
                 rb.Sleep();
             }
         }
+        // save data
+        MonsterData.monsterPos = transform.position.x;
+        MonsterData.monsterMustDetect = mustDetect;
+        MonsterData.monsterMustPatrol = mustPatrol;
+        MonsterData.monsterActive = gameObject.activeInHierarchy;
     }
 
     void monsterWalk()
@@ -188,6 +216,7 @@ public class EnemyController : MonoBehaviour
                 ReturnToCheckPoint.checkPoint = "checkpoint2";
             }
         }
+
         // log collide with monster -> monster inactive
         if (collision.gameObject.tag.Equals("Log") && gameover == false)
         {

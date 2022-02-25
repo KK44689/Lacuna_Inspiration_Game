@@ -7,14 +7,18 @@ public class MonsterData : ScriptableObject
 {
     //Monster 
     //chap1
-    public bool monster101Active;
-    public bool monster102Active;
-    public bool monster103Active;
-    public bool monster104Active;
+    public bool monsterActive = true;
+    public float monsterPos;
+    public bool monsterMustDetect = true;
+    public bool monsterMustPatrol = true;
 
-    //chap2
-    public bool monster201Active;
-    public bool monster202Active;
+    // public bool monster102Active;
+    // public bool monster103Active;
+    // public bool monster104Active;
+
+    // //chap2
+    // public bool monster201Active;
+    // public bool monster202Active;
 
     //chap3 none
     //chap4 none 

@@ -12,12 +12,19 @@ public class LogCollider : MonoBehaviour
 
     bool pickUpAllowed;
 
+    // load/save variables
+    [SerializeField]
+    private ObstacleData ObstacleData;
+
     // Start is called before the first frame update
     void Start()
     {
         pickUpText.SetActive(false);
         logRoll.SetActive(false);
-        hideLog = false;
+
+        // variable equals data
+        // hideLog = false;
+        hideLog = ObstacleData.HidelogCollider;
     }
 
     // Update is called once per frame
@@ -33,6 +40,7 @@ public class LogCollider : MonoBehaviour
             LogRoll.hitEnemy = false;
             logRoll.SetActive(true);
             hideLog = true;
+            ObstacleData.HidelogCollider = hideLog;
         }
     }
 
