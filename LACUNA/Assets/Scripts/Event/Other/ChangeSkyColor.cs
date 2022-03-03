@@ -11,6 +11,10 @@ public class ChangeSkyColor : MonoBehaviour
     //The Color to be assigned to the Renderer’s Material
     public Color NewColor;
 
+    // load/save variable
+    [SerializeField]
+    private GameplayDialogueData GameplayDialogueData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +23,6 @@ public class ChangeSkyColor : MonoBehaviour
 
         //Set the GameObject's Color quickly to a set Color (blue)
         SpriteRenderer.color = NewColor;
+        GameplayDialogueData.skyColor = SpriteRenderer.color;
     }
 }

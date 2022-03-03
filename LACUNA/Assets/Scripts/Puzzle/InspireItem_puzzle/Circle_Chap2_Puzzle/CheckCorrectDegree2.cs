@@ -26,6 +26,10 @@ public class CheckCorrectDegree2 : MonoBehaviour
 
     bool circle3_solved;
 
+    // load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     void Start()
     {
         circle1_solved = false;
@@ -34,6 +38,9 @@ public class CheckCorrectDegree2 : MonoBehaviour
         circle1 = GameObject.Find("piece1");
         circle2 = GameObject.Find("piece2");
         circle3 = GameObject.Find("piece3");
+
+        // make code value = data value
+        GenInspireItem.puzzleSolved = PuzzleData.inspireItem_puzzle_solved;
     }
 
     void Update()
@@ -47,7 +54,9 @@ public class CheckCorrectDegree2 : MonoBehaviour
         if (circle1_solved && circle2_solved && circle3_solved)
         {
             GenInspireItem.puzzleSolved = true;
-            print("Pencil Gen");
+
+            // save data
+            PuzzleData.inspireItem_puzzle_solved = GenInspireItem.puzzleSolved;
             Puzzle.SetActive(false);
         }
     }

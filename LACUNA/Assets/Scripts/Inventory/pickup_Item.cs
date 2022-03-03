@@ -8,6 +8,9 @@ public class pickup_Item : MonoBehaviour
 
     public GameObject itemButton;
 
+    [SerializeField]
+    private ItemData ItemData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +29,13 @@ public class pickup_Item : MonoBehaviour
             {
                 if (inventory.isFull[i] == false)
                 {
-                    inventory.isFull[i] = true;
-                    Instantiate(itemButton,
-                    inventory.slots[i].transform,
-                    false);
-
+                    // ItemData.souvenir = true;
+                    // Destroy (gameObject);
+                    // inventory.isFull[i] = true;
+                    // Instantiate(itemButton,
+                    // inventory.slots[i].transform,
+                    // false);
+                    ItemData.souvenir = true;
                     break;
                 }
             }

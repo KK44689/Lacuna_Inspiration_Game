@@ -10,19 +10,26 @@ public class FlowerPicked : MonoBehaviour
     // check that it's player who pick up
     bool pickUpAllowed;
 
+    // sound variables
     AudioSource audioSource;
 
     public AudioClip flowerSound;
 
+    // collected flower variable
     public static bool flowerC_Collected = false;
 
     public static bool flowerE_Collected = false;
 
     public static bool flowerG_Collected = false;
 
+    // inventory variables
     private Inventory inventory;
 
     public GameObject itemButton;
+
+    // load/save variables
+    [SerializeField]
+    private ItemData ItemData;
 
     private void Awake()
     {
@@ -37,6 +44,11 @@ public class FlowerPicked : MonoBehaviour
     {
         // hide E
         pickUpText.SetActive(false);
+
+        // make code values equals data
+        flowerC_Collected = ItemData.flower1;
+        flowerE_Collected = ItemData.flower2;
+        flowerG_Collected = ItemData.flower3;
     }
 
     // Update is called once per frame
@@ -101,6 +113,11 @@ public class FlowerPicked : MonoBehaviour
                     }
                 }
             }
+
+            //save data
+            ItemData.flower1 = flowerC_Collected;
+            ItemData.flower2 = flowerE_Collected;
+            ItemData.flower3 = flowerG_Collected;
 
             // delete flower
             Destroy (gameObject);

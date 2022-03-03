@@ -15,10 +15,17 @@ public class CheckCorrectDigits : MonoBehaviour
 
     bool correct = false;
 
+    // load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     void Start()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
         isCorrect = new bool[4] { false, false, false, false };
+
+        // make code value = data value
+        GenInspireItem.puzzleSolved = PuzzleData.inspireItem_puzzle_solved;
     }
 
     void Update()
@@ -28,6 +35,7 @@ public class CheckCorrectDigits : MonoBehaviour
         if (correct)
         {
             GenInspireItem.puzzleSolved = true;
+            PuzzleData.inspireItem_puzzle_solved = GenInspireItem.puzzleSolved;
         }
     }
 

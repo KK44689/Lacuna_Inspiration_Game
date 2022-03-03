@@ -5,12 +5,19 @@ using UnityEngine;
 [CreateAssetMenu]
 public class MonsterData : ScriptableObject
 {
-    //Monster 
+    //Monster
+
     //chap1
     public bool monsterActive = true;
+
     public float monsterPos;
+
     public bool monsterMustDetect = true;
+
     public bool monsterMustPatrol = true;
+
+    // Chap2
+    public bool monsterStruck = true;
 
     // public bool monster102Active;
     // public bool monster103Active;
@@ -21,5 +28,5 @@ public class MonsterData : ScriptableObject
     // public bool monster202Active;
 
     //chap3 none
-    //chap4 none 
+    //chap4 none
 }

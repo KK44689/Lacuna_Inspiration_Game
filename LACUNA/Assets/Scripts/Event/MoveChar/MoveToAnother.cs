@@ -11,20 +11,27 @@ public class MoveToAnother : MonoBehaviour
     [SerializeField]
     float delay;
 
+    // load/save variables
+    public int currentScene;
+
+    [SerializeField]
+    private IndexSceneData IndexSceneData;
+
     bool LoadNextSceneAllow = false;
 
     private void Update()
     {
+        IndexSceneData.currentSceneIndex = SceneID;
+
         // move to another scene after delays
         if (delay > 0)
         {
-            delay-= Time.deltaTime;
-            print(delay);
+            delay -= Time.deltaTime;
+            print (delay);
             return;
         }
         else
         {
-            print("change");
             SceneManager.LoadScene (SceneID);
         }
     }

@@ -60,12 +60,12 @@ public class PandoraController : MonoBehaviour
         // pandora stop moving when dialogue box active
         if (DialogueManager.isActive == true)
         {
-            if (transform.position.x >= npc.transform.position.x)
+            if (transform.position.x >= npc?.transform.position.x)
             {
                 lookDirection(1);
                 lookDirecTemp = 1;
             }
-            else if (transform.position.x < npc.transform.position.x)
+            else if (transform.position.x < npc?.transform.position.x)
             {
                 lookDirection(-1);
                 lookDirecTemp = -1;

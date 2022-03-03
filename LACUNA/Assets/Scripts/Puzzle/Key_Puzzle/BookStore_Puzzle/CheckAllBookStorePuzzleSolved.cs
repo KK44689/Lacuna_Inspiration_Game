@@ -12,6 +12,16 @@ public class CheckAllBookStorePuzzleSolved : MonoBehaviour
 
     public static bool allBookStorePuzzleSolved = false;
 
+    //load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
+    void Start()
+    {
+        // make code value = data value
+        allBookStorePuzzleSolved = PuzzleData.all_puzzle_solved;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +33,7 @@ public class CheckAllBookStorePuzzleSolved : MonoBehaviour
         )
         {
             allBookStorePuzzleSolved = true;
+            PuzzleData.all_puzzle_solved = allBookStorePuzzleSolved;
             Pandora = GameObject.FindWithTag("Player");
             collider.SetActive(true);
             collider.transform.position = Pandora.transform.position;

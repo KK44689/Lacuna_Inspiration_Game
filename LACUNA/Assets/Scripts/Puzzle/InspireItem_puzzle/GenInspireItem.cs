@@ -12,14 +12,21 @@ public class GenInspireItem : MonoBehaviour
 
     GameObject pandora;
 
+    // load/save variables
+    // [SerializeField]
+    // private PuzzleData PuzzleData;
+
     void Start()
     {
         puzzleSolved = false;
         pandora = GameObject.FindWithTag("Player");
+
+        // // make code value = data value
+        // puzzleSolved = PuzzleData.inspireItem_puzzle_solved;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         generateInspireItem();
     }
@@ -38,7 +45,7 @@ public class GenInspireItem : MonoBehaviour
                 (GameObject)
                 Instantiate(inspireBW, tempPos, Quaternion.identity);
             Destroy (gameObject);
-            puzzleSolved = false;
+            // puzzleSolved = false;
         }
     }
 }

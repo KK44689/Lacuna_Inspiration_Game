@@ -14,6 +14,14 @@ public class CheckAnswer : MonoBehaviour
 
     string answer = "";
 
+    // load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
+    void Start(){
+        GenInspireItem.puzzleSolved = PuzzleData.inspireItem_puzzle_solved;
+    }
+
     // Update is called once per frame
     public void CheckCorrectAnswer()
     {
@@ -31,6 +39,7 @@ public class CheckAnswer : MonoBehaviour
             Puzzle.SetActive(false);
             PuzzleCollider.GetComponent<BoxCollider2D>().enabled = false;
             GenInspireItem.puzzleSolved = true;
+            PuzzleData.inspireItem_puzzle_solved = GenInspireItem.puzzleSolved;
         }
     }
 }

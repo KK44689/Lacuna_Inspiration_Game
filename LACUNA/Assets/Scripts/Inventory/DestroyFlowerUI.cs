@@ -12,6 +12,10 @@ public class DestroyFlowerUI : MonoBehaviour
 
     public static bool flowerAllCollected = false;
 
+    // load/save variables
+    [SerializeField]
+    private ItemData ItemData;
+
     void Awake()
     {
         // get inventory from player
@@ -19,6 +23,13 @@ public class DestroyFlowerUI : MonoBehaviour
             GameObject
                 .FindGameObjectWithTag("Player")
                 .GetComponent<Inventory>();
+    }
+
+    void Start()
+    {
+        // make code value = data value
+        flowerAllCollected = ItemData.allFlowerCollected;
+        alreadyDestroy = ItemData.allFlower_alreadyDestroy;
     }
 
     void Update()
@@ -45,7 +56,7 @@ public class DestroyFlowerUI : MonoBehaviour
                     FlowerPicked.flowerC_Collected &&
                     FlowerPicked.flowerE_Collected &&
                     FlowerPicked.flowerG_Collected &&
-                    flowerAllCollected == false
+                    flowerAllCollected == false && alreadyDestroy
                 )
                 {
                     if (inventory.isFull[i] == false)
@@ -59,6 +70,10 @@ public class DestroyFlowerUI : MonoBehaviour
                 }
             }
         }
+
+        //save data
+        ItemData.allFlowerCollected = flowerAllCollected;
+        ItemData.allFlower_alreadyDestroy = alreadyDestroy;
     }
 
     public void destroyFlowerUI()

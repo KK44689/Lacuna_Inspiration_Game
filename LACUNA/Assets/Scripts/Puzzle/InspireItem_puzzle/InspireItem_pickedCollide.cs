@@ -17,11 +17,24 @@ public class InspireItem_pickedCollide : MonoBehaviour
     // get colored item
     public ConvertToColor convert_color;
 
+    // load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     // Start is called before the first frame update
     void Start()
     {
         // hide E
         pickUpText.SetActive(false);
+
+        // make code value = data value
+        GenInspireItem.inspireItemPicked = PuzzleData.inspireItem_alreadyPicked;
+    }
+
+    void Update()
+    {
+        //save data
+        PuzzleData.inspireItem_alreadyPicked = GenInspireItem.inspireItemPicked;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

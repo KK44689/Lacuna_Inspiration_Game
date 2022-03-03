@@ -7,10 +7,12 @@ public class FlowerTutorial : MonoBehaviour
     // pop up E
     public GameObject pickUpText;
 
+    // tutorial texts
     public GameObject tutorialText_correct;
 
     public GameObject tutorialText_wrong;
 
+    // inventory variables
     private Inventory inventory;
 
     public GameObject itemButton;
@@ -18,15 +20,21 @@ public class FlowerTutorial : MonoBehaviour
     // check that it's player who pick up
     bool pickUpAllowed;
 
+    // sound variables
     AudioSource audioSource;
 
     public AudioClip flowerSound;
 
+    // check tutorial state variables
     public static bool flowerCorrect_Collected = false;
 
     public static bool flowerTutorial_stop = false;
 
     public static bool flowerWrong_Collected = false;
+
+    // load/save variables
+    [SerializeField]
+    private ItemData ItemData;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +45,10 @@ public class FlowerTutorial : MonoBehaviour
             GameObject
                 .FindGameObjectWithTag("Player")
                 .GetComponent<Inventory>();
+
+        // make code values = data values
+        flowerCorrect_Collected = ItemData.flowerTutorialRight;
+        flowerWrong_Collected = ItemData.flowerTutorialWrong;
     }
 
     // Update is called once per frame
@@ -87,6 +99,10 @@ public class FlowerTutorial : MonoBehaviour
             flowerWrong_Collected = true;
             tutorialText_wrong.SetActive(false);
         }
+
+        // save data
+        ItemData.flowerTutorialRight = flowerCorrect_Collected;
+        ItemData.flowerTutorialWrong = flowerWrong_Collected;
     }
 
     // pop up E when player collide

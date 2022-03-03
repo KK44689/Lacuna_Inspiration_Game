@@ -49,6 +49,13 @@ public class CheckCorrectOrder_sun : MonoBehaviour
 
     public static bool sun_puzzle_solved = false;
 
+    //load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
+    [SerializeField]
+    private MonsterData MonsterData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +77,11 @@ public class CheckCorrectOrder_sun : MonoBehaviour
         box7 = GameObject.Find("box7");
         box8 = GameObject.Find("box8");
         monsterStruck.SetActive(false);
+
+        // make code value = data value
+        sun_puzzle_solved = PuzzleData.sun_puzzle_solved;
+        monsterStruck.SetActive(MonsterData.monsterStruck);
+        monster.SetActive(MonsterData.monsterActive);
     }
 
     // Update is called once per frame
@@ -103,9 +115,12 @@ public class CheckCorrectOrder_sun : MonoBehaviour
             Puzzle.SetActive(false);
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             sun_puzzle_solved = true;
+            PuzzleData.sun_puzzle_solved = sun_puzzle_solved;
             getInspireItemDetector.SetActive(false);
             monster.SetActive(false);
             monsterStruck.SetActive(true);
+            MonsterData.monsterStruck = monsterStruck.activeInHierarchy;
+            MonsterData.monsterActive = monster.activeInHierarchy;
         }
     }
 

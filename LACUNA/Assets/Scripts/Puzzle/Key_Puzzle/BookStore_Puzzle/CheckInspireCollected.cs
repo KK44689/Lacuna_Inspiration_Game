@@ -6,6 +6,9 @@ public class CheckInspireCollected : MonoBehaviour
 {
     public GameObject PuzzleCollider;
 
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +18,7 @@ public class CheckInspireCollected : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GenInspireItem.inspireItemPicked)
+        if (PuzzleData.inspireItem_alreadyPicked)
         {
             PuzzleCollider.GetComponent<BoxCollider2D>().enabled = true;
         }

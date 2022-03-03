@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2500888546678238789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7193212304147045885}
+  - component: {fileID: 3715918480151028570}
+  m_Layer: 0
+  m_Name: saveInventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7193212304147045885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500888546678238789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -123.54466, y: -1.0528287, z: -1.9428253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3715918480151028570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500888546678238789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0763f37fa417044a69ce42c6671cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inspireItemButton: {fileID: 220349213208770612, guid: 82e56b76d69ab6f4d930da15068d86d3, type: 3}
+  flower1_Button: {fileID: 5384918491851514955, guid: 9ec6f9fa181254343a05e17d8d77b59e, type: 3}
+  flower2_Button: {fileID: 1139402934244646384, guid: add77dbb04e0b8340bc8bb70ad7b1a51, type: 3}
+  flower3_Button: {fileID: 5822240825740684174, guid: 9d8a98bbcd8a4f74bac7be7468215ef0, type: 3}
+  allFlower_Button: {fileID: 6011444949082903782, guid: d074f55c39d72e843ae27ca5fc80cc86, type: 3}
+  flowerTutorial_Button: {fileID: 1139402934244646384, guid: add77dbb04e0b8340bc8bb70ad7b1a51, type: 3}
+  souvenir_Button: {fileID: 8005479081023868359, guid: d71851d1db378244cb0221c68a8f3009, type: 3}
+  PuzzleData: {fileID: 11400000, guid: 960227634462dfa489de5fe716695e1d, type: 2}
+  ItemData: {fileID: 11400000, guid: 0c1b2395ccd8e554694c69ce6f1874af, type: 2}

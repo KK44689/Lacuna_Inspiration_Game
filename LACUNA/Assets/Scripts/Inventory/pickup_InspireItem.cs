@@ -8,6 +8,9 @@ public class pickup_InspireItem : MonoBehaviour
 
     public GameObject itemButton;
 
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     private void Awake()
     {
         // get inventory from player
@@ -23,15 +26,17 @@ public class pickup_InspireItem : MonoBehaviour
         {
             if (PuzzleCollider.alreadyPickup && InspireItem.pickUpAllowed)
             {
-                if (inventory.isFull[i] == false)
-                {
-                    inventory.isFull[i] = true;
-                    Instantiate(itemButton,
-                    inventory.slots[i].transform,
-                    false);
-                    Destroy (gameObject);
-                    break;
-                }
+                PuzzleData.inspireItem_alreadyPicked = true;
+                Destroy (gameObject);
+                // if (inventory.isFull[i] == false)
+                // {
+                //     inventory.isFull[i] = true;
+                //     Instantiate(itemButton,
+                //     inventory.slots[i].transform,
+                //     false);
+                //     Destroy (gameObject);
+                //     break;
+                // }
             }
         }
     }

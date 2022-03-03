@@ -40,6 +40,13 @@ public class CheckCorrectOrder : MonoBehaviour
 
     public static bool star_puzzle_solved = false;
 
+    //load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
+    [SerializeField]
+    private MonsterData MonsterData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +62,11 @@ public class CheckCorrectOrder : MonoBehaviour
         piece4 = GameObject.Find("puzzle4");
         piece5 = GameObject.Find("puzzle5");
         monsterStruck.SetActive(false);
+
+        // make code value = data value
+        star_puzzle_solved = PuzzleData.star_puzzle_solved;
+        monsterStruck.SetActive(MonsterData.monsterStruck);
+        monster.SetActive(MonsterData.monsterActive);
     }
 
     // Update is called once per frame
@@ -82,9 +94,12 @@ public class CheckCorrectOrder : MonoBehaviour
             Puzzle.SetActive(false);
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             star_puzzle_solved = true;
+            PuzzleData.star_puzzle_solved = star_puzzle_solved;
             getInspireItemDetector.SetActive(false);
             monster.SetActive(false);
             monsterStruck.SetActive(true);
+            MonsterData.monsterStruck = monsterStruck.activeInHierarchy;
+            MonsterData.monsterActive = monster.activeInHierarchy;
         }
     }
 

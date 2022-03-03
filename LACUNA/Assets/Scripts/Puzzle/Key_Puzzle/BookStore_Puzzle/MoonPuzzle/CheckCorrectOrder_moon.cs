@@ -39,6 +39,10 @@ public class CheckCorrectOrder_moon : MonoBehaviour
 
     public static bool moon_puzzle_solved = false;
 
+    //load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +59,9 @@ public class CheckCorrectOrder_moon : MonoBehaviour
         square4 = GameObject.Find("square4");
         square5 = GameObject.Find("square5");
         square6 = GameObject.Find("square6");
+
+        // make code value = data value
+        moon_puzzle_solved = PuzzleData.moon_puzzle_solved;
     }
 
     // Update is called once per frame
@@ -85,6 +92,7 @@ public class CheckCorrectOrder_moon : MonoBehaviour
             Puzzle.SetActive(false);
             puzzleDetector.GetComponent<BoxCollider2D>().enabled = false;
             moon_puzzle_solved = true;
+            PuzzleData.moon_puzzle_solved = moon_puzzle_solved;
             getInspireItemDetector.SetActive(false);
         }
     }

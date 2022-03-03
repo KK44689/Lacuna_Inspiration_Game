@@ -10,14 +10,19 @@ public class CheckRightPosition : MonoBehaviour
 
     bool allCorrect = false;
 
+    // load/save variables
+    [SerializeField]
+    private PuzzleData PuzzleData;
+
     // Start is called before the first frame update
     void Start()
     {
-        print(CheckRightPos.Count);
+        // print(CheckRightPos.Count);
         for (int i = 0; i < 36; i++)
         {
             CheckRightPos.Add(false);
         }
+        GenCollectable.challangeSolved = PuzzleData.collectable_puzzle_solved;
     }
 
     // Update is called once per frame
@@ -26,6 +31,8 @@ public class CheckRightPosition : MonoBehaviour
         if (CheckAllCorrect())
         {
             GenCollectable.challangeSolved = true;
+            PuzzleData.collectable_puzzle_solved =
+                GenCollectable.challangeSolved;
             PuzzleContainer.SetActive(false);
         }
     }

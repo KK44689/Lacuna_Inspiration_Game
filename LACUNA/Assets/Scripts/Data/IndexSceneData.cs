@@ -30,10 +30,10 @@ public class IndexSceneData : ScriptableObject
         Chap4_AfterSisterRoom = 16,
         Chap4_flashback = 17,
         Chap4_ending = 18,
-        test_load_save = 19,
-        test_load_save2 = 20,
+        Chap1_Pan_house2 = 19,
+
     }
 
-    //Sound,Resolution,Fullscreen in SettingMenu 
-    // save as PlayerPrefs
+   
+    
 }
