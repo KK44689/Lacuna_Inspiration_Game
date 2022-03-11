@@ -1,4 +1,4 @@
-# Lacuna
+# LACUNA
 The inspiration Game For Burnout Syndrome
 Made with Unity Engine
 
