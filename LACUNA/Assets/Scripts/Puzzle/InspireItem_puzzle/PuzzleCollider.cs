@@ -55,7 +55,6 @@ public class PuzzleCollider : MonoBehaviour
     // void FixedUpdate()
     // {
     // }
-
     void generateInspireItem()
     {
         if (puzzleSolved)
@@ -69,12 +68,16 @@ public class PuzzleCollider : MonoBehaviour
             GameObject InspireObject =
                 (GameObject)
                 Instantiate(inspireBW, tempPos, Quaternion.identity);
-            Destroy(gameObject);
+            Destroy (gameObject);
+
             // puzzleSolved = false;
             deletePuzzle = true;
             PuzzleData.inspireItem_puzzle_solved = puzzleSolved;
+            // PuzzleData.inspireItem_alreadyPicked = true;
         }
-        Debug.Log("inspireItem_puzzle_solved_load/save--" + PuzzleData.inspireItem_puzzle_solved);
+        Debug
+            .Log("inspireItem_puzzle_solved_load/save--" +
+            PuzzleData.inspireItem_puzzle_solved);
         Debug.Log("inspireItem_puzzle_solved_solved--" + puzzleSolved);
     }
 

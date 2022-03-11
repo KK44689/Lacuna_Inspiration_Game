@@ -36,7 +36,7 @@ public class TimelineManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        // this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         //when trigger player disable UI_interface
         if (collision.gameObject.tag.Equals("Player")) {
             UI_interface.SetActive(false);
@@ -62,6 +62,8 @@ public class TimelineManager : MonoBehaviour
 
         //open warp after cutscene
         enter_box.SetActive(true);
+        this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
 
         //set bool to update change
         bool_UI = true;

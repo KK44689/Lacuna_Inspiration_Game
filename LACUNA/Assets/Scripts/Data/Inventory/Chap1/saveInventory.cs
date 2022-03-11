@@ -140,20 +140,21 @@ public class saveInventory : MonoBehaviour
         }
 
         // show souvenir item in inventory
-        if (ItemData.souvenir)
-        {
-            for (int i = 0; i < inventory.slots.Length; i++)
-            {
-                if (inventory.isFull[i] == false)
-                {
-                    inventory.isFull[i] = true;
-                    Instantiate(souvenir_Button,
-                    inventory.slots[i].transform,
-                    false);
-                    Destroy (gameObject);
-                    break;
-                }
-            }
-        }
+        // if (ItemData.souvenir)
+        // {
+        //     for (int i = 0; i < inventory.slots.Length; i++)
+        //     {
+        //         if (inventory.isFull[i] == false)
+        //         {
+        //             inventory.isFull[i] = true;
+        //             Instantiate(souvenir_Button,
+        //             inventory.slots[i].transform,
+        //             false);
+        //             print("saveinventory");
+        //             Destroy (gameObject);
+        //             break;
+        //         }
+        //     }
+        // }
     }
 }

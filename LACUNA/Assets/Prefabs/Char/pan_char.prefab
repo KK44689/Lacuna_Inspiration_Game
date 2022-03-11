@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  bouquet: {fileID: 6103075741207813746, guid: ec1434be0af6a6245860cfb52d9cb343, type: 3}
+  pickItemSound: {fileID: 8300000, guid: f625bda85ad498d4a98b58493161b2ec, type: 3}
+  PlayerData: {fileID: 0}
 --- !u!95 &1074402362
 Animator:
   serializedVersion: 3
@@ -225,7 +226,7 @@ AudioSource:
   m_GameObject: {fileID: 3498139857954457136}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1090845121564860454, guid: d5fb5e42dd761e248b9816859783eaae, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -325,6 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectable: {fileID: 6575916822125467668, guid: 9d9e65260c9208141949658bb5d45c0e, type: 3}
+  PuzzleData: {fileID: 0}
 --- !u!114 &5469085691529191854
 MonoBehaviour:
   m_ObjectHideFlags: 0

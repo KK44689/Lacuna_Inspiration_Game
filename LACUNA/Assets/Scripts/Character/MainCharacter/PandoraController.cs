@@ -19,6 +19,7 @@ public class PandoraController : MonoBehaviour
 
     // Sound variables
     AudioSource audioSource;
+    public AudioClip pickItemSound;
 
     // Animation variables
     Animator animator;
@@ -92,7 +93,8 @@ public class PandoraController : MonoBehaviour
         // if pandora collect inspire item play sound
         if (InspireItem.PlayPickupSound)
         {
-            SoundManager.PlaySoundItem("receiveItem");
+            // SoundManager.PlaySoundItem("receiveItem");
+            PlaySound(pickItemSound);
             InspireItem.PlayPickupSound = false;
         }
     }

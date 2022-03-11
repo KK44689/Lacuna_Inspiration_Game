@@ -25,18 +25,37 @@ public class pickup_Item : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            for (int i = 0; i < inventory.slots.Length; i++)
+            if (ItemData.souvenir == false)
             {
-                if (inventory.isFull[i] == false)
+                ItemData.souvenir = true;
+                // for (int i = 0; i < inventory.slots.Length; i++)
+                // {
+                //     if (inventory.isFull[i] == false)
+                //     {
+                //         inventory.isFull[i] = true;
+                //         Instantiate(itemButton,
+                //         inventory.slots[i].transform,
+                //         false);
+
+                //         // print("pickupitem");
+                //         // Destroy (gameObject);
+                //         // ItemData.souvenir = true;
+                //         break;
+                //     }
+                // }
+            }
+            if (ItemData.souvenir)
+            {
+                for (int i = 0; i < inventory.slots.Length; i++)
                 {
-                    // ItemData.souvenir = true;
-                    // Destroy (gameObject);
-                    // inventory.isFull[i] = true;
-                    // Instantiate(itemButton,
-                    // inventory.slots[i].transform,
-                    // false);
-                    ItemData.souvenir = true;
-                    break;
+                    if (inventory.isFull[i] == false)
+                    {
+                        inventory.isFull[i] = true;
+                        Instantiate(itemButton,
+                        inventory.slots[i].transform,
+                        false);
+                        break;
+                    }
                 }
             }
         }

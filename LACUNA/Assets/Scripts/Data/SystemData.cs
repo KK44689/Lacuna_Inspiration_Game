@@ -6,11 +6,11 @@ using UnityEngine;
 public class SystemData : ScriptableObject
 {
     //sound
-    public float main_volume = -20f;
+    public float main_volume = -5f;
 
     //master same as main_volume
 
-    public float audio_music = -10f;
+    public float audio_music = -5f;
     public float audio_VFX = -10f;
 
 

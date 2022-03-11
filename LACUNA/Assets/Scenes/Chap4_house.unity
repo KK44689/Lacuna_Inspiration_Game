@@ -897,8 +897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0e56024c809f84a862d3a84ca0062a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSrc: {fileID: 106711245}
-  musicStart: {fileID: 8300000, guid: 986b672178ea18c4188394902975eb70, type: 3}
 --- !u!4 &106711247
 Transform:
   m_ObjectHideFlags: 0
@@ -1135,6 +1133,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457136, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498139857954457136, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457137, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
@@ -1570,6 +1572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickupText
       objectReference: {fileID: 0}
+    - target: {fileID: 3691227490910072071, guid: 9a1ba72a30286634bb53b0a930d27b33, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1ba72a30286634bb53b0a930d27b33, type: 3}
 --- !u!224 &219060029 stripped
@@ -1883,11 +1889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a3cf03a6ab1aa43ac5f80e6890c637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 1267695819}
-  currentScene: 0
-  sceneTo: 0
-  IndexSceneData: {fileID: 0}
-  warpData: {fileID: 0}
 --- !u!61 &301944805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5135,6 +5136,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3498139857954457136, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3498139857954457137, guid: b6b1d24ada2a9f141b58b17d4f65ab21, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -5281,11 +5286,6 @@ PrefabInstance:
 --- !u!224 &1267695818 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2688231341162113461, guid: 9a1ba72a30286634bb53b0a930d27b33, type: 3}
-  m_PrefabInstance: {fileID: 1267695817}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1267695819 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3691227490910072071, guid: 9a1ba72a30286634bb53b0a930d27b33, type: 3}
   m_PrefabInstance: {fileID: 1267695817}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1281255494
@@ -7360,7 +7360,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685231326}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dd3b2af2666ded4bbcc72925df8b3da, type: 3}
   m_Name: 

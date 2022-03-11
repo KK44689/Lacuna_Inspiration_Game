@@ -13,8 +13,8 @@ public class GenInspireItem : MonoBehaviour
     GameObject pandora;
 
     // load/save variables
-    // [SerializeField]
-    // private PuzzleData PuzzleData;
+    [SerializeField]
+    private PuzzleData PuzzleData;
 
     void Start()
     {
@@ -33,18 +33,22 @@ public class GenInspireItem : MonoBehaviour
 
     void generateInspireItem()
     {
-        if (puzzleSolved && inspireItemPicked == false)
+        if (
+            (puzzleSolved && inspireItemPicked == false) ||
+            PuzzleData.inspireItem_puzzle_solved
+        )
         {
-            Physics2D
-                .IgnoreCollision(pandora.GetComponent<Collider2D>(),
-                GetComponent<Collider2D>());
+            PuzzleData.inspireItem_alreadyPicked = true;
+            // Physics2D
+            //     .IgnoreCollision(pandora.GetComponent<Collider2D>(),
+            //     GetComponent<Collider2D>());
 
-            Vector2 tempPos = transform.position;
+            // Vector2 tempPos = transform.position;
 
-            GameObject InspireObject =
-                (GameObject)
-                Instantiate(inspireBW, tempPos, Quaternion.identity);
-            Destroy (gameObject);
+            // GameObject InspireObject =
+            //     (GameObject)
+            //     Instantiate(inspireBW, tempPos, Quaternion.identity);
+            // Destroy (gameObject);
             // puzzleSolved = false;
         }
     }

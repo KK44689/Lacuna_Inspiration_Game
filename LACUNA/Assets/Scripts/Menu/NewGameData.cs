@@ -254,6 +254,8 @@ public class NewGameData : MonoBehaviour
     public WarpData warp_chap1_02;
     [SerializeField]
     public WarpData warp_chap1_03;
+    [SerializeField]
+    public WarpData warp_chap1_04;
 
     [SerializeField]
     public WarpData warp_chap2_01;
@@ -263,11 +265,15 @@ public class NewGameData : MonoBehaviour
     public WarpData warp_chap2_03;
     [SerializeField]
     public WarpData warp_chap2_04;
+    [SerializeField]
+    public WarpData warp_chap2_05;
 
     [SerializeField]
     public WarpData warp_chap3_01;
     [SerializeField]
     public WarpData warp_chap3_02;
+    [SerializeField]
+    public WarpData warp_chap3_03;
 
     [SerializeField]
     public WarpData warp_chap4_01;
@@ -285,7 +291,7 @@ public class NewGameData : MonoBehaviour
 
     // set all data to default 
 
-    public void StartNewGame()
+    public async void StartNewGame()
     {
         ////////////////////////////////////////////////////////////////////////////////////////////
         //index not  to use in this script
@@ -339,9 +345,9 @@ public class NewGameData : MonoBehaviour
 
         //4
         npc_s0_chap2.position_npc_x = 260;
-        npc_s1_chap2.position_npc_x = -4;
+        npc_s1_chap2.position_npc_x = 94;
         npc_s2_chap2.position_npc_x = -9;
-        npc_s3_chap2.position_npc_x = 94;
+        npc_s3_chap2.position_npc_x = -4;
 
         //1
         npc_s0_chap3.position_npc_x = 278;
@@ -474,6 +480,7 @@ public class NewGameData : MonoBehaviour
         puzzle_chap1.star_puzzle_solved = false;
         puzzle_chap1.sun_puzzle_solved = false;
         puzzle_chap1.all_puzzle_solved = false;
+        puzzle_chap1.fishing_puzzle_solved = false;
 
         //1
         puzzle_chap2.inspireItem_puzzle_solved = false;
@@ -483,6 +490,7 @@ public class NewGameData : MonoBehaviour
         puzzle_chap2.star_puzzle_solved = false;
         puzzle_chap2.sun_puzzle_solved = false;
         puzzle_chap2.all_puzzle_solved = false;
+        puzzle_chap2.fishing_puzzle_solved = false;
 
         //1
         puzzle_chap3.inspireItem_puzzle_solved = false;
@@ -492,6 +500,7 @@ public class NewGameData : MonoBehaviour
         puzzle_chap3.star_puzzle_solved = false;
         puzzle_chap3.sun_puzzle_solved = false;
         puzzle_chap3.all_puzzle_solved = false;
+        puzzle_chap3.fishing_puzzle_solved = false;
 
         //1
         puzzle_chap4.inspireItem_puzzle_solved = false;
@@ -501,6 +510,7 @@ public class NewGameData : MonoBehaviour
         puzzle_chap4.star_puzzle_solved = false;
         puzzle_chap4.sun_puzzle_solved = false;
         puzzle_chap4.all_puzzle_solved = false;
+        puzzle_chap4.fishing_puzzle_solved = false;
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         //Dialogue
@@ -754,22 +764,25 @@ public class NewGameData : MonoBehaviour
         ////////////////////////////////////////////////////////////////////////////////////////////
         //warp
         ////////////////////////////////////////////////////////////////////////////////////////////
-        ///3 4 2 3
+        ///4 5 3 3
 
-        //3
+        //4
         warp_chap1_01.warp_active = true;
         warp_chap1_02.warp_active = true;
         warp_chap1_03.warp_active = true;
+        warp_chap1_04.warp_active = true;
 
-        //4
+        //5
         warp_chap2_01.warp_active = true;
         warp_chap2_02.warp_active = true;
         warp_chap2_03.warp_active = true;
         warp_chap2_04.warp_active = true;
+        warp_chap2_05.warp_active = true;
 
-        //2
+        //3
         warp_chap3_01.warp_active = true;
         warp_chap3_02.warp_active = true;
+        warp_chap3_03.warp_active = true;
 
         //3
         warp_chap4_01.warp_active = true;

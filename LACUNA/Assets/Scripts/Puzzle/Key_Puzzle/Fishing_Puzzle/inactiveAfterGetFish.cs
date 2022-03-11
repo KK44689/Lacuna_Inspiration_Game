@@ -6,6 +6,9 @@ public class inactiveAfterGetFish : MonoBehaviour
 {
     public GameObject NextCollider;
 
+    [SerializeField]
+    private int fishCaught = 5;
+
     // load/save variables
     [SerializeField]
     private PuzzleData PuzzleData;
@@ -18,7 +21,7 @@ public class inactiveAfterGetFish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FishingPuzzle.score == 10 && FishingPuzzle.fishingComplete == false)
+        if (FishingPuzzle.score == fishCaught && FishingPuzzle.fishingComplete == false)
         {
             FishingPuzzle.fishingComplete = true;
             PuzzleData.fishing_puzzle_solved = FishingPuzzle.fishingComplete;

@@ -2403,7 +2403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5612868043567060951, guid: 79c0d8a89307abc47925c685b6f2830a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.323208
+      value: -38.311264
       objectReference: {fileID: 0}
     - target: {fileID: 5612868043567060951, guid: 79c0d8a89307abc47925c685b6f2830a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6512,6 +6512,7 @@ GameObject:
   - component: {fileID: 1540293161}
   - component: {fileID: 1540293164}
   - component: {fileID: 1540293165}
+  - component: {fileID: 1540293166}
   m_Layer: 0
   m_Name: JillStayHere
   m_TagString: Untagged
@@ -6581,7 +6582,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.044953942}
@@ -6621,6 +6622,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0bf9905968789343bd46893f12f1385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1540293166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540293159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25cd2fc5fe7ded4facc386d1484473f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1593477943
